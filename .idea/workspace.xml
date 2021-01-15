@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e8cda-fea1-4f05-ad0b-dac7a748dd3a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sort/BucketSort/HIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sort/Intervals/MeetingRooms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sort/LargestNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sort/SortThenCompareString/ValidAnagram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sort/SortWithSquares/SortTransformedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sort/WiggleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SortingAlgorithms/BucketSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Summary.md" beforeDir="false" afterPath="$PROJECT_DIR$/Summary.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sort/groupAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort/SortThenCompareString/groupAnagrams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SortingAlgorithms/InsertSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SortingAlgorithms/InsertSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/~$总结.docx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +23,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/笔记.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
+            <state relative-caret-position="2659">
               <caret line="1449" column="12" selection-start-line="1449" selection-start-column="12" selection-end-line="1449" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SortingAlgorithms/BucketSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -48,16 +48,52 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Summary.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+            <state relative-caret-position="394">
+              <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SortingAlgorithms/MergeSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SortingAlgorithms/InsertSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SortingAlgorithms/HeapSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="41" column="44" lean-forward="true" selection-start-line="41" selection-end-line="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sort/InsertSort/InsertionSortList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="523">
+              <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stack/decodeString.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
@@ -88,6 +124,7 @@
         <option value="$PROJECT_DIR$/src/Sort/WiggleSort.java" />
         <option value="$PROJECT_DIR$/src/Sort/SortTransformedArray.java" />
         <option value="$PROJECT_DIR$/笔记.md" />
+        <option value="$PROJECT_DIR$/src/SortingAlgorithms/InsertSort.java" />
         <option value="$PROJECT_DIR$/Summary.md" />
       </list>
     </option>
@@ -121,7 +158,7 @@
               <item name="LEETCODE_1" type="b2602c69:ProjectViewProjectNode" />
               <item name="LEETCODE_1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="stack" type="462c0819:PsiDirectoryNode" />
+              <item name="SortingAlgorithms" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -266,21 +303,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SortingAlgorithms/InsertSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SortingAlgorithms/SelectionSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SortingAlgorithms/HeapSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
@@ -336,20 +359,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SortingAlgorithms/BucketSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SortingAlgorithms/MergeSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Sort/MergeSort/SortList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -383,10 +392,31 @@
         <state relative-caret-position="-1972" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/笔记.md">
+    <entry file="file://$PROJECT_DIR$/src/Sort/InsertSort/InsertionSortList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="1449" column="12" selection-start-line="1449" selection-start-column="12" selection-end-line="1449" selection-end-column="12" />
+        <state relative-caret-position="523">
+          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stack/decodeString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SortingAlgorithms/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SortingAlgorithms/InsertSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -398,15 +428,29 @@
         </state>
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        <state relative-caret-position="394">
+          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sort/InsertSort/InsertionSortList.java">
+    <entry file="file://$PROJECT_DIR$/笔记.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="2659">
+          <caret line="1449" column="12" selection-start-line="1449" selection-start-column="12" selection-end-line="1449" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SortingAlgorithms/BucketSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SortingAlgorithms/HeapSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="44" lean-forward="true" selection-start-line="41" selection-end-line="42" />
         </state>
       </provider>
     </entry>

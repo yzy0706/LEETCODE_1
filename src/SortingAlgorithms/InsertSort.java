@@ -7,9 +7,9 @@ public class InsertSort {
 
     //上升
     public static void insertSort(int[] arr) {
-        for (int i = 0; i < arr.length - 1; i++) {  //重复n次
-            for (int j = i + 1; j > 0; j--) { //从i+1开始到0， 每次都把浏览到的每一个小于前面一个的数两两替换
-                if (arr[j] < arr[j - 1]) {
+        for (int i = 0; i < arr.length - 1; i++){//重复n次
+            int j =  i + 1;
+            while (j > 0 && arr[j] < arr[j - 1]) { //while j > o, 每次都把浏览到的每一个小于前面一个的数两两替
                     int temp = arr[j];
                     arr[j] = arr[j - 1];
                     arr[j - 1] = temp;
