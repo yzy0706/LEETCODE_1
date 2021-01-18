@@ -1,4 +1,4 @@
-package 中心点延伸;
+package MidpointExpand;
 
 public class JZ_JC_1_LongestPanlidromicSubstring {
 }

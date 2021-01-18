@@ -1,4 +1,4 @@
-package 赋值修改int数列;
+package MapUseArray;
 
 public class removeElement {
      public int removeElement(int[] nums, int val){

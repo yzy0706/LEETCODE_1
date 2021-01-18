@@ -2,11 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e8cda-fea1-4f05-ad0b-dac7a748dd3a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/BFS/levelOrderTraversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DFS/TwoSameTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/BinaryTreeInOrderTraversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/ConstructBinaryTree/ConstructBinaryTreeFromPreorderInorder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/CountNumbersOfUniqueTrees/UniqueBinarySearchTreesII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/CountNumbersOfUniqueTrees/UniqueBinaryTrees.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TreeTraversalAlgorithms/DepthOrderTraverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TreeTraversalAlgorithms/InOrderTraverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TreeTraversalAlgorithms/LevelOrderTraverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TreeTraversalAlgorithms/PostOrderTraverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TreeTraversalAlgorithms/PreorderTraverse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Summary.md" beforeDir="false" afterPath="$PROJECT_DIR$/Summary.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sort/HeapSort/SortKNearlySortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort/HeapSort/SortKNearlySortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SortingAlgorithms/BucketSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SortingAlgorithms/BucketSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~$总结.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GraphDataStructure/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphDataStructure/Dijkstra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GraphDataStructure/Dijkstra_Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphDataStructure/Dijkstra_Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GraphDataStructure/Kruskal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphDataStructure/Kruskal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MapUseArray/removeDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MapUseArray/removeDuplicates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MapUseArray/removeElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MapUseArray/removeElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MidpointExpand/JZ_JC_1_LongestPanlidromicSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MidpointExpand/JZ_JC_1_LongestPanlidromicSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MidpointExpand/JZ_JC_1_ValidPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MidpointExpand/JZ_JC_1_ValidPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dynamicProgramming/uniqueBinaryTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicProgramming/UniqueBinaryTrees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/BFS/levelOrderTraversal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/BFS/reverseBinaryTreeLevelOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFS/reverseBinaryTreeLevelOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/BFS/topologicalSort/courseSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFS/topologicalSort/courseSchedule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/BFS/topologicalSort/courseScheduleII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFS/topologicalSort/courseScheduleII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/BFS/topologicalSort/isValidTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFS/topologicalSort/isValidTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/BFS/zigZagTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFS/zigZagTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/DFS/allNodesDistanceKInBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS/AllNodesDistanceKInBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/DFS/balancedBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS/BalancedBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/DFS/bucketFill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS/bucketFill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/DFS/converSortedArrayToBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS/converSortedArrayToBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/DFS/friendCricles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS/friendCricles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/DFS/maxDepthOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS/maxDepthOfBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/DFS/subtreeOfAnotherTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS/subtreeOfAnotherTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/DFS/symmetricTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS/symmetricTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/DFS/twoSameTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/DFS/validBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS/validBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/dijkstra_floydWarshall_bellman/networkDelayTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/dijkstra_floydWarshall_bellman/networkDelayTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/dijkstra_floydWarshall_bellman/pathWithMaxProb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/dijkstra_floydWarshall_bellman/pathWithMaxProb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/kruskal/connectingCitiesWithMinCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/kruskal/connectingCitiesWithMinCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/prim/cheapestFlightWithinKStops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/prim/cheapestFlightWithinKStops.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/unionFind/JZ_accountMerge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/unionFind/JZ_accountMerge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/unionFind/JZ_connectingGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/unionFind/JZ_connectingGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/unionFind/JZ_connectingGraphII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/unionFind/JZ_connectingGraphII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/unionFind/JZ_connectingGraphIII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/unionFind/JZ_connectingGraphIII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/unionFind/JZ_graphValidTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/unionFind/JZ_graphValidTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/unionFind/JZ_minimumSpanningTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/unionFind/JZ_minimumSpanningTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/unionFind/isValidTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/unionFind/isValidTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/matrix/wordSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/matrix/wordSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oa2/Amazon OA2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/OA2/Amazon OA2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oa2/BreakAPalidrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OA2/BreakAPalidrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oa2/CopyListWIthRandomPointer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OA2/CopyListWIthRandomPointer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oa2/CountTeams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OA2/CountTeams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oa2/DiskSpaceAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OA2/DiskSpaceAnalysis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oa2/FetchItemsToDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OA2/FetchItemsToDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oa2/FillTruck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OA2/FillTruck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oa2/MaxAverageSubtree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OA2/MaxAverageSubtree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oa2/MinDistanceBetweenRobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OA2/MinDistanceBetweenRobots.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oa2/NearstCity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OA2/NearstCity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oa2/OA2_part1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/OA2/OA2_part1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oa2/OA2_part2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/OA2/OA2_part2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oa2/PackagingAutomation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OA2/PackagingAutomation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oa2/SmallestNegativeBalance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OA2/SmallestNegativeBalance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oa2/SupplierInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OA2/SupplierInventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oa2/WaysToSplitStringIntoPrimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OA2/WaysToSplitStringIntoPrimes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记 copy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/笔记 copy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +170,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Tree.CountNumbersOfUniqueTrees" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">

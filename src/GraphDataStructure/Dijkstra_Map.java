@@ -1,4 +1,4 @@
-package 数据结构.树和图.dataStructure;
+package GraphDataStructure;
 
 
 import java.util.ArrayList;
