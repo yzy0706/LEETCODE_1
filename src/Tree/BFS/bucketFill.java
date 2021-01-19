@@ -1,4 +1,4 @@
-package Tree.DFS;
+package Tree.BFS;
 
 import java.util.LinkedList;
 import java.util.Queue;

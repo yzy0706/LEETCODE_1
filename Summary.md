@@ -236,6 +236,11 @@ c.  有负数让你sort平方以后的情况的题：
                   if(a >= 0) temp[startIndex--] = calculate(nums[l]) >= calculate(nums[r])? nums[l++] : nums[r--];
                   if(a < 0) temp[startIndex++] = calcalate(nums[l]) >= calculate(nums[r])? nums[r--] : nums[l++];
                }
+
+
+
+
+
             
       
 
