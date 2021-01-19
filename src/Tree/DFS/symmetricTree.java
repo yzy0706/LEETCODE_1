@@ -1,4 +1,7 @@
-package DFS;
+package Tree.DFS;
+
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class symmetricTree {
     // dfs的办法， 直接检查left.right, right.left并一直到最后的node
@@ -16,7 +19,7 @@ public class symmetricTree {
 
 
     //答案里queue的办法
-    public boolean isSymmetric(TreeNode root) {
+    public boolean isSymmetric_queue(TreeNode root) {
         Queue<TreeNode> q = new LinkedList<>();
         q.offer(root);
         q.offer(root);

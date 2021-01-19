@@ -1,4 +1,4 @@
-package DFS;
+package Tree.DFS;
 
 import javax.swing.tree.TreeNode;
 

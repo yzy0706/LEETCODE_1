@@ -116,7 +116,7 @@ binarySearch（二分法）{
 
 
 
-BFS{
+Tree.BFS{
 常用解法：BFS和DFS最大的不同在于BFS要随时储存每一层的，而DFS是从一个node一查到底一直到null&null，所以BFS一般新建一个queue来承载所有的node
 
 
@@ -157,7 +157,7 @@ return。
 
 
 
-DFS{
+Tree.DFS{
 
 maxDepthBinaryTree:
 中心思想：如果null了就return 0，否则return recursion Math.max(maxDepthBinaryTree(root.left)+1, maxDepthBinaryTree(root.right)+1)
@@ -737,7 +737,7 @@ twoSum{
 Matrix矩阵题{
 常用解法：
 1.由每个点出发向各个方向拓展（recursion）
-2. BFS,用queue
+2. Tree.BFS,用queue
 
 
  numberOfIslands:
@@ -1229,12 +1229,12 @@ Graph（记得优先建数据结构： 两种图的表示方式 ： adjacent mat
 
      Runtime: 因为有比较所以是O(log(V)V+log(V)E), space是O(E+V)， 所有当前邻居的最大值
 ----------------------------------------------------------------------------------------------------
-DFS
+Tree.DFS
 1. helper查null的时候helper有几个node就查几个node == null， 不然会null pointer
 
 
 ----------------------------------------------------------------------------------------------------
-BFS
+Tree.BFS
 1.BFS在forloop去poll() queue里面的东西之前一定要注意用一个int在while loop里确认好queue的size
 2.常用的whileloop格式
   Queue<> queue = new LinkedList<>();

@@ -15,10 +15,10 @@ public class PostOrderTraverse {
         }
     }
 
-    //递归版本， 先右后左， 暂时不写stack版本
+    //递归版本， 先遍历左子树再遍历右子树， 浏览完右子树以后再退回到根节点， 暂时不写stack版本
     private void postOrderTraverse(TreeNode root){
-        postOrderTraverse(root.right);
         postOrderTraverse(root.left);
+        postOrderTraverse(root.right);
         System.out.println(root.val + " ");
     }
 }

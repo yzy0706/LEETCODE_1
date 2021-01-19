@@ -1,4 +1,4 @@
-package BFS;
+package Tree.BFS;
 
 public class reverseBinaryTreeLevelOrder {
 

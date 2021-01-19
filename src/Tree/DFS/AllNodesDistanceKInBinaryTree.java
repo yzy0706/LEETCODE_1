@@ -1,4 +1,4 @@
-package DFS;
+package Tree.DFS;
 
 public class AllNodesDistanceKInBinaryTree {
     //主要用dfs的做法

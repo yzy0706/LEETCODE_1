@@ -77,7 +77,7 @@ public class wordSearch {
                 || this.board[row][col] != word.charAt(index))
             return false;
 
-        /* Step 3). explore the neighbors in DFS */
+        /* Step 3). explore the neighbors in Tree.DFS */
         boolean ret = false;
         // mark the path before the next exploration
         this.board[row][col] = '#';

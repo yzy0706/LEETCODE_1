@@ -1,4 +1,4 @@
-package DFS;
+package Tree.DFS;
 
 public class friendCricles {
     //solution里面的DFS, 就是建立一个int[M.length] visited来记录哪一行浏览过， 然后顺着i浏览每一行，如果这行没有被浏览过

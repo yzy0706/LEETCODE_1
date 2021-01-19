@@ -1,4 +1,4 @@
-package DFS;
+package Tree.DFS;
 
 public class validBST {
     // DFS做法，主要就是在用一个记录lower和upper的helper来递归root的val和他左边、右边的node的val

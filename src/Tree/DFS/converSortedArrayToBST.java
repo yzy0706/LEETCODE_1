@@ -1,4 +1,4 @@
-package DFS;
+package Tree.DFS;
 
 public class converSortedArrayToBST {
     public TreeNode sortedArrayToBST(int[] nums) {

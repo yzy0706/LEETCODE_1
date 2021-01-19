@@ -1,4 +1,4 @@
-package BFS.topologicalSort;
+package Tree.BFS.topologicalSort;
 
 public class courseScheduleII {
     //跟courseSchdule一样, 只是每当indegree[taking]等于0的时候要设置res[pos++]= taking; 这里pos是先使用了再++
