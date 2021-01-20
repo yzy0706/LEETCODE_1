@@ -1,4 +1,4 @@
-package dynamicProgramming;
+package DynamicProgramming;
 
 public class minimumPathSum {
     //中心思想就是新建一个dp[][], i == 0 和 j == 0的两个row和col都是dp[i][j-1] 和 dp[i-1][j] + grid[i][j] 然后其他的就比较dp[i-1][j]和 dp[i][j-1]

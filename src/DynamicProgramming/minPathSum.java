@@ -1,4 +1,4 @@
-package dynamicProgramming;
+package DynamicProgramming;
 
 public class minPathSum {
     //第二遍写的，用的是取左边和上面比较小的那个dp[][]的方法，还是建新的dp

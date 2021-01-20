@@ -1,4 +1,4 @@
-package dynamicProgramming;
+package DynamicProgramming;
 
 public class buyAndSellAStock {
 //    public int maxProfit(int[] prices) {

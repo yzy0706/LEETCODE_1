@@ -39,6 +39,5 @@ public class InOrderTraverse {
                 head = cur.right; //浏览右儿子
             }
         }
-
     }
 }

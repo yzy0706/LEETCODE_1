@@ -1,4 +1,4 @@
-package dynamicProgramming;
+package DynamicProgramming;
 
 public class maximalSquare{
     //dp解法：d if(matrix[i-1][j-1] == '1') dp[i][j] = Math.min(dp[i-1][j],Math.min(dp[i-1][j-1], dp[i][j-1])) + 1;

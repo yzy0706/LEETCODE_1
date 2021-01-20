@@ -1,4 +1,4 @@
-package dynamicProgramming;
+package DynamicProgramming;
 
 public class climbingChairs {
     //dp解法主要就是用一个一维dp来存储当前的解法有多少个

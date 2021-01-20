@@ -1,4 +1,4 @@
-package dynamicProgramming;
+package DynamicProgramming;
 
 public class decodeWays {
     //dp[i] = dp[i-1] + dp[i-2]; 总结来说就是把0，1位置都设置为1， 前一位不是0对的话加上dp[i-1]， 前两位<26 && >10的话加上dp[i-2]

@@ -1,4 +1,4 @@
-package dynamicProgramming;
+package DynamicProgramming;
 
 public class maximumSubarray {
     public int maxSubArray(int[] nums) {

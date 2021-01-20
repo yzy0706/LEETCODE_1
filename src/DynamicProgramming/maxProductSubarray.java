@@ -1,4 +1,4 @@
-package dynamicProgramming;
+package DynamicProgramming;
 
 public class maxProductSubarray {
     //因为每一个数字都有正负之分， 所以我们需要用一个maxdp和一个mindp来记录当前的乘积， 如果当前的数是<0, maxdp[i]就是当前的数乘以min[i-1]和nums[i]的比较

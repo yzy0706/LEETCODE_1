@@ -1,4 +1,4 @@
-package dynamicProgramming.adjacent;
+package DynamicProgramming.adjacent;
 
 public class Robber {
     //做法：主要就是去比较dp[i-2]+nums[i]和dp[i-1]谁更大， 然后就选谁， 记住dp[1]也要是dp[0]或者nums[1]的最大值

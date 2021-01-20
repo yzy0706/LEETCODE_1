@@ -1,4 +1,4 @@
-package dynamicProgramming;
+package DynamicProgramming;
 
 public class uniquePathsWithObstacles {
     //solution给的解法，主要是把边角上是0并且前一个是1的地方改成1；第一个地方如果是0的话换成1这样改
