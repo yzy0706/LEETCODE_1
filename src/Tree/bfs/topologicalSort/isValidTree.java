@@ -1,4 +1,4 @@
-package Tree.BFS.topologicalSort;
+package Tree.bfs.topologicalSort;
 
 import java.util.ArrayList;
 import java.util.HashMap;
