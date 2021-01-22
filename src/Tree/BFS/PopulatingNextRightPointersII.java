@@ -56,11 +56,11 @@ public Node connect(Node root) {
 
 
 
+
 //DFS
 //做法: 这个题主要跟之前那个是一个解法, 但因为不是完美的平衡树, 我们不是先去判断root.right是不是null, 而是先去判断root.left是不是null, 然后再去讨论如果root.left不是null的话, root.right是不是null的情况; 反之, 如果root.left是null,
 //root.right也要连接下一个neighbor, 在这里neighbour也不再一定是root.next.left, 而是要通过一个helper来找到最近的下一个邻居给root.left或者root.right连
 //Runtime:  我们每一个node都要浏览, 而且还要浏览同层的最近的一个邻居, 最坏的情况是O(N^2), spcae是O(1)
-class Solution {
     public Node connect(Node root) {
         modify(root);
         return root;

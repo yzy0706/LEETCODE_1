@@ -2,33 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e8cda-fea1-4f05-ad0b-dac7a748dd3a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/RedOrBlackCardGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/BFS/PopulatingNextRightPointersII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/DFS/ConnectNodesOnSameLevel/PopulatingNextRightPointers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/DFS/ConnectNodesOnSameLevel/PopulatingNextRightPointersII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Math/NPeopleSayNumberM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/BinaryTreeInOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/InorderTraversal/BinaryTreeInOrderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TreeTraversalAlgorithms/InOrderTraverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeTraversalAlgorithms/InOrderTraverse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicProgramming/PerfectSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/PerfectSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicProgramming/UniqueBinaryTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/UniqueBinaryTrees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicProgramming/adjacent/PaintFence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/adjacent/PaintFence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicProgramming/adjacent/PaintHouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/adjacent/PaintHouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicProgramming/adjacent/Robber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/adjacent/Robber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicProgramming/buyAndSellAStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/buyAndSellAStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicProgramming/buyAndSellMutipleStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/buyAndSellMutipleStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicProgramming/climbingChairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/climbingChairs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicProgramming/decodeWays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/decodeWays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicProgramming/longestValidParenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/longestValidParenthesis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicProgramming/maxProductSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/maxProductSubarray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicProgramming/maximalSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/maximalSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicProgramming/maximumSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/maximumSubarray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicProgramming/minPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/minPathSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicProgramming/minimumPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/minimumPathSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicProgramming/palindromePartitioning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/palindromePartitioning.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicProgramming/triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicProgramming/uniquePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/uniquePath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicProgramming/uniquePathsWithObstacles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/uniquePathsWithObstacles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicProgramming/wordBreak_dp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/wordBreak_dp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Summary.md" beforeDir="false" afterPath="$PROJECT_DIR$/Summary.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/BFS/PopulatingNextRightPointersII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/PopulatingNextRightPointersII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/CountNumbersOfUniqueTrees/UniqueBinarySearchTreesII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/CountNumbersOfUniqueTrees/UniqueBinaryTreesII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/CountNumbersOfUniqueTrees/UniqueBinaryTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/CountNumbersOfUniqueTrees/UniqueBinaryTrees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/DFS/AllNodesDistanceKInBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/DFS/Path/AllNodesDistanceKInBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/DFS/PathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/DFS/Path/PathSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/DFS/PathSumII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/DFS/Path/PathSumII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/DFS/subtreeOfAnotherTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/DFS/subtreeOfAnotherTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TreeTraversalAlgorithms/DepthOrderTraverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeTraversalAlgorithms/DepthOrderTraverse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TreeTraversalAlgorithms/LevelOrderTraverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeTraversalAlgorithms/LevelOrderTraverse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TreeTraversalAlgorithms/PostOrderTraverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeTraversalAlgorithms/PostOrderTraverse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TreeTraversalAlgorithms/PreorderTraverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeTraversalAlgorithms/PreorderTraverse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/linkedList/addTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedList/addTwoNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/linkedList/removeNthNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedList/removeNthNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/addTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Math/addTwoNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/divideTwoIntegers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Math/divideTwoIntegers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/happyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Math/happyNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/reverseInteger_7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Math/reverseInteger_7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/romanInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Math/romanInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twoPointer/removeNthNodeFromEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twoPointer/removeNthNodeFromEnd.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/笔记 copy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/笔记 copy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记.md" afterDir="false" />
     </list>
@@ -134,6 +130,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Tree/BFS" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Tree.CountNumbersOfUniqueTrees" />
     </key>

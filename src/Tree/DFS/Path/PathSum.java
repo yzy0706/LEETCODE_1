@@ -1,4 +1,4 @@
-package Tree.DFS;
+package Tree.DFS.Path;
 
 public class PathSum {
     class TreeNode {

@@ -1,6 +1,6 @@
 package twoPointer;
 
-import math.ListNode;
+import Math.ListNode;
 
 public class removeNthNodeFromEnd {
     /**

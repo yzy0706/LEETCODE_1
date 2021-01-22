@@ -1,6 +1,6 @@
 package linkedList;
 
-import math.ListNode;
+import Math.ListNode;
 
 public class removeNthNode {
     public ListNode removeNthFromEnd(ListNode head, int n) {

@@ -1,6 +1,6 @@
 package linkedList;
 
-import math.ListNode;
+import Math.ListNode;
 
 public class addTwoNumbers {
     public ListNode addTwoNumbers (ListNode l1 , ListNode l2){

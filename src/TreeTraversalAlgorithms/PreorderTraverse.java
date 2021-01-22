@@ -31,16 +31,16 @@ public class PreorderTraverse {
 
     public void preOrderStack(TreeNode root){
         LinkedList<TreeNode> stack = new LinkedList<>();
-        TreeNode cur = root;
-        while(cur != null || !stack.isEmpty()){
-            if(cur != null){
-                System.out.println(cur.val + " ");
-                stack.offer(cur);
-                cur = cur.left;
+        TreeNode head = root;
+        while(head != null || !stack.isEmpty()){
+            if(head != null){
+                System.out.println(head.val + " ");
+                stack.push(head);
+                head = head.left;
             }
             else{
                 TreeNode father = stack.pop(); // 退回到他的爹
-                cur = father.right; //浏览他爹的右儿子
+                head = father.right; //浏览他爹的右儿子
             }
         }
 

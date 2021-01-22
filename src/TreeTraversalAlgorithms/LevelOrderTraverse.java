@@ -19,7 +19,7 @@ public class LevelOrderTraverse {
     }
 
     //Queue做法： 用queue来承载每一层
-    private void leverTraverse(TreeNode root){
+    private void levelorder(TreeNode root){
         Queue<TreeNode> queue = new LinkedList<TreeNode>();
         queue.offer(root);
         while(!queue.isEmpty()){

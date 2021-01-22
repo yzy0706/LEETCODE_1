@@ -1,4 +1,4 @@
-package math;
+package Math;
 
 public class reverseInteger_7 {
     public  int reverse(int x) {

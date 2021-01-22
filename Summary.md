@@ -188,6 +188,9 @@ Runtime： O(n^2), space: O(1)
         }
     }
 
+
+
+
 2. 几种题型的解法： 
    
 a. 有关于interval的题：
@@ -237,10 +240,272 @@ c.  有负数让你sort平方以后的情况的题：
                   if(a < 0) temp[startIndex++] = calcalate(nums[l]) >= calculate(nums[r])? nums[r--] : nums[l++];
                }
 
+------------------------------------------------------------------------------------------------------------------------
+Tree
+
+1. Tree的几大Traversal算法
+
+a. Preorder Traverse(根节点 -> 左子树 -> 右子树)
+
+Recursiion做法：
+
+            public void preorder_recursion(TreeNode root){
+                if(root == null) return;
+                System.out.println(root.val);
+                preorder_recursion(root.left); //碰到底以后会返回
+                preorder_recursion(root.right);
+            }
+
+Stack Iterative做法：
+            
+            public void preorder_stack(TreeNode root){
+                Stack<TreeNode> stack = new stack<>();
+                stack.push(root);
+                TreeNode head = root;
+                while(head != null || !stack.isEmpty()){
+                    if(head != null){//如果head ！= null
+                        System.out.println(head.val + " ");
+                        stack.push(head); // 把他自己装进去
+                        head = head.left; //一直往左叶子节点移动
+                    }
+                    else{
+                        TreeNode father = stack.pop(); // 如果head是null， 就pop出他的爸爸
+                        cur = father.right; // head移动到他爸爸的右儿子
+                    }
+                }
+            }
+                        
+b. Inorder Traverse（左子树 -> 根节点 -> 右子树）
+
+Recursion做法：
+        
+         public void preorder_recursion(TreeNode root){
+                if(root == null) return;
+                preorder_recursion(root.left); //碰到底以后会返回
+                System.out.println(root.val); //打印第一个爸爸
+                preorder_recursion(root.right); //看看右子树能不能也浏览一下
+            }
+
+Stack Iterative做法：
+
+        public void preorder_stack(TreeNode root){
+                Stack<TreeNode> stack = new stack<>();
+                stack.push(root);
+                TreeNode head = root;
+                while(head != null || !stack.isEmpty()){
+                    if(head != null){//如果head ！= null
+                        stack.push(head); // 把他自己装进去
+                        head = head.left; //一直往左叶子节点移动
+                    }
+                    else{
+                        TreeNode father = stack.pop(); // 如果head是null， 就pop出他的爸爸
+                        System.out.println(father.val + " "); 
+                        //跟preorder不一样的是我们是浏览到最底端以后再去打印第一个爸爸
+                        //所以我们应该在碰到了null以后再操作
+                        cur = father.right; // head移动到他爸爸的右儿子
+                    }
+                }
+            }
+
+c. Postorder Traverse(左子树 -> 右子树 -> 根节点)
+
+Recursion算法：
+        
+            public void postorder(TreeNode root){
+                if(root == null) return;
+                postorder(root.left); //还有左叶子节点就一直往左， return到根节点
+                postorder(root.right); // 没有左叶子节点了就往右叶子节点试试
+                System.out.println(root.val); //左叶子节点是空而且右叶子节点也是空就会print
+ 
+d. Levelorder traverse(浏览每一层)
+
+            private void levelOrder(TreeNode root){
+                Queue<TreeNode> queue = new LinkedList<TreeNode>();
+                queue.offer(root);
+                while(!queue.isEmpty()){
+                    TreeNode cur = queue.poll();
+                    System.out.println(cur.val + " ");
+                    if(cur.left != null) queue.offer(cur.left);
+                    if(cur.right != null) queue.offer(cur.right);
+                }
+            }
+
+e. DepthOrder traverse(其实就是preorder的另一种写法)
+
+            private void depthOrder(TreeNode root){
+                Stack<TreeNode> stack = new stack<>();
+                stack.push(root);
+                while(!stack.isEmpty()){
+                    TreeNode cur = stack.pop();
+                    System.out.println(cur.val);
+                    stack.push(cur.right);
+                    stack.push(cur.left); //left后进去， 所以碰到null了以后他会第一个出来， 再转去右儿子
+            }
+
+2. 题型的总结 
+   
+    a. BFS的题：
+
+    1. BFS的题结构上很简单：直接建立一个queue然后把head以及head以下所有的子节点都一层层加进去就好。
+       如果需要浏览每一层再开始下一层的话我们直接每次都把这层的size = queue.size();要提前计算出来然后
+       再forloop完一整层就好。
+       
+       在PopulatingNextRightPointersII这道题中， 我们不应该在forloop之外poll（）出最左边的Node然后再forloop剩下的，
+       而是应该在进入forloop前设置一个空的pre来承载每一个应该在左边的node
+       
+                               while(!queue.isEmpty()){
+                                    int size = queue.size();
+                                    Node pre = new Node();
+                                    for(int i = 0; i < size; i++){
+                                        Node cur = queue.poll();
+                                        pre.next = cur;
+                                        if(cur.left != null) queue.offer(cur.left);
+                                        if(cur.right != null) queue.offer(cur.right);
+                                    }
+                                }
+    
+    b.  Construct Binary Tree的题：
+    
+    1. 根据inorder数列和postorder或者preorder两者之一的数列来建立一个binary tree的题：
+       
+       a. 首先我们要注意在preorder里root在最左边， 所以我们应该从左往右开始找根节点 -> 左子树 -> 右子树， 反之在posdtOrder中， 
+       我们应该从右往左开始找根节点 -> 右子树 -> 左子树， 因为在postorder中的顺序从左往右应该是左子树  -> 右子树 -> 根节点。 
+       
+       b. 其次我们要了解在一个重要的知识点（这个在count unique binary trees的dp题型里也会用到）， 在inorder中， 如果i是这个root， 
+        则左边0到i-1都应该是他的左子树， i+1到最右边应该都是他的右子树, 所以我们应该设置一个变量inIndex表示当前root在inorder里面的位置， 
+        inStart代表他的左子树起点， inEnd代表他的右子树终点， 这样在建立binary tree的helper里从postIndex = length-1， inStart = 0， 
+        inEnd = inorder.length -1 的条件开始一直循环建立每个节点的左右子树就行。
+       
+                    public TreeNode BuildTreePostorder(int[] inorder, int[] postorder){
+                        return construct(postorder.length-1, 0, inorder.length-1, inorder, postorder);
+                    }
+                    
+
+                    public TreeNode construct(int postIndex, int inStart, int inEnd, int[] inorder, int[] postorder){
+                        if (postIndex < 0 || inStart > inEnd) return null;
+                        TreeNode root = new TreeNode(postorder[postIndex]);
+                        inIndex = 0;
+                        for(int i = inStart; i <= inEnd； i++){
+                            if(inorder[i] == postorder[postIndex] inIndex = i;
+                        }
+                        root.left = construct(postIndex - (inIndex - inStart + 1),  inStart, inIndex-1, inorder, postorder);
+                        root.right = construct(postIndex-1, inIndex+1, inEnd, inorder, postorder);
+                        return root;
+                    }
+    
+   
 
 
 
 
+ 
+c. Counting Numbers of Unique Trees
+    
+1.首先如果是单纯求1到n这些数字能组成的binaryTree的个数， 我们可以用dp来做， 但是中心还是用的当一个树的头是j时（在一个i的forloop里 ， 以j为头的，
+j <= i, 因为j可以为1到i的各个数字）， dp[i] += dp[j-1] (左边的树的大小) + dp[i-j] (j+1到i， 右边树的大小)， 而且dp[0] = 1， dp[1] = 1
+
+        public int uniqueBinaryTrees(int n){
+            int dp = new int[n+1];
+            dp[0] = 1;
+            dp[1] = 1;
+            for(int i = 2; i <= n; i++){
+                for(int j = 1; j <= i; j++){
+                    dp[i] += dp[j-1] + dp[i-j]; ////以j为root， 大小为[j-1], [i-j]的subtree个数叠加在G[i]上
+                }
+            }
+            return dp[n];
+
+2.其次， 如果是给我一个数 n， 让我把所有的树的可能放在一个List<TreeNode> 里return的话:
+  a.用two pointer： start和 end来表示这个树的所有元素应该在哪个区间生成
+  b.然后用forloop从1到n去浏览所有根节点的可能
+  c.根据（start， i-1), (i+1, end)两个区间去dfs 产生他所有的的左右subTree的可能在一个list上（这个题型的中心知识）
+  d.然后再在每一个根节点的基础上permute所有左右子树的可能
+
+        public List<TreeNode> uniqueBinaryTree(int n){
+        }
+
+        public List<TreeNode> generate(int start, int end){
+            List<TreeNode> res = new ArrayList<>();
+            if(start > end){  //做dfs的题一定要先想没法运行的corner case
+                res.add(null);
+                return res;
+            }
+            if(start == end){
+                res.add(new TreeNode(start));
+                return res;
+            }
+            for(int i = start; i <= end; i++){
+                List<TreeNode> potentialLefts = generate(start, i-1);
+                List<TreeNode> potentialRights = generate(i+1, end);
+                
+                for(TreeNode leftSon : potentialLefts){
+                    for(TreeNode rightSon : potentialRights){
+                        TreeNode curRoot = new TreeNode(i);
+                        cur.left = leftSon;
+                        cur.right = rightSon;
+                        res.add(curRoot);
+                    }
+                }
+            
+            return res;
+        }
+
+
+
+
+d. DFS： DFS里面有connectNodesOnSameLevel这种题， 也有PathSum这种题
+1. 首先我们要知道在dfs中， 我们碰到了底层或者碰到了想找的情况是会return回来的， 而不是直接结束方程：在AllNodesDistanceKInBinaryTre这道题
+里， 第一个helper是去找到target， 然后找到target return 0， 再一步步在return的步骤中+1并且放到map里：
+
+        public void findTarget(TreeNode root, TreeNode target,  Map<TreeNode, Integer> map){
+            if(root == null) return -1;
+            if(root.val  == target.val){
+                return 0;
+                map.put(root, 0);
+            }
+            int left = findTarget(root.left, target, map); //像map， list这种引用参数在各个recursion的使用是共通的
+            if(left >= 0){
+                map.put(root, left+1); //这样从target那一层开始就会一直return + 1， + 1一直到root
+                return left+1;
+            }
+
+            int right = ... (同样的再右子树找一遍， 一样的步骤);
+            
+            return -1;
+        }
+       
+        //然后再找一遍每一个节点在不在在map上， 再分别计算他的距离等不等于k就行
+        private void findQualified(TreeNode root, TreeNode target, int distance, int K, Map<TreeNode, Integer> map, List<Integer> res){
+        if(root == null) return;
+        if(map.containsKey(root)) distance = map.get(root); //如果map里本来就有当前的node, 那么证明他肯定在root到target的路径上, 直接把distance置换一下
+        if(distance == K) res.add(root.val); //如果不是路径上的再去判断distance是不是等于K
+        findQualified(root.left, target, distance+1, K, map, res);
+        findQualified(root.right, target, distance+1, K, map, res);  //再往左右dfs去看下面的其他TreeNode在map里还是distance == k都行
+    }
+
+
+2. 就在上面已经提到过， 在dfs的过程中， 如果是list， map之类的引用传递参数， 所有的变化是互通的， 如果我们是在做pathSumII这样需要分别记录每一次dfs
+的路径的题目时， 我们需要每次做完dfs以后把自己的最尾部代表当前值的部分像backTrack一样去掉， 这样如果dfs触底了以后会在每一次return到上一个根节点的时候把自己当前的值删掉
+    
+        public void expand(TreeNode root, int sum, List<Integer> temp){
+            if(root == null) return;
+            temp.add(root.val);
+            if(root.left == null && root.right == null && sum - root.val == 0){
+                res.add(new ArrayList<>(temp));
+            }
+            else {
+                expand(root.left, sum - root.val, temp);
+                expand(root.right, sum - root.val, temp);
+            }
+            temp.remove(temp.size()-1);
+        }
+
+    
+                        
+            
+       
+       
+    
             
       
 

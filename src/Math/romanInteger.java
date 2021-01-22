@@ -1,4 +1,4 @@
-package math;
+package Math;
 
 public class romanInteger {
 
