@@ -53,7 +53,7 @@
 
 ----------------------------------------------------------------------------------------------------
 
-binarySearch（二分法）{
+BinarySearch（二分法）{
 常用解法：把整个数列拆分为两半（一定要用mid = l + (r - l)/2，否则会出现加的次数太多stack根据overflow！！）。题目给的规则分别判断两段哪一段可能存在想要的结果，然后再继续分段
 
 
@@ -116,7 +116,7 @@ binarySearch（二分法）{
 
 
 
-Tree.bfs{
+Tree.BFS{
 常用解法：BFS和DFS最大的不同在于BFS要随时储存每一层的，而DFS是从一个node一查到底一直到null&null，所以BFS一般新建一个queue来承载所有的node
 
 
@@ -737,7 +737,7 @@ twoSum{
 Matrix矩阵题{
 常用解法：
 1.由每个点出发向各个方向拓展（recursion）
-2. Tree.bfs,用queue
+2. Tree.BFS,用queue
 
 
  numberOfIslands:
@@ -1234,7 +1234,7 @@ Tree.DFS
 
 
 ----------------------------------------------------------------------------------------------------
-Tree.bfs
+Tree.BFS
 1.BFS在forloop去poll() queue里面的东西之前一定要注意用一个int在while loop里确认好queue的size
 2.常用的whileloop格式
   Queue<> queue = new LinkedList<>();

@@ -2,18 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e8cda-fea1-4f05-ad0b-dac7a748dd3a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/buyAndSellStock/BuyAndSellStockWithCoolDown.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinarySearch/rotatedSortedArray/RotatedSortedArrayII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinarySearchAlgorithm/BinarySearch_recursive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinarySearchAlgorithm/BinarySearch_whileLoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/CoinCombinations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleArray/BuyAndSellStockWithCoolDown.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/buyAndSellAStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/buyAndSellStock/buyAndSellAStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/buyAndSellMutipleStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/buyAndSellStock/buyAndSellMutipleStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/BFS/PopulatingNextRightPointersII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/bfs/PopulatingNextRightPointersII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/BFS/bucketFill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/bfs/bucketFill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/BFS/levelOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/bfs/levelOrderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/BFS/reverseBinaryTreeLevelOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/bfs/reverseBinaryTreeLevelOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/BFS/topologicalSort/courseSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/bfs/topologicalSort/courseSchedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/BFS/topologicalSort/courseScheduleII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/bfs/topologicalSort/courseScheduleII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/BFS/topologicalSort/isValidTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/bfs/topologicalSort/isValidTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/BFS/zigZagTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/bfs/zigZagTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/PerfectSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleArray/PerfectSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/ConstructBinaryTree/ConstructBinaryTreeFromInorderPostorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/constructBinaryTree/ConstructBinaryTreeFromInorderPostorder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/ConstructBinaryTree/ConstructBinaryTreeFromPreorderInorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/constructBinaryTree/ConstructBinaryTreeFromPreorderInorder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/CountNumbersOfUniqueTrees/UniqueBinaryTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/countNumbersOfUniqueTrees/UniqueBinaryTrees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/CountNumbersOfUniqueTrees/UniqueBinaryTreesII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/countNumbersOfUniqueTrees/UniqueBinaryTreesII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/InorderTraversal/BinaryTreeInOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/inorderTraversal/BinaryTreeInOrderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/LevelorderTraversal/BinaryTreeLevelorderTraversalII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/levelorderTraversal/BinaryTreeLevelorderTraversalII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/bfs/PopulatingNextRightPointersII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/PopulatingNextRightPointersII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/bfs/bucketFill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/bucketFill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/bfs/levelOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/levelOrderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/bfs/reverseBinaryTreeLevelOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/reverseBinaryTreeLevelOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/bfs/topologicalSort/courseSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/topologicalSort/courseSchedule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/bfs/topologicalSort/courseScheduleII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/topologicalSort/courseScheduleII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/bfs/topologicalSort/isValidTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/topologicalSort/isValidTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/bfs/zigZagTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/zigZagTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binarySearch/ClosestBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/ClosestBinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binarySearch/LongestIncreasingSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/LongestIncreasingSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binarySearch/Pow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/Pow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binarySearch/firstBadVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/firstBadVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binarySearch/rangeRotatedSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/rangeRotatedSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binarySearch/rotatedSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/rotatedSortedArray/RotatedSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binarySearch/search2DMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/search2DMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binarySearch/search2DMatrix_II.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/search2DMatrix_II.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binarySearch/searchInsertPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/searchInsertPosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binarySearch/sqrt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/sqrt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binarySearch/twoSumII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/twoSumII.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/笔记 copy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/笔记 copy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记.md" afterDir="false" />
     </list>
@@ -123,6 +143,7 @@
       <recent name="$PROJECT_DIR$/src/Tree/BFS" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="DynamicProgramming.doubleArray" />
       <recent name="Tree.CountNumbersOfUniqueTrees" />
     </key>
   </component>
