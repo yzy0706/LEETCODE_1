@@ -1,4 +1,4 @@
-package heap;
+package Heap;
 
 public class pair{
     int i , j ,val;

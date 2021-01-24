@@ -1,4 +1,4 @@
-package heap;
+package Heap;
 
 public class kthLargestElementInAnArray {
     // 主要是queue.size()大于k的时候pq.poll()

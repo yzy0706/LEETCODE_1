@@ -1,4 +1,4 @@
-package heap;
+package Heap;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
@@ -16,8 +16,8 @@ public class JZ_KthSmallestMatrix {
 
     }
 
-    class com implements Comparator<heap.pair> {
-        public int compare(heap.pair a, heap.pair b){
+    class com implements Comparator<Heap.pair> {
+        public int compare(Heap.pair a, Heap.pair b){
             return a.val - b.val;
         }
     }

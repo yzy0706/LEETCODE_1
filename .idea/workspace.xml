@@ -2,38 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e8cda-fea1-4f05-ad0b-dac7a748dd3a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/rotatedSortedArray/RotatedSortedArrayII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearchAlgorithm/BinarySearch_recursive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearchAlgorithm/BinarySearch_whileLoop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/CoinCombinations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleArray/BuyAndSellStockWithCoolDown.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinarySearch/rotatedSortedArray/RotatedArrayFindMin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/PerfectSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleArray/PerfectSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/ConstructBinaryTree/ConstructBinaryTreeFromInorderPostorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/constructBinaryTree/ConstructBinaryTreeFromInorderPostorder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/ConstructBinaryTree/ConstructBinaryTreeFromPreorderInorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/constructBinaryTree/ConstructBinaryTreeFromPreorderInorder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/CountNumbersOfUniqueTrees/UniqueBinaryTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/countNumbersOfUniqueTrees/UniqueBinaryTrees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/CountNumbersOfUniqueTrees/UniqueBinaryTreesII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/countNumbersOfUniqueTrees/UniqueBinaryTreesII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/InorderTraversal/BinaryTreeInOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/inorderTraversal/BinaryTreeInOrderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/LevelorderTraversal/BinaryTreeLevelorderTraversalII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/levelorderTraversal/BinaryTreeLevelorderTraversalII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/bfs/PopulatingNextRightPointersII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/PopulatingNextRightPointersII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/bfs/bucketFill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/bucketFill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/bfs/levelOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/levelOrderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/bfs/reverseBinaryTreeLevelOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/reverseBinaryTreeLevelOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/bfs/topologicalSort/courseSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/topologicalSort/courseSchedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/bfs/topologicalSort/courseScheduleII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/topologicalSort/courseScheduleII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/bfs/topologicalSort/isValidTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/topologicalSort/isValidTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/bfs/zigZagTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/zigZagTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binarySearch/ClosestBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/ClosestBinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binarySearch/LongestIncreasingSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/LongestIncreasingSubsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binarySearch/Pow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/Pow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binarySearch/firstBadVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/firstBadVersion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binarySearch/rangeRotatedSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/rangeRotatedSortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binarySearch/rotatedSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/rotatedSortedArray/RotatedSortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binarySearch/search2DMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/search2DMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binarySearch/search2DMatrix_II.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/search2DMatrix_II.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binarySearch/searchInsertPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/searchInsertPosition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binarySearch/sqrt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/sqrt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binarySearch/twoSumII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/twoSumII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/rotatedSortedArray/RotatedSortedArrayII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/rotatedSortedArray/RotatedSortedArrayII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/CoinCombinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/GreedyCombinations/CoinCombinations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/RedOrBlackCardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/GreedyCombinations/RedOrBlackCardGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/JZ_KthSamllestSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/JZ_KthSamllestSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/JZ_KthSmallestMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/JZ_KthSmallestMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/Queue/backtrackFindMinSum/kPairsWithSmallestSums.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/Queue/backtrackFindMinSum/kPairsWithSmallestSums.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/Queue/backtrackFindMinSum/kSmallestElementInMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/Queue/backtrackFindMinSum/kSmallestElementInMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/Queue/superUglyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/Queue/superUglyNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/Queue/tailProblems_greedy/distantBarcodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/Queue/tailProblems_greedy/distantBarcodes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/Queue/tailProblems_greedy/furthestBuildingYouCanReach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/Queue/tailProblems_greedy/furthestBuildingYouCanReach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/Queue/tailProblems_greedy/isPossible.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/Queue/tailProblems_greedy/isPossible.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/Queue/tailProblems_greedy/reorganizeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/Queue/tailProblems_greedy/reorganizeString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/Queue/tailProblems_greedy/sortCharactersByFrequency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/Queue/tailProblems_greedy/sortCharactersByFrequency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/Queue/tailProblems_greedy/topKFrequentElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/Queue/tailProblems_greedy/topKFrequentElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/Queue/uglyNumbersII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/Queue/uglyNumbersII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/kClosestPointsToOrigin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/kClosestPointsToOrigin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/kthLargestElementInAnArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/kthLargestElementInAnArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/medianOfSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/medianOfSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/meetingRoomsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/meetingRoomsII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/slidingWindowMedian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/slidingWindowMedian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/topKFrequentWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/topKFrequentWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/trappingRainWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/trappingRainWater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/trappingRainWaterII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/trappingRainWaterII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/wordBeak_queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/wordBeak_queue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/笔记 copy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/笔记 copy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记.md" afterDir="false" />
     </list>

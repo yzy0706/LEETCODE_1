@@ -1,4 +1,4 @@
-package heap;
+package Heap;
 
 public class topKFrequentWords {
     // 看了答案以后添加了map，修改了comparator

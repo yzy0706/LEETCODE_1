@@ -1,4 +1,4 @@
-package heap.Queue;
+package Heap.Queue;
 
 public class superUglyNumber {
     // 用pq去承载当前从2开始到n-1（for i = 0; i < n-2)个丑数与各个primes的乘积（第一个数1的乘积就直接offer prime就好），并保证里面一直是不同的丑数，

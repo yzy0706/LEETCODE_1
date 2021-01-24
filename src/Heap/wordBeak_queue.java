@@ -1,4 +1,4 @@
-package heap;
+package Heap;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package heap.Queue.backtrackFindMinSum;
+package Heap.Queue.backtrackFindMinSum;
 
 import java.util.ArrayList;
 import java.util.Arrays;

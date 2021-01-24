@@ -1,4 +1,4 @@
-package heap;
+package Heap;
 
 public class meetingRoomsII {
     //关键就是把每一个房的开始和终止时间放在了两个表里并排序，如果开始时间一直>=结束时间就一直res -- 再++ ， 等于不变

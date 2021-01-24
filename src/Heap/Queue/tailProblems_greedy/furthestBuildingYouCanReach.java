@@ -1,4 +1,4 @@
-package heap.Queue.tailProblems_greedy;
+package Heap.Queue.tailProblems_greedy;
 
 import java.util.PriorityQueue;
 import java.util.Queue;

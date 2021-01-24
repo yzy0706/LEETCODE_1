@@ -1,4 +1,4 @@
-package heap;
+package Heap;
 
 import java.util.Stack;
 

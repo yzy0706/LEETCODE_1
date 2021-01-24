@@ -56,19 +56,9 @@ public class RotatedSortedArrayII {
             else return binarySearch(target, nums, start, mid-1);
         }
 
-
-        // if(target >= nums[start] && target <= nums[mid]){
-        //     return binarySearch(target, nums, start, mid-1);
-        // }
-        // else return binarySearch(target, nums, mid+1, end);
-
         else if(nums[start] > nums[mid]){//右边是排好序的,我们先考虑左边混乱的地方的情况
             if(target < nums[mid] || target > nums[end]) return binarySearch(target, nums, start, mid-1);
             else return binarySearch(target, nums, mid+1, end);
-
-
-            // if(target >= nums[mid] && target <= nums[end]) return binarySearch(target, nums, mid+1, end);
-            // return binarySearch(target, nums, start, mid-1);
         }
 
         return binarySearch(target, nums, start+1, end);

@@ -1,4 +1,4 @@
-package heap.Queue;
+package Heap.Queue;
 
 public class uglyNumbersII {
     //主要就是往一个pq里面加n-1次当前pq.poll() * prime的值， 记得Long和int之间的转换
