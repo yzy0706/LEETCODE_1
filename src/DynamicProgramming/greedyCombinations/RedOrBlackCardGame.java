@@ -1,4 +1,4 @@
-package DynamicProgramming.GreedyCombinations;
+package DynamicProgramming.greedyCombinations;
 
 public class RedOrBlackCardGame {
     //做法： 这题是要求每一个卡牌状态下的最好收入， 首先我们判断r = 0的情况， 因为没有赢面了直接收入就=0；

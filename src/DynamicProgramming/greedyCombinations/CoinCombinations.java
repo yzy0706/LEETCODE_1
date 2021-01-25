@@ -1,4 +1,4 @@
-package DynamicProgramming.GreedyCombinations;
+package DynamicProgramming.greedyCombinations;
 
 import java.util.Arrays;
 

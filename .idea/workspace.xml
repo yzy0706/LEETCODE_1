@@ -2,33 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e8cda-fea1-4f05-ad0b-dac7a748dd3a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/rotatedSortedArray/RotatedArrayFindMin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackAlgorithms/InFixToPostFix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackAlgorithms/PostFixExpression.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BinarySearch/rotatedSortedArray/RotatedSortedArrayII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/rotatedSortedArray/RotatedSortedArrayII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/CoinCombinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/GreedyCombinations/CoinCombinations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/RedOrBlackCardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/GreedyCombinations/RedOrBlackCardGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/JZ_KthSamllestSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/JZ_KthSamllestSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/JZ_KthSmallestMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/JZ_KthSmallestMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/Queue/backtrackFindMinSum/kPairsWithSmallestSums.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/Queue/backtrackFindMinSum/kPairsWithSmallestSums.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/Queue/backtrackFindMinSum/kSmallestElementInMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/Queue/backtrackFindMinSum/kSmallestElementInMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/Queue/superUglyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/Queue/superUglyNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/Queue/tailProblems_greedy/distantBarcodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/Queue/tailProblems_greedy/distantBarcodes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/Queue/tailProblems_greedy/furthestBuildingYouCanReach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/Queue/tailProblems_greedy/furthestBuildingYouCanReach.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/Queue/tailProblems_greedy/isPossible.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/Queue/tailProblems_greedy/isPossible.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/Queue/tailProblems_greedy/reorganizeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/Queue/tailProblems_greedy/reorganizeString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/Queue/tailProblems_greedy/sortCharactersByFrequency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/Queue/tailProblems_greedy/sortCharactersByFrequency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/Queue/tailProblems_greedy/topKFrequentElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/Queue/tailProblems_greedy/topKFrequentElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/Queue/uglyNumbersII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/Queue/uglyNumbersII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/kClosestPointsToOrigin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/kClosestPointsToOrigin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/kthLargestElementInAnArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/kthLargestElementInAnArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/medianOfSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/medianOfSortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/meetingRoomsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/meetingRoomsII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/slidingWindowMedian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/slidingWindowMedian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/topKFrequentWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/topKFrequentWords.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/trappingRainWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/trappingRainWater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/trappingRainWaterII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/trappingRainWaterII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/wordBeak_queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/wordBeak_queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记 copy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/笔记 copy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/GreedyCombinations/CoinCombinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/CoinCombinations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/GreedyCombinations/RedOrBlackCardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/RedOrBlackCardGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
