@@ -23,8 +23,8 @@
 
 
 
-  stack{
-  Initialization: Deque<E> stack = new  ArrayDeque<>();
+  Stack{
+  Initialization: Deque<E> Stack = new  ArrayDeque<>();
    加东西：push(E element)
     抽most recent：pop（）
     看most recent：peek（）
@@ -32,8 +32,8 @@
 
 
   validParentheses:
-  中心思想：建一个stack（Deque<Character> stack = new Deque，把所有遇到的括号左边'{','(','['都以'}',')'和']'的形式
-  push到stack里(stack.push(s.charAt(i)))
+  中心思想：建一个stack（Deque<Character> Stack = new Deque，把所有遇到的括号左边'{','(','['都以'}',')'和']'的形式
+  push到stack里(Stack.push(s.charAt(i)))
 
 
 
@@ -1340,12 +1340,12 @@ Comparator
 ---------------------------------------------------------------------------------------
 Stack和Queue：
 
- 1.Deque<List<Integer>> stack = new ArrayDeque<>();
-   Stack<Integer> stack = new Stack<>();
-   stack.push(E);
-   stack.pop(E);
-   stack.addLast(E);
-   stack.removeLast(E);
+ 1.Deque<List<Integer>> Stack = new ArrayDeque<>();
+   Stack<Integer> Stack = new Stack<>();
+   Stack.push(E);
+   Stack.pop(E);
+   Stack.addLast(E);
+   Stack.removeLast(E);
 
  2.Queue<TreeNode> queue = new LinkedList<>();不能写PriorityQueue<>();因为treeNode是无法比较的
    queue.offer(E);

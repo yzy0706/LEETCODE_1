@@ -1,4 +1,4 @@
-package stack;
+package Stack;
 
 public class palindromeNumber {
     //stack做法

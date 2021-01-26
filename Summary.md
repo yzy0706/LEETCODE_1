@@ -259,17 +259,17 @@ Recursiion做法：
 Stack Iterative做法：
             
             public void preorder_stack(TreeNode root){
-                Stack<TreeNode> stack = new stack<>();
-                stack.push(root);
+                Stack<TreeNode> Stack = new Stack<>();
+                Stack.push(root);
                 TreeNode head = root;
-                while(head != null || !stack.isEmpty()){
+                while(head != null || !Stack.isEmpty()){
                     if(head != null){//如果head ！= null
                         System.out.println(head.val + " ");
-                        stack.push(head); // 把他自己装进去
+                        Stack.push(head); // 把他自己装进去
                         head = head.left; //一直往左叶子节点移动
                     }
                     else{
-                        TreeNode father = stack.pop(); // 如果head是null， 就pop出他的爸爸
+                        TreeNode father = Stack.pop(); // 如果head是null， 就pop出他的爸爸
                         cur = father.right; // head移动到他爸爸的右儿子
                     }
                 }
@@ -289,16 +289,16 @@ Recursion做法：
 Stack Iterative做法：
 
         public void preorder_stack(TreeNode root){
-                Stack<TreeNode> stack = new stack<>();
-                stack.push(root);
+                Stack<TreeNode> Stack = new Stack<>();
+                Stack.push(root);
                 TreeNode head = root;
-                while(head != null || !stack.isEmpty()){
+                while(head != null || !Stack.isEmpty()){
                     if(head != null){//如果head ！= null
-                        stack.push(head); // 把他自己装进去
+                        Stack.push(head); // 把他自己装进去
                         head = head.left; //一直往左叶子节点移动
                     }
                     else{
-                        TreeNode father = stack.pop(); // 如果head是null， 就pop出他的爸爸
+                        TreeNode father = Stack.pop(); // 如果head是null， 就pop出他的爸爸
                         System.out.println(father.val + " "); 
                         //跟preorder不一样的是我们是浏览到最底端以后再去打印第一个爸爸
                         //所以我们应该在碰到了null以后再操作
@@ -333,13 +333,13 @@ d. Levelorder traverse(浏览每一层)
 e. DepthOrder traverse(其实就是preorder的另一种写法)
 
             private void depthOrder(TreeNode root){
-                Stack<TreeNode> stack = new stack<>();
-                stack.push(root);
-                while(!stack.isEmpty()){
-                    TreeNode cur = stack.pop();
+                Stack<TreeNode> Stack = new Stack<>();
+                Stack.push(root);
+                while(!Stack.isEmpty()){
+                    TreeNode cur = Stack.pop();
                     System.out.println(cur.val);
-                    stack.push(cur.right);
-                    stack.push(cur.left); //left后进去， 所以碰到null了以后他会第一个出来， 再转去右儿子
+                    Stack.push(cur.right);
+                    Stack.push(cur.left); //left后进去， 所以碰到null了以后他会第一个出来， 再转去右儿子
             }
 
 2. 题型的总结 

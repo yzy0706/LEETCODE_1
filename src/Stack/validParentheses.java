@@ -1,9 +1,76 @@
-package stack;
+package Stack;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.Stack;
 
 public class validParentheses {
+    //做法： 碰到了所有的左括号都push他对应的右括号到stack里， 碰到了右括号就把当前stack里最顶端的pop出来，
+    // 如果跟当前右括号不一样， 或者stack里面已经是empty的， 证明左右括号不是对应的， return false;
+    // 结束foreach loop 以后如果stack还是有东西的证明左括号多了， 也return false；
+
+    //Runtime: O(n), space: O(1)
+
+    public boolean isValid_stack(String s) {
+        char[] cl = s.toCharArray();
+        Stack<Character> stack = new Stack<>();
+        for(char c : cl){
+            if(c == '[') stack.push(']');
+            else if (c == '{') stack.push('}');
+            else if(c == '(') stack.push(')');
+            else{
+                if(!stack.isEmpty()){
+                    char right = stack.pop();
+                    if(right != c) return false;
+                }
+                else{
+                    return false;
+                }
+            }
+        }
+        if(!stack.isEmpty()) {
+            return false;
+        }
+        return true;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public boolean isValid(String s) {
         boolean res= true;
         if(s.length()<1||s==null){
