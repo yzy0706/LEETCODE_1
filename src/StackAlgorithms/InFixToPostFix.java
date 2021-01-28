@@ -25,6 +25,7 @@ public class InFixToPostFix {
             if(Character.isDigit(c)) sb.append(c); //如果是int直接append到结果上
             else{ //不是数字的情况
                 if(c == '*' || c == '/' || c == '+' || c == '-'){ //如果不是（
+
                     Character top = operatorStack.peek();
                     while(priority.get(c) <= priority.get(top)){ //如果当前的operator优先级小于等于前面的， 把前面的都加进去
                         top = operatorStack.pop();
