@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e8cda-fea1-4f05-ad0b-dac7a748dd3a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/matrix/BombingEnemy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/columnGraph/LargestRectangleArea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/string/SimplifyPath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/decodeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/string/decodeString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StackAlgorithms/InFixToPostFix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAlgorithms/InFixToPostFix.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

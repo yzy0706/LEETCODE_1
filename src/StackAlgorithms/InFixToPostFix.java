@@ -24,18 +24,20 @@ public class InFixToPostFix {
         for(char c : cl){
             if(Character.isDigit(c)) sb.append(c); //如果是int直接append到结果上
             else{ //不是数字的情况
-                if(c == '*' || c == '/' || c == '+' || c == '-'){ //如果不是（
-
-                    Character top = operatorStack.peek();
-                    while(priority.get(c) <= priority.get(top)){ //如果当前的operator优先级小于等于前面的， 把前面的都加进去
-                        top = operatorStack.pop();
-                        sb.append(top);
-                        if(operatorStack.isEmpty()) { //当前已经pop出最后一个operator， 直接break
-                            break;
+                if(c == '*' || c == '/' || c == '+' || c == '-') { //如果不是（
+                    if (operatorStack.isEmpty()) operatorStack.push(c);
+                    else {
+                        Character top = operatorStack.peek();
+                        while (priority.get(c) <= priority.get(top)) { //如果当前的operator优先级小于等于前面的， 把前面的都加进去
+                            top = operatorStack.pop();
+                            sb.append(top);
+                            if (operatorStack.isEmpty()) { //当前已经pop出最后一个operator， 直接break
+                                break;
+                            }
+                            top = operatorStack.peek(); //在循环继续前把stack的头再peek出来准备下一轮用
                         }
-                        top = operatorStack.peek(); //在循环继续前把stack的头再peek出来准备下一轮用
+                        operatorStack.push(c); //最后再把当前最小的push进去
                     }
-                    operatorStack.push(c); //最后再把当前最小的push进去
                 }
 
                 else if(c == '('){
