@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e8cda-fea1-4f05-ad0b-dac7a748dd3a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Stack/columnGraph/LargestRectangleArea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stack/string/SimplifyPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinarySearch/search/GuessNumberLowerOrHigher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/reconstruct/RemoveDuplicateLetters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stack/decodeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/string/decodeString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StackAlgorithms/InFixToPostFix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAlgorithms/InFixToPostFix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Summary.md" beforeDir="false" afterPath="$PROJECT_DIR$/Summary.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/arithmaticExpression/EvaluateReversePolishNotation_postFix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/reconstruct/EvaluateReversePolishNotation_postFix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/columnGraph/LargestRectangleArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/reconstruct/LargestRectangleArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/implementDataStructure/ImplementStackWithQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/implementDataStructure/ImplementStackWithQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/string/SimplifyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/reconstruct/SimplifyPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/validParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/validParentheses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

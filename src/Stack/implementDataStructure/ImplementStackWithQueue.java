@@ -50,4 +50,4 @@ public class ImplementStackWithQueue {
         return queue1.isEmpty();
     }
 }
-}
+

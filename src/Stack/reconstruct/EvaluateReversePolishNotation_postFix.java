@@ -1,4 +1,4 @@
-package Stack.arithmaticExpression;
+package Stack.reconstruct;
 
 import java.util.Stack;
 
