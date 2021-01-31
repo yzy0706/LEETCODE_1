@@ -504,9 +504,178 @@ d. DFS： DFS里面有connectNodesOnSameLevel这种题， 也有PathSum这种题
 Stack
 
 1. 基础算法
-                        
-            
-       
+
+a. PostFixExpress(也叫逆波兰式)， 计算的时候 
+    1. 每次碰到运算符号就pop出装数字的stack里面的两个数
+    2. 运算完以后把结果push回stack
+    3. 最后把stack里剩下的最后一个数return就是结果
+
+    private int postFixExpression(String s){
+        Stack<Integer> stack = new Stack<>();
+        char[] cl = s.toCharArray();
+        for(char c : cl){
+            if(Character.isDigit(c)){
+                stack.push(Integer.valueOf(c));
+            }
+            else{
+                int right = stack.pop();
+                int left = stack.pop();
+                stack.push(calculate(left, right, c));
+            }
+        }
+        return stack.pop();
+    }
+
+    private int calculate(int l, int r, Character operator){
+        if(operator.equals('+')) return l + r;
+        if(operator.equals('-')) return l - r;
+        if(operator.equals('*')) return l * r;
+        return l / r;
+    }
+                  
+
+
+
+b. PostFixToInfix(调度场算法) 
+    
+1. 形似火车停入车站：每看到一个运算符就把所有优先级比他大的pop出来， 并把优先级大的运算符都加到答案里
+
+        public String inFixToPostFix(String s){
+            HashMap<Character, Integer> priority = constructPriority();
+            char[] cl = s.toCharArray();
+            Stack<Character> operatorStack = new Stack<>();
+            StringBuilder sb = new StringBuilder();
+            for(char c : cl){
+                if(Character.isDigit(c)){
+                    sb.append(c); //如果是int直接append到结果上
+                }
+                else{ //不是数字的情况
+                    if(c == '*' || c == '/' || c == '+' || c == '-') { //如果不是（
+                        if (operatorStack.isEmpty()){
+                            operatorStack.push(c);
+                        }
+                        else {
+                            Character top = operatorStack.peek();
+                            while (priority.get(c) <= priority.get(top)) { //如果当前的operator优先级小于等于前面的， 把前面的都加进去
+                                top = operatorStack.pop();
+                                sb.append(top);
+                                if (operatorStack.isEmpty()) { //当前已经pop出最后一个operator， 直接break
+                                    break;
+                                }
+                                top = operatorStack.peek(); //在循环继续前把stack的头再peek出来准备下一轮用
+                            }
+                            operatorStack.push(c); //最后再把当前最小的push到操作符栈里
+                        }
+                    }
+    
+                    else if(c == '('){
+                        operatorStack.push(c);
+                    }
+                    else if(c == ')'){ //如果是右括号把碰到左括号前的所有的operator全都append上
+                        while(!operatorStack.isEmpty()){
+                            Character top = operatorStack.pop();
+                            if (top == '('){
+                                break;
+                            }
+                            sb.append(top);
+                        }
+                }
+
+            }
+        }
+        while(!operatorStack.isEmpty()){
+            sb.append(operatorStack.pop());
+        }
+        return sb.toString();
+        }
+
+        public HashMap<Character, Integer> constructPriority(){
+            HashMap<Character, Integer> priority = new HashMap<>();
+            priority.put('*', 2);
+            priority.put('/', 2);
+            priority.put('+', 1);
+            priority.put('-', 1);
+            priority.put('(', 0);
+        }
+
+
+2. 基本题型：
+
+a. 用到了调度场算法的
+
+1. 题型有多重种类，经典题型就是postFix表达式转inFix表达式：
+
+        ...
+        for(char c : s.toCharArray()){
+            ...
+            if(c == '+' || c == '-' || c == '*' || c == '/'){
+                if(opStack.isEmpty()){
+                    opStack.push(c);
+                }
+                else{
+                character top = opStack.peek();
+                while(priority.get(c) < priority.get(top)){
+                    top = opStack.pop();
+                    sb.append(top);
+                    if(opStack.isEmpty()){
+                        break;
+                    }
+                    top = opStack.peek();  //存在一个变量传送给下一个冒头的运算符的关系， 一直刨到底
+                }
+
+2. 也有类似的存储最高的高度来计算面积的（LargestRectangleArea)
+        
+        for(int i = 0; i  < heights.length; i++){
+        ...
+        if(stack.isEmpty() || heights[i] >= stack.peek()){
+            stack.push(heights[i]);
+        }
+        else{
+            int leftHighest = stack.pop();
+            res = Math.max(res, nums[leftHighest] * (stack.isEmpty() ? i : i - stack.peek() - 1));
+            i--;
+        }
+        }
+
+
+
+
+b. Implement DataStructure:
+
+1. 这种题主要注意两个Stack一起用的用法就好
+
+
+
+
+
+
+c. Parentheses的题， 这种题和任何对称性的题思路一样， 当碰到每个object就把他对称的object push到stack里，
+如果后面能依次消除就证明是valid parentheses
+
+        public boolean isValid_stack(String s) {
+        char[] cl = s.toCharArray();
+        Stack<Character> stack = new Stack<>();
+        for(char c : cl){
+            if(c == '[') stack.push(']');
+            else if (c == '{') stack.push('}');
+            else if(c == '(') stack.push(')');
+            else{
+                if(!stack.isEmpty()){
+                    char right = stack.pop();
+                    if(right != c) return false;
+                }
+                else{
+                    return false;
+                }
+            }
+        }
+        if(!stack.isEmpty()) {
+            return false;
+        }
+        return true;
+    }
+
+        
        
     
             

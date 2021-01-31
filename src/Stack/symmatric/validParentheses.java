@@ -1,4 +1,4 @@
-package Stack;
+package Stack.symmatric;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

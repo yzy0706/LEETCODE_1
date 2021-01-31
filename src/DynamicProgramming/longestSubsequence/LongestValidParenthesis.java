@@ -1,4 +1,4 @@
-package DynamicProgramming.greedyCombinations;
+package DynamicProgramming.longestSubsequence;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

@@ -1,4 +1,4 @@
-package Stack;
+package Stack.symmatric;
 
 public class palindromeNumber {
     //stack做法

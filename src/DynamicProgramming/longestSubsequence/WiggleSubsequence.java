@@ -1,6 +1,6 @@
-package DynamicProgramming.doubleArray;
+package DynamicProgramming.longestSubsequence;
 
-public class WiggleSubsequence{
+public class WiggleSubsequence {
     //做法: 设立两个array, up[i]代表在i之前最后一位是上涨的最长连续wiggle, down[i]代表最后一位是下降的最长连续wiggle,
     //求连续的最长数列的情况一般都是用dp来记载当前最长的长度然后再根据尾部来更新长度
     //1. 如果最后一位比倒数第二位大, up[i] = down[i-1] + 1; , down[i] = down[i-1];, down[i-1]是最后一个区间下降的条件下i-1前最长的array

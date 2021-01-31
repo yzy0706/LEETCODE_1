@@ -1,4 +1,4 @@
-package DynamicProgramming.greedyCombinations;
+package DynamicProgramming.longestSubsequence;
 
 import java.util.ArrayList;
 import java.util.Arrays;

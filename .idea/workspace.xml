@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e8cda-fea1-4f05-ad0b-dac7a748dd3a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/search/GuessNumberLowerOrHigher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stack/reconstruct/RemoveDuplicateLetters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleArray/WiggleSubsequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/WiggleSubsequence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Summary.md" beforeDir="false" afterPath="$PROJECT_DIR$/Summary.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stack/arithmaticExpression/EvaluateReversePolishNotation_postFix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/reconstruct/EvaluateReversePolishNotation_postFix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stack/columnGraph/LargestRectangleArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/reconstruct/LargestRectangleArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stack/implementDataStructure/ImplementStackWithQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/implementDataStructure/ImplementStackWithQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stack/string/SimplifyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/reconstruct/SimplifyPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stack/validParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/validParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/CoinCombinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/CoinCombinations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/LargestDivisibleSubset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/LargestDivisibleSubset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/LongestValidParenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/LongestValidParenthesis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/palindromeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/symmatric/palindromeNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/reconstruct/LargestRectangleArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/shuntingYard/LargestRectangleArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/validParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/symmatric/validParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAlgorithms/PostFixExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAlgorithms/PostFixExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +110,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Markdown" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Tree/BFS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -118,6 +123,7 @@
       <recent name="$PROJECT_DIR$/src/Tree/BFS" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="DynamicProgramming.longestSubsequence" />
       <recent name="DynamicProgramming.doubleArray" />
       <recent name="Tree.CountNumbersOfUniqueTrees" />
     </key>
@@ -215,6 +221,9 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/binarySearch/firstBadVersion.java">
