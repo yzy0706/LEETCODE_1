@@ -1,4 +1,4 @@
-package DynamicProgramming.greedyCombinations;
+package DynamicProgramming.divideToSubproblems;
 
 public class GuessHigherOrLowerII {
     //做法: 这个题有些tricky, dp是一个int[n+2][n+2], dp[i][j]就是在[i,j]范围内我猜到结果所需要的最少的钱, 我们要求dp[1][n];

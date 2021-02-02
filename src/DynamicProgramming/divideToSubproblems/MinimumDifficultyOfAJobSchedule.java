@@ -1,4 +1,4 @@
-package DynamicProgramming.greedyCombinations;
+package DynamicProgramming.divideToSubproblems;
 
 public class MinimumDifficultyOfAJobSchedule {
     public int minDifficulty(int[] jobDifficulty, int d) {

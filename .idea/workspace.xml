@@ -2,36 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e8cda-fea1-4f05-ad0b-dac7a748dd3a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/MinimumDifficultyOfAJobSchedule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HashTable/accumulate/SubarraySumEqualsK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Math/RobotRoundInCircle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sort/constructComparator/VerifyingAnAlienDictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stack/histogram/TrappingRainWater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stack/shuntingYard/BasicCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stack/shuntingYard/DecodeString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stack/symmatric/MinRemoveToMakeValid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Summary.md" beforeDir="false" afterPath="$PROJECT_DIR$/Summary.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/DivideIntegerForMaxProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/DivideIntegerForMaxProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Math/NPeopleSayNumberM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Math/NPeopleSayNumberM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sort/BucketSort/HIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort/bucketSort/HIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sort/HeapSort/SortKNearlySortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort/heapSort/SortKNearlySortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sort/InsertSort/InsertionSortList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort/insertSort/InsertionSortList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sort/Intervals/InsertInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort/intervals/InsertInterval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sort/Intervals/MeetingRooms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort/intervals/MeetingRooms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sort/MergeSort/SortList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort/mergeSort/SortList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sort/SortThenCompareString/ValidAnagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort/sortThenCompareString/ValidAnagram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sort/SortThenCompareString/groupAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort/sortThenCompareString/groupAnagrams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sort/SortWithSquares/SortTransformedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort/sortWithSquares/SortTransformedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stack/shuntingYard/LargestRectangleArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/histogram/LargestRectangleArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stack/string/decodeString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stack/symmatric/palindromeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/symmatric/palindromeNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stack/symmatric/validParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/symmatric/ValidParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hashTable/jewelsAndStones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashTable/jewelsAndStones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hashTable/kLongestSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashTable/kLongestSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hashTable/lengthOfLongestSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashTable/lengthOfLongestSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hashTable/uniqueEmailAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashTable/uniqueEmailAddress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/GuessHigherOrLowerII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/divideToSubproblems/GuessHigherOrLowerII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/MinimumDifficultyOfAJobSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/divideToSubproblems/MinimumDifficultyOfAJobSchedule.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
