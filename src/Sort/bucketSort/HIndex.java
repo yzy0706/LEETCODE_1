@@ -1,4 +1,4 @@
-package Sort.BucketSort;
+package Sort.bucketSort;
 
 public class HIndex {
     //做法： 这题主要是用一个bucket来记录每一个citation出现的频率， 如果 >= n就直接bucket[n]++就好了， 然后再从bucket[]倒过来叠加大于等于i个citation的总共数量

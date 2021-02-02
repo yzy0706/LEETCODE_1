@@ -1,4 +1,4 @@
-package Sort.SortWithSquares;
+package Sort.sortWithSquares;
 
 public class SortTransformedArray {
     //做法: 看了答案的, 建立一个int[] res, 如果 a >= 0, 比较i, j计算后大小从右边开始放，因为左边最小的数可能到最右边去; 否则从左边开始放

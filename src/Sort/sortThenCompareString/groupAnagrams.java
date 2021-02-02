@@ -1,4 +1,4 @@
-package Sort.SortThenCompareString;
+package Sort.sortThenCompareString;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.Map;
 
 public class groupAnagrams {
-    // xlog(x)*n
-    //用map的解法，主要是把每一个string浏览的时候都把他们先变成char[]再sort一下，这样valueOf(cl)以后的key就是一样了
+    //做法： 用map的解法，主要是把每一个string浏览的时候都把他们先变成char[]再sort一下，这样valueOf(cl)以后的key就是一样了
+    //Runtime： xlog(x)*n
     public List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> res = new ArrayList<>();
         if(strs.length < 1) return res;

@@ -1,4 +1,4 @@
-package Sort.HeapSort;
+package Sort.heapSort;
 
 import java.util.PriorityQueue;
 

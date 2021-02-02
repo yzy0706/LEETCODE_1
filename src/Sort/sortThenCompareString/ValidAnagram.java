@@ -1,4 +1,4 @@
-package Sort.SortThenCompareString;
+package Sort.sortThenCompareString;
 
 import java.util.Arrays;
 

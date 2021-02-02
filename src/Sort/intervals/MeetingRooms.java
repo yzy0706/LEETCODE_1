@@ -1,4 +1,4 @@
-package Sort.Intervals;
+package Sort.intervals;
 
 import java.util.Arrays;
 import java.util.Comparator;

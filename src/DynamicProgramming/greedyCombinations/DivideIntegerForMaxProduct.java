@@ -1,7 +1,9 @@
 package DynamicProgramming.greedyCombinations;
 
 public class DivideIntegerForMaxProduct {
-    //做法: 这题主要是在把从i到n的数的最大乘积算出来, 然而从i到n的数又可以拆分为j和i-j来引出之前算出来的j和i-j的最大乘积, 但唯一要注意的是我们不能在每个i之内j的forloop里直接乘 dp[j], dp[i-j], 而是应该比较一下j, dp[j] 还有 i-j, dp[i-j] 这两对, 因为有时候他自己本身比他分成两个数的最大乘积还大
+    //做法: 这题主要是在把从i到n的数的最大乘积算出来, 然而从i到n的数又可以拆分为j和i-j来引出之前算出来的j和i-j的最大乘积,
+    // 但唯一要注意的是我们不能在每个i之内j的forloop里直接乘 dp[j], dp[i-j], 而是应该比较一下j, dp[j] 还有 i-j, dp[i-j] 这两对,
+    // 因为有时候他自己本身比他分成两个数的最大乘积还大
     //Runtime: 最坏的情况就是 O(n!), space: O(n)
     public int integerBreak(int n) {
         int[] dp = new int[n + 1];

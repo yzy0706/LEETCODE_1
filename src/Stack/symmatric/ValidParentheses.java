@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Stack;
 
-public class validParentheses {
+public class ValidParentheses {
     //做法： 碰到了所有的左括号都push他对应的右括号到stack里， 碰到了右括号就把当前stack里最顶端的pop出来，
     // 如果跟当前右括号不一样， 或者stack里面已经是empty的， 证明左右括号不是对应的， return false;
     // 结束foreach loop 以后如果stack还是有东西的证明左括号多了， 也return false；

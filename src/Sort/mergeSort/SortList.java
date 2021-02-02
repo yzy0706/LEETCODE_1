@@ -1,4 +1,4 @@
-package Sort.MergeSort;
+package Sort.mergeSort;
 
 
 import java.util.ArrayList;

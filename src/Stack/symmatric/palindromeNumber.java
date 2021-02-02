@@ -1,5 +1,9 @@
 package Stack.symmatric;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
 public class palindromeNumber {
     //stack做法
     public boolean isPalindrome(int x) {
@@ -34,7 +38,7 @@ public class palindromeNumber {
 
 
 
-    public boolean isPalindrome(int x) {
+    public boolean isPalindrome_twoPointer(int x) {
         Boolean res= false;
         if(x<0){
             return res;
@@ -59,7 +63,7 @@ public class palindromeNumber {
         return res;
     }
 
-    public boolean isPalindrome(int x) {
+    public boolean isPalindrome_math(int x) {
         if(x<0 || (x!=0 && x%10==0))
             return false;
         int res = 0;
