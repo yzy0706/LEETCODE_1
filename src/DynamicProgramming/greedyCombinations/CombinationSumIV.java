@@ -5,7 +5,7 @@ public class CombinationSumIV {
 
 
     //做法: 设立一个从0到target的int[] dp, dp[0] = 1; 因为0只能被0组成
-    //1. 从1 forloop到 targe
+    //1. 从1 forloop到 target
     //2. 每次都forloop一遍所有的nums, 如果i - nums[j] >= 0, 证明这个数能被nums[j]和其他数组合而成, dp[i] += dp[i - nums[j]];
     //3. 最后return dp[target]; 就是所有组成target的可能
 

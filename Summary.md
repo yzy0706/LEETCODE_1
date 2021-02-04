@@ -728,6 +728,37 @@ Dynamic Programming
 1. 题型总结
 
 a. 碰到有target求不同组合的问题一定要利用好target和每一个元素之间的差
+
+b. Subarray
+
+1. 如果只是求max subarray 可以用 kadane's algorithm
+
+        public int maxSubArray(int[] nums) {
+        if(nums.length < 1) return 0;
+        int res = nums[0];
+        int sum = nums[0];
+        int start = 0, end = 0, curStart = 0, curEnd = 0;
+
+        for(int i = 1; i < nums.length ; i++) {
+            if (sum < 0) {
+                curStart = i;
+                curEnd = i;
+                sum = nums[i];
+            } else {
+                curEnd = i;
+                sum += nums[i];
+            }
+            if (sum >= res) {
+                start = curStart;
+                end = curEnd;
+                res = sum;
+            }
+
+        }
+
+        return res;
+   }
+
       
 
 

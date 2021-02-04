@@ -1,10 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="872e8cda-fea1-4f05-ad0b-dac7a748dd3a" name="Default" comment="">
+    <list default="true" id="872e8cda-fea1-4f05-ad0b-dac7a748dd3a" name="Default" comment="yyo">
+      <change afterPath="$PROJECT_DIR$/src/Array/maxSubarray/MaxProductSubarray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/maxSubarray/MaxSumOfRectangleNoLargetThanK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/maxSubarray/MaxSumRectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/maxSubarray/MaximumSubarray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/maxSubarray/MaximumSubarrayCloseToK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/twoDimensionalRelations/StringMatching.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Math/AddStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/BFS/searchInMatrix/MinimumKnightMoves.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/GuessHigherOrLowerII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/divideToSubproblems/GuessHigherOrLowerII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/MinimumDifficultyOfAJobSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/divideToSubproblems/MinimumDifficultyOfAJobSchedule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Summary.md" beforeDir="false" afterPath="$PROJECT_DIR$/Summary.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ARRAY/findFirstOccurenceString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/findFirstOccurenceString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ARRAY/findPivotIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/findPivotIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ARRAY/firstMissingPositive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/firstMissingPositive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ARRAY/implementStr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/implementStr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ARRAY/integerToRoman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/integerToRoman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ARRAY/lengthOfLastWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/lengthOfLastWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ARRAY/longestCommonPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/longestCommonPrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ARRAY/productOfArrayExceptSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/productOfArrayExceptSelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ARRAY/removeDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/removeDuplicates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ARRAY/removeElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/removeElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ARRAY/reorderLogFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/reorderLogFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ARRAY/reverseFirstKOutof2K.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/reverseFirstKOutof2K.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ARRAY/reverseString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/reverseString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ARRAY/romanToInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/romanToInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ARRAY/searchInsertPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/searchInsertPosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ARRAY/stringToInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/stringToInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ARRAY/twoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/twoSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ARRAY/zigzagConversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/zigzagConversion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/adjacent/PaintHouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/adjacent/PaintHouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/CombinationSumIV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/CombinationSumIV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/CoinCombinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/CoinCombinations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/maxProductSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleArray/MaxProductSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/maximumSubarray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/BFS/levelOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/searchInTree/LevelOrderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/BFS/zigZagTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/searchInTree/ZigZagTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twoPointer/JZ_lengthOfKDistinctSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoPointer/sameDirection/JZ_lengthOfKDistinctSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twoPointer/JZ_longestNonrepeating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoPointer/JZ_longestNonrepeating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twoPointer/JZ_minimumSizeSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoPointer/JZ_minimumSizeSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twoPointer/JZ_minimunWindowSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoPointer/JZ_minimunWindowSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twoPointer/containerWithMostWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoPointer/containerWithMostWater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twoPointer/fourSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoPointer/fourSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twoPointer/longestParlindromicSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoPointer/longestParlindromicSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twoPointer/mergeTwoSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoPointer/mergeTwoSortedLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twoPointer/removeNthNodeFromEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoPointer/removeNthNodeFromEnd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twoPointer/threeSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoPointer/threeSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twoPointer/threeSumClosest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoPointer/threeSumClosest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twoPointer/trappingRainWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoPointer/trappingRainWater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记 copy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/笔记 copy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,8 +160,8 @@
       <recent name="$PROJECT_DIR$/src/Tree/BFS" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="DynamicProgramming.longestSubsequence" />
       <recent name="DynamicProgramming.doubleArray" />
+      <recent name="DynamicProgramming.longestSubsequence" />
       <recent name="Tree.CountNumbersOfUniqueTrees" />
     </key>
   </component>
