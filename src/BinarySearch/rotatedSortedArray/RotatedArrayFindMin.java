@@ -7,6 +7,7 @@ public class RotatedArrayFindMin {
     // 那么我们在最终得到一个sorted好了的区间，我去找左边的最小值并return start时候， 我们又默认忽略了左边区间，
     // 所以我们就算忽略sorted的部分我们也应该先忽略右边
     // 所以跟寻找target不同的是我们在寻找最小值的过程中应该先比较 nums[mid] < nums[end]， 是的话就mid = end；
+
     // Runtime:  O(log(n))， space: O(1)
 
     public int findMin_2(int[] nums) {

@@ -4,7 +4,7 @@ public class MaxSumRectangle {
     //做法： 这题主要是用三个forloop， 来变化这个长方形的体积
     //1. leftCol从0到l-1， 代表这个长方形左边从matrix左往右移动, 每移动一次建立一个新的rowSums[w]来记录这个长方形每一个row的sum的和
     //2. rightCol从leftCol到l-1，代表这个长方形右边从leftCol的位置往右边移动
-    //3. i从0到w-1， 代表这个长方形的顶部从0到w-1， 在这个forloop结束以后我们回到所有row分别的数字的和: rowSums[i] += matrix[i][rightCol];
+    //3. i从0到w-1， 代表这个长方形的顶部从0到w-1， 在这个forloop结束以后我们回到所有row分别的数字的和: rowSums[i] += Array.matrix[i][rightCol];
     //4. kadane(tmp), 就会得到这个tmp上sum最大的一段的起始点和sum， 这就是这个长方形的宽， 然后我们再更新res, left和right
 
     //Runtime: O(wl^2), l是这个长方形的长度， space: O(l)

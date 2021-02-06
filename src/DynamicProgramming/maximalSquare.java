@@ -1,7 +1,7 @@
 package DynamicProgramming;
 
 public class maximalSquare{
-    //dp解法：d if(matrix[i-1][j-1] == '1') dp[i][j] = Math.min(dp[i-1][j],Math.min(dp[i-1][j-1], dp[i][j-1])) + 1;
+    //dp解法：d if(Array.matrix[i-1][j-1] == '1') dp[i][j] = Math.min(dp[i-1][j],Math.min(dp[i-1][j-1], dp[i][j-1])) + 1;
     public int maximalSquare(char[][] matrix) {
         int w = matrix.length, l = w > 0? matrix[0].length : 0;
         int res = 0;

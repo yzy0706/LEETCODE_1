@@ -29,6 +29,8 @@ public class friendCricles {
             }
         }
     }
+
+
     //第一遍用map和dfs写的，有点太复杂了
     public int findCircleNum(int[][] M) {
         int w = M.length;

@@ -54,9 +54,9 @@ public class JZ_KthSmallestMatrix {
 
     public class Solution {
         /**
-         * @param matrix: a matrix of integers
+         * @param matrix: a Array.matrix of integers
          * @param k: An integer
-         * @return: the kth smallest number in the matrix
+         * @return: the kth smallest number in the Array.matrix
          */
 
         class pair{

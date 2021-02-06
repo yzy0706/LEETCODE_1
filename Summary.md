@@ -729,42 +729,182 @@ Dynamic Programming
 
 a. 碰到有target求不同组合的问题一定要利用好target和每一个元素之间的差
 
+
+
 b. Subarray
 
 1. 如果只是求max subarray 可以用 kadane's algorithm
 
         public int maxSubArray(int[] nums) {
-        if(nums.length < 1) return 0;
-        int res = nums[0];
-        int sum = nums[0];
-        int start = 0, end = 0, curStart = 0, curEnd = 0;
-
-        for(int i = 1; i < nums.length ; i++) {
-            if (sum < 0) {
-                curStart = i;
-                curEnd = i;
-                sum = nums[i];
-            } else {
-                curEnd = i;
-                sum += nums[i];
+            if(nums.length < 1) return 0;
+            int res = nums[0];
+            int sum = nums[0];
+            int start = 0, end = 0, curStart = 0, curEnd = 0;
+    
+            for(int i = 1; i < nums.length ; i++) {
+                if (sum < 0) {
+                    curStart = i;
+                    curEnd = i;
+                    sum = nums[i];
+                } else {
+                    curEnd = i;
+                    sum += nums[i];
+                }
+                if (sum >= res) {
+                    start = curStart;
+                    end = curEnd;
+                    res = sum;
+                }
+    
             }
-            if (sum >= res) {
-                start = curStart;
-                end = curEnd;
-                res = sum;
-            }
+    
+            return res;
+       }
 
+
+即便是要同时记录两种情况， 只要是没有上限的求最大值我们都可以用kadane，
+我们可以用参数来代表dp[i-1][0] 或更多的状态， 节省一点空间
+
+
+    public int maxSumAfterOperation_kadane(int[] nums) {
+        if(nums.length < 1){
+            return 0;
+        }
+        int res = Integer.MIN_VALUE;
+        int opHappend  = nums[0] * nums[0], opNotHappend = nums[0];
+        if(nums.length == 1){
+            return opHappend;
+        }
+        for(int i = 1; i < nums.length; i++){
+            if(opNotHappend <= 0){
+                opHappend = Math.max(nums[i] * nums[i], opHappend + nums[i]);
+                opNotHappend = nums[i];
+            }
+            else{
+                opHappend = Math.max(opNotHappend + nums[i] * nums[i], opHappend + nums[i]);
+                opNotHappend += nums[i];
+            }
+            res = Math.max(opHappend, res);
         }
 
         return res;
-   }
-
-      
+    }
 
 
+
+Array
+------------------------------------------------------------------------------------------------------------------------
+1. Subarray 
+   
+a. 如果只是求max subarray 可以用 kadane's algorithm
+
+       public int maxSubArray(int[] nums) {
+            if(nums.length < 1) return 0;
+            int res = nums[0];
+            int sum = nums[0];
+            int start = 0, end = 0, curStart = 0, curEnd = 0;
     
+            for(int i = 1; i < nums.length ; i++) {
+                if (sum < 0) {
+                    curStart = i;
+                    curEnd = i;
+                    sum = nums[i];
+                } else {
+                    curEnd = i;
+                    sum += nums[i];
+                }
+                if (sum >= res) {
+                    start = curStart;
+                    end = curEnd;
+                    res = sum;
+                }
+    
+            }
+    
+            return res;
+       }
+
+       return res;
+       }
+
+
+ 即便是要同时记录两种情况， 只要是没有上限的求最大值我们都可以用kadane， 我们可以用参数来
+ 代表dp[i-1][0] 或更多的状态， 节省一点空间
+
+
+    public int maxSumAfterOperation_kadane(int[] nums) {
+        if(nums.length < 1){
+            return 0;
+        }
+        int res = Integer.MIN_VALUE;
+        int opHappend  = nums[0] * nums[0], opNotHappend = nums[0];
+        if(nums.length == 1){
+            return opHappend;
+        }
+        for(int i = 1; i < nums.length; i++){
+            if(opNotHappend <= 0){
+                opHappend = Math.max(nums[i] * nums[i], opHappend + nums[i]);
+                opNotHappend = nums[i];
+            }
+            else{
+                opHappend = Math.max(opNotHappend + nums[i] * nums[i], opHappend + nums[i]);
+                opNotHappend += nums[i];
+            }
+            res = Math.max(opHappend, res);
+        }
+
+        return res;
+    } 
    
-   
+b. 假如是只求确定的sum == k而size最大subarray, 就要用到类似与twoSum里面的map的解法，
+因为sum(0, j) - sum(0, i) = sum(i, j), 所以我们每次更新res为 res = Math.max(i - map.get(nums[i] - k), res);
+
+        public int maxSubArrayLen(int[] nums, int k) {
+        if (nums == null || nums.length == 0) return 0;
+        for(int i = 1; i < nums.length; i++){
+            nums[i] += nums[i-1];
+        }
+        int res = 0;
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(0, -1);
+        int max = 0;
+        for(int i = 0; i < nums.length; i++){
+            if(map.containsKey(nums[i] - k)){
+                res = Math.max(i - map.get(nums[i] - k), res);
+            }
+            if (!map.containsKey(nums[i])){
+                map.put(nums[i], i);
+            }
+        }
+
+        return res;
+    }
+
+
+
+b. 假如是有一个limit k的话， 就要用到treeSet()来找到sum <= k的最大的array
+
+        public int maxSubarrayCloseToK(int[] nums, int k){
+        int sum = 0, res = Integer.MIN_VALUE;
+        TreeSet<Integer> set = new TreeSet<>();
+        set.add(0);
+
+        for (int i = 0; i < nums.length; i++){
+            sum += nums[i];
+            Integer ceiling = set.ceiling(sum - k);
+            if(ceiling != null){
+                res = Math.max(res, sum - ceiling); //sum - 与(sum - k)最接近的且大于它值就是sum里与k最接近的值
+            }
+            set.add(sum);
+        }
+
+        return res;
+
+    }
+
+
+c. Rectangle的题， 大体的骨架就是三个forloop， helper暂时见过kadane和closeToK两种情况
+
    
    
 
