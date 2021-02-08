@@ -1,8 +1,11 @@
-package DynamicProgramming;
+package DynamicProgramming.matrix;
 
-public class maximalSquare{
-    //dp解法：d if(Array.matrix[i-1][j-1] == '1') dp[i][j] = Math.min(dp[i-1][j],Math.min(dp[i-1][j-1], dp[i][j-1])) + 1;
-    public int maximalSquare(char[][] matrix) {
+public class MaximalSquare {
+    //dp解法：d if(Array.matrix[i-1][j-1] == '1')
+    // dp[i][j] = Math.min(dp[i-1][j],Math.min(dp[i-1][j-1], dp[i][j-1])) + 1;
+
+    //Runtime: O(mn) Space: O(mn);
+    public int maximalSquare_dp(char[][] matrix) {
         int w = matrix.length, l = w > 0? matrix[0].length : 0;
         int res = 0;
         int[][] dp = new int[w+1][l+1];

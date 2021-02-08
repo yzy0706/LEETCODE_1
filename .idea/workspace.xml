@@ -2,43 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e8cda-fea1-4f05-ad0b-dac7a748dd3a" name="Default" comment="yyo">
-      <change afterPath="$PROJECT_DIR$/src/Array/maxSubarray/MaximumSubarrayAfterOneOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/twoFactorSum/MinStartValueToAlwaysGetBiggerThanOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/search/MostLeftColumnWithOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Greedy/Array/JumpGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Greedy/Array/MinStartValueToAlwaysGetBiggerThanOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HashTable/hashMap/PairOfSongsWithTotalDurationsDivisibleBy60.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/BFS/levelorderTraversal/BinaryTreeRightSideView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/DFS/matrix/MaxAreaOfIsland.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/DFS/matrix/NumberOfIslands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/DFS/preorderHybirdPostorder/BoundaryOfBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/matrix/LargestRectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/rearrange/TaskScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/accumulate/ArithmeticSlices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/CoinCombinationsII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Greedy/Array/JumpGameII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HashTable/hashMap/TaskScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/reCombine/RemoveAdjacentDuplicateLettersII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/shuntingYard/BasicCalculatorII.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Summary.md" beforeDir="false" afterPath="$PROJECT_DIR$/Summary.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/maxSubarray/MaxSumOfRectangleNoLargetThanK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/maxSubarray/MaxSumOfRectangleNoLargerThanK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/maxSubarray/MaximumSubarrayCloseToK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/maxSubarray/MaximumSubarrayCloseToK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/twoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/twoFactorSum/TwoSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BinarySearch/rotatedSortedArray/RotatedArrayFindMin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/rotatedSortedArray/RotatedArrayFindMin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BinarySearch/search2DMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/search/search2DMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BinarySearch/search2DMatrix_II.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/search/search2DMatrix_II.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HashTable/accumulate/SubarraySumEqualsK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashTable/hashMap/SubarraySumEqualsK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/BFS/PopulatingNextRightPointersII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/levelorderTraversal/PopulatingNextRightPointersII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/DFS/ConnectNodesOnSameLevel/PopulatingNextRightPointers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/DFS/connectNodesOnSameLevel/PopulatingNextRightPointers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/DFS/ConnectNodesOnSameLevel/PopulatingNextRightPointersII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/DFS/connectNodesOnSameLevel/PopulatingNextRightPointersII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/DFS/Path/AllNodesDistanceKInBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/DFS/path/AllNodesDistanceKInBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/DFS/Path/PathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/DFS/path/PathSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/DFS/Path/PathSumII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/DFS/path/PathSumII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/DFS/friendCricles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/DFS/friendCricles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/levelorderTraversal/BinaryTreeLevelorderTraversalII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/levelorderTraversal/BinaryTreeLevelorderTraversalII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/greedy/assignCookies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Greedy/assignCookies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/greedy/candy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Greedy/candy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/greedy/gasStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Greedy/gasStation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/greedy/maximumSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/greedy/Array/maximumSubarray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/greedy/meetingRoomsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Greedy/meetingRoomsII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/greedy/mergeIntervals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Greedy/mergeIntervals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/greedy/partitionLabels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Greedy/partitionLabels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/greedy/removeKDigits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Greedy/removeKDigits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/matrix/numberOfIslands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/matrix/NumberOfIslands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记 copy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/笔记 copy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/maximalSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/matrix/MaximalSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/reconstruct/EvaluateReversePolishNotation_postFix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/reCombine/EvaluateReversePolishNotation_postFix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/reconstruct/RemoveDuplicateLetters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/reCombine/RemoveDuplicateLetters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/reconstruct/SimplifyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/reCombine/SimplifyPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/symmatric/MinRemoveToMakeValid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/symmatric/MinRemoveToMakeValid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,11 +127,11 @@
       <recent name="$PROJECT_DIR$/src/Tree/BFS" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Array.rearrange" />
+      <recent name="matrix" />
       <recent name="Tree.DFS.matrix" />
       <recent name="greedy.Array" />
       <recent name="DynamicProgramming.doubleArray" />
-      <recent name="DynamicProgramming.longestSubsequence" />
-      <recent name="Tree.CountNumbersOfUniqueTrees" />
     </key>
   </component>
   <component name="RunManager">

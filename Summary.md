@@ -882,7 +882,7 @@ b. 假如是只求确定的sum == k而size最大subarray, 就要用到类似与t
 
 
 
-b. 假如是有一个limit k的话， 就要用到treeSet()来找到sum <= k的最大的array
+c. 假如是有一个limit k的话， 就要用到treeSet()来找到sum <= k的最大的array
 
         public int maxSubarrayCloseToK(int[] nums, int k){
         int sum = 0, res = Integer.MIN_VALUE;
@@ -903,7 +903,43 @@ b. 假如是有一个limit k的话， 就要用到treeSet()来找到sum <= k的�
     }
 
 
-c. Rectangle的题， 大体的骨架就是三个forloop， helper暂时见过kadane和closeToK两种情况
+
+2. Rectangle的题， 大体的骨架就是三个forloop， helper暂时见过kadane和closeToK两种情况
+
+
+
+
+
+
+3. 求combination个数的题: 用int[] dp来储存0到所要求的sum的每个数， dp[i]表示i能被已有的元素用几种组合组合起来, dp[0] = 1： 
+   
+a. 如果是不考虑排列顺序的combination, 可以先forloop所有的数字i， 再forloop所有的coin，只要i - number >= 0就行:
+       
+                
+            for(int i = 0; i <= target; i++){
+                for(int number: nums){
+                    if(i - number >= 0) dp[i] += dp[i - number];
+                }
+            }
+
+    
+
+
+b. 如果要考虑排列顺序， 大的那个forloop应该就是forloop所有的组成元素， 小的那个forloop应该是forloop所有 >= 这个coin的
+数
+
+
+            for(int coin : coins){
+                for(int i = coin; i <= sum; i++){
+                    dp[i] += dp[i - coin];
+                }
+            }
+            
+            return dp[sum];
+                
+        
+    
+        
 
    
    

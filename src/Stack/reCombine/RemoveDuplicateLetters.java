@@ -1,4 +1,4 @@
-package Stack.reconstruct;
+package Stack.reCombine;
 
 import java.util.Stack;
 

@@ -12,6 +12,7 @@ public class MinRemoveToMakeValid {
     // 4. sb.toString(); 以后string.removeAll("!", ""); 统一删除
 
     //Runtime: O(n), space: O(n);
+
     public String minRemoveToMakeValid(String s) {
         char[] cl = s.toCharArray();
         Stack<Integer> stack = new Stack<>();
