@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e8cda-fea1-4f05-ad0b-dac7a748dd3a" name="Default" comment="yyo">
-      <change afterPath="$PROJECT_DIR$/src/Array/matrix/LargestRectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/rearrange/TaskScheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/accumulate/ArithmeticSlices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/CoinCombinationsII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Greedy/Array/JumpGameII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HashTable/hashMap/TaskScheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stack/reCombine/RemoveAdjacentDuplicateLettersII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stack/shuntingYard/BasicCalculatorII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/PartitionEqualSubsetSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sort/constructComparator/AnalyzeUserWebsiteVisitPattern.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Summary.md" beforeDir="false" afterPath="$PROJECT_DIR$/Summary.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/maximalSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/matrix/MaximalSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stack/reconstruct/EvaluateReversePolishNotation_postFix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/reCombine/EvaluateReversePolishNotation_postFix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stack/reconstruct/RemoveDuplicateLetters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/reCombine/RemoveDuplicateLetters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stack/reconstruct/SimplifyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/reCombine/SimplifyPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stack/symmatric/MinRemoveToMakeValid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/symmatric/MinRemoveToMakeValid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/CoinCombinationsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/CoinCombinationsII.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
