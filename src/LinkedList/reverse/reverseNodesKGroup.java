@@ -1,4 +1,4 @@
-package linkedList;
+package LinkedList.reverse;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -39,7 +39,7 @@ public class reverseNodesKGroup {
 
 
     //一个印度人的写法
-    public ListNode reverseKGroup(ListNode head, int k) {
+    public ListNode reverseKGroup_2(ListNode head, int k) {
         if(head == null || head.next == null || k == 1 || k== 0) return head;
 
         ListNode kthNode, kthNodeNext;

@@ -1,4 +1,4 @@
-package linkedList;
+package LinkedList;
 
 public class palindromeLinkedList {
     // 中心就是建立一个公用的pointer，然后用一个recursive helper去检查能不能找到跟pointer的val相等的listnode， 公用的pointer一开始等于head，

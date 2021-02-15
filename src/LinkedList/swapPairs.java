@@ -1,4 +1,4 @@
-package linkedList;
+package LinkedList;
 
 public class swapPairs {
     public class ListNode {

@@ -1,4 +1,4 @@
-package Tree.inorderTraversal;
+package Tree.DFS.inorderTraversal;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

@@ -1,8 +1,11 @@
-package linkedList;
+package LinkedList.reverse;
 
-public class reverseLinkedList {
-    // 第一种直接三个三个的reverse
-    public ListNode reverseList(ListNode head) {
+public class ReverseLinkedList {
+    //做法： 就是用基础的reverse linkedlist的算法
+    //Runtime: O(n), space: O(1)
+
+
+    public ListNode reverseList_algorithm(ListNode head) {
         ListNode prev = null;
         ListNode curr = head;
         while(curr != null){
@@ -26,4 +29,20 @@ public class reverseLinkedList {
     }
 
 
+    public class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode() {
+        }
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
+    }
 }

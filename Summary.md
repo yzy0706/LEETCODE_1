@@ -731,6 +731,10 @@ a. 碰到有target求不同组合的问题一定要利用好target和每一个�
 
 
 
+
+
+
+
 b. Subarray
 
 1. 如果只是求max subarray 可以用 kadane's algorithm
@@ -790,6 +794,39 @@ b. Subarray
         return res;
     }
 
+
+2. 背包问题：求combination个数的题， 用int[] dp来储存0到所要求的sum的每个数， dp[i]表示i能被已有的元素用几种组合组合起来, dp[0] = 1：
+
+a. 如果是不考虑排列顺序的combination, 可以先forloop所有可能组合成的数字i， 再forloop所有的coin，只要i - number >= 0就行:
+（CombinationSum IV)
+
+            for(int i = 0; i <= target; i++){
+                for(int number: nums){
+                    if(i - number >= 0) dp[i] += dp[i - number];
+                }
+            }
+
+
+
+
+b. 如果要考虑排列顺序，我们必须从元素找更大的i - coin，所以大的那个forloop应该就是forloop所有的组成元素， 小的那个forloop应该是forloop所有到sum为止 >= 这个coin的
+数 (CoinCombinationsII) (PartitionEqualSubsetSum)
+
+
+            for(int coin : coins){
+                for(int i = coin; i <= sum; i++){
+                    dp[i] += dp[i - coin];
+                }
+            }
+            
+            return dp[sum];
+
+
+            for(int i = 0; i < nums.length; i++){
+           for(int j = sum; j >= nums[i]; j--){
+               if(dp[j - nums[i]] == true) dp[j] = true;
+           }
+        }
 
 
 Array
@@ -910,40 +947,19 @@ c. 假如是有一个limit k的话， 就要用到treeSet()来找到sum <= k的�
 
 
 
+LinkedList
+------------------------------------------------------------------------------------------------------------------------
 
-3. 背包问题：求combination个数的题， 用int[] dp来储存0到所要求的sum的每个数， dp[i]表示i能被已有的元素用几种组合组合起来, dp[0] = 1： 
-   
-a. 如果是不考虑排列顺序的combination, 可以先forloop所有可能组合成的数字i， 再forloop所有的coin，只要i - number >= 0就行:
-       
-                
-            for(int i = 0; i <= target; i++){
-                for(int number: nums){
-                    if(i - number >= 0) dp[i] += dp[i - number];
-                }
+1. Reverse
+
+a. 基本的reverse的格式
+
+            while(!cur == null){
+                ListNode tmp = cur.next;  //用tmp储存cur.next的部分
+                cur.next = prev;  //接上前面的prev
+                prev = cur;   //prev移动到当前位置cur
+                cur = tmp;   //cur移动到之前存储的tmp那里
             }
-
-    
-
-
-b. 如果要考虑排列顺序，我们必须从元素找更大的i - coin，所以大的那个forloop应该就是forloop所有的组成元素， 小的那个forloop应该是forloop所有到sum为止 >= 这个coin的
-数
-
-
-            for(int coin : coins){
-                for(int i = coin; i <= sum; i++){
-                    dp[i] += dp[i - coin];
-                }
-            }
-            
-            return dp[sum];
-                
-        
-    
-        
-
-   
-   
-
    
 
    

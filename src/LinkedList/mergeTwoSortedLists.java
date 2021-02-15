@@ -1,4 +1,4 @@
-package linkedList;
+package LinkedList;
 
 public class mergeTwoSortedLists {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
