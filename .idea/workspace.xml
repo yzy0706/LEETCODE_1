@@ -2,39 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e8cda-fea1-4f05-ad0b-dac7a748dd3a" name="Default" comment="yyo">
-      <change afterPath="$PROJECT_DIR$/src/Array/rearrange/MergeSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/rearrange/SquaresOfASortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/accumulate/DailyTemperatures.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/accumulate/UniqueSubstring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/divideToSubproblems/CanIWin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/divideToSubproblems/PredictTheWinner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/OnesAndZeros.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/TargetSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/twoDimensionalRelations/PredictTheWinner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/reverse/ReverseLinkedListII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/DFS/commonAncestors/LowestCommonAncestorII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/DFS/commonAncestors/LowestCommonAncestorIII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/DFS/commonAncestors/LowestCommonAncestors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/DFS/commonAncestors/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/DFS/commonAncestors/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/doubleCircle/IntersectionOfTwoLinkedLists.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/doubleCircle/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/doubleCircle/LowestCommonAncestorIII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/doubleCircle/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/matrix/GameOfLife.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/accumulate/PalindromeSubstrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/LongestPalindromeSubseq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/twoDimensionalRelations/LongestPalindromeSubseq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/twoDimensionalRelations/NumberOfPalindromeSubstrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TwoPointer/diffrentDirection/ValidPalindrome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Summary.md" beforeDir="false" afterPath="$PROJECT_DIR$/Summary.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/inorderTraversal/BinaryTreeInOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/DFS/inorderTraversal/BinaryTreeInOrderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedList/addTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/addTwoNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedList/copyListWithRandomPointer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/copyListWithRandomPointer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedList/countAndSay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/countAndSay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedList/mergeKSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/mergeKSortedLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedList/mergeTwoSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/mergeTwoSortedLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedList/palindromeLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/palindromeLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedList/removeNthNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/removeNthNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedList/reverseLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/reverse/ReverseLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedList/reverseNodesKGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/reverse/reverseNodesKGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedList/swapPairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/swapPairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/accumulate/UniqueSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/accumulate/UniqueSubstring.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,11 +124,11 @@
       <recent name="Tree.DFS.commonAncestors" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Tree.doubleCircle" />
       <recent name="DynamicProgramming.twoDimensionalRelations" />
+      <recent name="DynamicProgramming.longestSubsequence" />
+      <recent name="Tree.doubleCircle" />
       <recent name="Array.rearrange" />
       <recent name="matrix" />
-      <recent name="Tree.DFS.matrix" />
     </key>
   </component>
   <component name="RunManager">
