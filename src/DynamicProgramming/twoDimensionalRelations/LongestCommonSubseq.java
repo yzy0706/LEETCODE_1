@@ -1,7 +1,7 @@
 package DynamicProgramming.twoDimensionalRelations;
 
 public class LongestCommonSubseq {
-    //做法: 用的主要是dp做法, 思路跟longestPaindromeSubseq有点类似,
+    //做法: 用的主要是跳跃叠加的dp做法,思路跟longestPaindromeSubseq有点类似,
     //这种题符合增加的调节就是之前的结果+1;
     //在不符合叠加条件的时候都要善用Math.max(dp[i+1][j], dp[i][j+1]), 也就是包含两端中的一端的两种dp的最大值
     // 1. forloop text1和text2的pointer i和j

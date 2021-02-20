@@ -6,7 +6,7 @@ public class QuickSort {
     // 的循环就会快很多
     // Runtime： 左右分配排序是log(n)， 最多分配n次， 所以是nlog(n)
 
-    //上升
+    // 由小到大
     public static void quickSort(int[] arr, int l, int r){
         if(l >= r) return;
         int i = l, j = r, key = arr[l];

@@ -1,4 +1,4 @@
-package MapUseArray;
+package HashTable.mapUseArray;
 
 public class removeDuplicates {
     public int removeDuplicates(int[] nums) {

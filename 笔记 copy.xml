@@ -989,7 +989,7 @@ Matrix矩阵题{
 
 
 
-    MapUseArray{
+    HashTable.mapUseArray{
     重要：看到这种从int[]删除某些条件的数字的题就应该想到新建一个新的数列pointer：res去赋值
 
      removeDuplicates{

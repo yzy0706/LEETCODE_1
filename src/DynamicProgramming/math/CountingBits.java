@@ -1,4 +1,4 @@
-package DynamicProgramming.binaryDigits;
+package DynamicProgramming.math;
 
 public class CountingBits {
     //做法: 这道题主要是运用到了一个数学原理就是一个数的二进制的1的数量应该和i/2一样， 因为一个数乘以二就是他所有binary digit往左边移动一个

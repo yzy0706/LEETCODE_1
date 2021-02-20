@@ -725,17 +725,17 @@ a. 这种题和任何对称性的题思路一样， 当碰到每个object就把�
 
 Dynamic Programming
 ------------------------------------------------------------------------------------------------------------------------
-1. 题型总结
+题型总结
 
-a. 碰到有target求不同组合的问题一定要利用好target和每一个元素之间的差
-
-
+1. 碰到有target求不同组合的问题一定要利用好target和每一个元素之间的差
 
 
 
 
 
-b. Subarray
+
+
+2. Subarray
 
 1. 如果只是求max subarray 可以用 kadane's algorithm
 
@@ -795,7 +795,7 @@ b. Subarray
     }
 
 
-2. 背包问题：求combination个数的题， 用int[] dp来储存0到所要求的sum的每个数， dp[i]表示i能被已有的元素用几种组合组合起来, dp[0] = 1：
+3. 背包问题：求combination个数的题， 用int[] dp来储存0到所要求的sum的每个数， dp[i]表示i能被已有的元素用几种组合组合起来, dp[0] = 1：
 
 a. 如果是不考虑排列顺序的combination, 可以先forloop所有可能组合成的数字i， 再forloop所有的coin，只要i - number >= 0就行:
 （CombinationSum IV)
@@ -827,6 +827,7 @@ b. 如果要考虑排列顺序，我们必须从元素找更大的i - coin，所
                if(dp[j - nums[i]] == true) dp[j] = true;
            }
         }
+
 
 
 Array
@@ -959,15 +960,60 @@ LinkedList
 
 a. 基本的reverse的格式
 
+
+            ListNode pre = null;
+            ListNode cur = head;
             while(!cur == null){
                 ListNode tmp = cur.next;  //用tmp储存cur.next的部分
                 cur.next = prev;  //接上前面的prev
                 prev = cur;   //prev移动到当前位置cur
                 cur = tmp;   //cur移动到之前存储的tmp那里
             }
-   
 
+b. ListNode从后往前建立的方法
+
+            while(){
+                ...
+                cur.val = sum;
+                ListNode pre = new ListNode(0);
+                pre.next = cur;
+                cur = pre;
+            }
+
+
+
+Two Pointer
+------------------------------------------------------------------------------------------------------------------------   
+1. FLoyd Cycle Detection Algorithm:
+    a. 证明： https://www.youtube.com/watch?v=LUm2ABqAs1w 
    
+   https://leetcode.com/problems/linked-list-cycle-ii/discuss/44774/Java-O(1)-space-solution-with-detailed-explanation.
+    
+    b. 做法： 中心就是两步:
+      1. 先把fast和slow都指向head, 当fast和fast.next都不是null的时候, fast每次走两步, slow走一步, 一直到fast == slow, 如果fast或者fast.next是null的话证明到头了, 直接return null, 代表没有cycle, 也没有接入点 
+         
+      2. 当fast == slow的时候, fast调回到head, 然后fast和slow用一样的速度跑, 当fast和slow是一样的时候就return slow, 这时候的交汇点就是cycle的起始点 
+    
+      Runtime: O(n), LinkedList的长度, Space: O(1)
+
+        public ListNode detectCycle(ListNode head) {
+            ListNode fast = head, slow = head;
+            while(fast != null && fast.next != null){
+                fast = fast.next.next;
+                slow = slow.next;
+                if(slow == fast){
+                    fast = head;
+                    while(slow != fast){
+                        slow = slow.next;
+                        fast = fast.next;
+                    }
+                    return slow;
+                }
+            }
+            return null;
+        }
+   
+        
 
      
    

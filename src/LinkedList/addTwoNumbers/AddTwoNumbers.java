@@ -1,8 +1,9 @@
-package LinkedList;
+package LinkedList.addTwoNumbers;
 
 import Math.ListNode;
 
-public class addTwoNumbers {
+public class AddTwoNumbers {
+    //做法： 已经被反过来了所以其实很简单
     public ListNode addTwoNumbers (ListNode l1 , ListNode l2){
         ListNode dummy = new ListNode(0);
         ListNode track = dummy;
@@ -32,4 +33,5 @@ public class addTwoNumbers {
         if( cnt != 0) track.next = new ListNode(cnt);
         return dummy.next;
     }
+
 }

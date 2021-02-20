@@ -1,4 +1,4 @@
-package MapUseArray;
+package HashTable.mapUseArray;
 
 public class removeElement {
      public int removeElement(int[] nums, int val){

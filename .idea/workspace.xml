@@ -2,15 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e8cda-fea1-4f05-ad0b-dac7a748dd3a" name="Default" comment="yyo">
-      <change afterPath="$PROJECT_DIR$/src/Array/matrix/GameOfLife.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/accumulate/PalindromeSubstrings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/LongestPalindromeSubseq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/twoDimensionalRelations/LongestPalindromeSubseq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/twoDimensionalRelations/NumberOfPalindromeSubstrings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TwoPointer/diffrentDirection/ValidPalindrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/rearrange/MoveZeros.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/LongestPalindromicSubseqII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/math/ContinuousSubarraySum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/twoDimensionalRelations/OutOfBoundsPaths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HashTable/hashMap/ContinuousSubarraySum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HashTable/hashMap/SubdomainVisitCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedList/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedList/addTwoNumbers/AddTwoNumbersII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedList/addTwoNumbers/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Math/ContinuousSubarraySum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Math/FizzBuzz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Math/equalArrayElements/MinMovesToEqualArrayElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Math/equalArrayElements/MinMovesToEqualArrayElementsII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TwoPointer/diffrentDirection/ValidPalindromeII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TwoPointer/sameDirection/FloydCycle/FindDuplicateNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TwoPointer/sameDirection/FloydCycle/LinkedListCycleII.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Summary.md" beforeDir="false" afterPath="$PROJECT_DIR$/Summary.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/accumulate/UniqueSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/accumulate/UniqueSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/binaryDigits/CountingBits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/math/CountingBits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/LongestPalindromeSubseq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/LongestPalindromeSubseq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/twoDimensionalRelations/LongestCommonSubseq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/twoDimensionalRelations/LongestCommonSubseq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph/prim/cheapestFlightWithinKStops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/prim/cheapestFlightWithinKStops.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/addTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/addTwoNumbers/AddTwoNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/reverse/ReverseLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/reverse/ReverseLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MapUseArray/removeDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashTable/mapUseArray/removeDuplicates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MapUseArray/removeElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashTable/mapUseArray/removeElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Math/addTwoNumbers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SortingAlgorithms/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SortingAlgorithms/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记 copy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/笔记 copy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,15 +142,16 @@
       <recent name="$PROJECT_DIR$/src/Tree/BFS" />
     </key>
     <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="LinkedList" />
       <recent name="Tree.doubleCircle" />
       <recent name="Tree.DFS.commonAncestors" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="HashTable.hashMap" />
+      <recent name="Math" />
+      <recent name="LinkedList.addTwoNumbers" />
+      <recent name="DynamicProgramming.accumulate" />
       <recent name="DynamicProgramming.twoDimensionalRelations" />
-      <recent name="DynamicProgramming.longestSubsequence" />
-      <recent name="Tree.doubleCircle" />
-      <recent name="Array.rearrange" />
-      <recent name="matrix" />
     </key>
   </component>
   <component name="RunManager">

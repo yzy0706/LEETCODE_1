@@ -1,5 +1,7 @@
 package LinkedList.reverse;
 
+import LinkedList.ListNode;
+
 public class ReverseLinkedList {
     //做法： 就是用基础的reverse linkedlist的算法
     //Runtime: O(n), space: O(1)
@@ -29,20 +31,4 @@ public class ReverseLinkedList {
     }
 
 
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
 }

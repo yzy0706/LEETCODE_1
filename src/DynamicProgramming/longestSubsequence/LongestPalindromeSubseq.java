@@ -1,7 +1,8 @@
 package DynamicProgramming.longestSubsequence;
 
 public class LongestPalindromeSubseq {
-// 做法: 用二维的dp去解决longestSubsequence的题, 但这题没有像LargestDivisibleSubset一样额外用一个res来记录最长的subseq,
+// 做法: 用二维的dp去解决longestSubsequence的题, dp[i][j]代表i到j之间最长的palindromic subseq
+// 但这题没有像LargestDivisibleSubset一样额外用一个res来记录最长的subseq,
 // 所以我们并不是在跳跃着去找最长的subseq, 而是通过两个forloop一步步更新两个pointer之间各个分段的最长palindrome sequence
     // 1. 建立一个forloop右边端点r, 一直从s.length() - 1到0; dp[l][l] = 1;
     // 2.再建立一个左端点l从r + 1到length();

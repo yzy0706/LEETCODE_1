@@ -1,5 +1,7 @@
 package Graph.prim;
 
+import java.util.*;
+
 public class cheapestFlightWithinKStops {
     //Prim的解法， 主要就是前半部分建立map和狄杰斯特拉一样，而在建立pq时里面每个stop单元int[] curStop应该是三维的
     //curStop[0]应该当前的下一个中转站（邻居），curStop[1]应该是一个一直在叠加的price， 而curStop[2]应该是当前叠加的已经经过的中转站的数量
