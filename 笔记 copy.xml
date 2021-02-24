@@ -658,7 +658,7 @@ twoSum{
 
 
 
-    backTrack{
+    Backtrack{
 
     letterCombinations：
     中心思想：建立一个backtrack的helper，有一个变量是index=0（这个index是用来在backtrack里面记录是否已经浏览完所有的digit的）。

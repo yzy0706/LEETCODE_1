@@ -1,4 +1,4 @@
-package backTrack;
+package Backtrack;
 
 public class nextPermutation {
     public void nextPermutation(int[] nums) {

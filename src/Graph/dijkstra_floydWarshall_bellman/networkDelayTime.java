@@ -1,8 +1,10 @@
 package Graph.dijkstra_floydWarshall_bellman;
 
+import java.util.*;
+
 public class networkDelayTime {
     // Floyd-warshall解法, 主要就是用dp[][]循环N次
-    public int networkDelayTime(int[][] times, int N, int K){
+    public int networkDelayTime_Floyd(int[][] times, int N, int K){
         int[][] dp = new int[N][N];
         for(int i = 0; i < N; i++){
             for(int j = 0 ; j < N; j++){
@@ -35,7 +37,7 @@ public class networkDelayTime {
 
     //狄杰斯特拉： forloop解法，每次whileloop循环还是会去找所有目的地里面当前距离start最近的那个
     Map<Integer, Integer> distances;
-    public int networkDelayTime(int[][] times, int N, int K) {
+    public int networkDelayTime_forloop(int[][] times, int N, int K) {
         Map<Integer, List<int[]>> map = new HashMap<>();
         for(int[] time: times){
             if(!map.containsKey(time[0])) map.put(time[0], new ArrayList<int[]>());
@@ -198,103 +200,6 @@ public class networkDelayTime {
         }
         return res;
     }
-
-
-    //
-
-
-
-
-
-
-// 第一遍做的
-
-    public int networkDelayTime(int[][] times, int N, int K) {
-        Map<Integer, List<int[]>> map = new HashMap<>();
-        for(int i = 1; i < N; i++){
-            List<int[]> temp = new ArrayList<>();
-            int max = Integer.MAX_VALUE;
-            for(int j= 1; i < N; i++){
-                temp.add(new int[]{j, max});
-            }
-        }
-        for(int i = 0; i < times.length; i++){
-            int curStart = times[i][0];
-            if(!map.containsKey(curStart)){
-                int[] curDes = new int[]{times[i][1], times[i][2]};
-                List<int[]> curList = new ArrayList<>();
-                curList.add(curDes);
-                map.put(curStart, curList);
-            }
-
-            else{
-                int[] curDes = new int[]{times[i][1], times[i][2]};
-                List<int[]> curList = map.get(curStart);
-                curList.add(curDes);
-                map.replace(curStart, curList);
-            }
-        }
-
-        List<int[]> distances = map.get(K);
-        // if(distances.size() < N) return -1;
-        boolean[] visited = new boolean[map.size()];
-        PriorityQueue<Integer> curStops = new PriorityQueue<>(N, Comparator.comparing(i -> distances.get(i)[1]));
-
-
-        for(int i = 0; i < distances.size(); i++){
-            curStops.offer(distances.get(i)[0]);
-        }
-
-        int curStart = K;
-
-        //把这个queue的格式改成普通的forloop格式就行了
-        }
-//
-//        while(!curStops.isEmpty()){
-//            int curStop = curStops.poll();
-//
-//            while(visited[curStop]){
-//                curStop = curStops.poll();
-//            }
-//
-//            visited[curStop] = true;
-//
-//            int curStartDistance = 0;
-//            int curStopDistance = 0;
-//            int curMidDistance = 0;
-//            for(int[] pair : distances){
-//                if(pair[0] == curStart)  curStartDistance = pair[1];
-//                else if(pair[0] == curStop)   curStopDistance = pair[1];
-//            }
-//
-//            for(int[] pair : map.get(curStop)){
-//                if(pair[0] ==curStart)  curMidDistance = pair[1];
-//            }
-//
-//            if(curStopDistance > curStartDistance + curMidDistance){
-//                for(int i = 0; i < distances.size(); i++){
-//                    int[] pair = distances.get(i);
-//                    if(pair[0] == curStop) pair[1] = curStartDistance + curMidDistance;
-//                }
-//            }
-//
-//            curStops.clear();
-//            for(int[] pair : map.get(curStop)){
-//                curStops.offer(pair[0]);
-//            }
-//
-//            curStart = curStop;
-//
-//        }
-
-        int res = -1;
-        for(int i = 0; i < distances.size(); i++){
-            if(distances.get(i)[1] > res) res = distances.get(i)[1];
-        }
-
-
-        return res;
-
 
 
 

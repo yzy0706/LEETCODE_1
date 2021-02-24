@@ -1,15 +1,17 @@
-package Graph.unionFind;
+package Graph.unionFind.ValidTree;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class isValidTree {
-    public static void main(String[] args){
-        String s = "(A,B) (A,C) (B,D) (D,C)";
-        System.out.println(isValidTree(s));
-    }
+public class IsValidTree {
+//    public static void main(String[] args){
+//        String s = "(A,B) (A,C) (B,D) (D,C)";
+//        System.out.println(isValidTree(s));
+//    }
+
+
      public static class UNF{
          int[] parents;
 

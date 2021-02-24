@@ -1,4 +1,4 @@
-package LinkedList.addTwoNumbers;
+package Math.addTwoNumbers;
 
 
 public class AddTwoNumbers {

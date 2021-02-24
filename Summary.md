@@ -1012,9 +1012,47 @@ Two Pointer
             }
             return null;
         }
+
+
+
+Graph
+------------------------------------------------------------------------------------------------------------------------
    
+1. DFS
+   
+    UNF就是借助一个class用DFS来检查一个directed或者undirected的graph是不是最终都指向一个祖宗， 
+    也就是关注他们所有的edge之间的连通性
+
+
+                class UNF{
+                    int[] parents;
+                    public UNF(int n){
+                        this.parents = new int[n];
+                        for(int i = 0; i < n; i++){
+                        parents[i] = i;
+                        }
+                    }
+
+                    public int find(int a){
+                                while(parents[a] != a){
+                                    parents[a] = parents[parents[a]];
+                                    a = parents[a];
+                                }
+                                return a;
+                            }
+                            
+                            public void merge(int a, int b){
+                                int fa = find(a);
+                                int fb = find(b);
+                                if(fa != fb){
+                                    parents[fb] = fa;
+                                }
+                            }
+                        }
         
 
+
+2. BFS
      
    
    

@@ -1,4 +1,4 @@
-package backTrack;
+package Backtrack;
 
 public class findPeakElement {
 //    public int backTrack.findPeakElement(int[] nums) {
