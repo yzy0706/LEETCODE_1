@@ -1,11 +1,12 @@
-package DynamicProgramming.greedyCombinations;
+package DynamicProgramming.accumulate;
 
 import java.util.Arrays;
 
 public class TwoKeysKeyboard {
     //做法: 数学解法:
     // 1. 先预设dp[i] = i, 因为我们2个的时候需要copy + paste两步
-    // 2. 用i从1到n做forloop, j从1到i做forloop, 如果 i % j == 0; 则我们知道从j加j一直加到i需要加 i/j-1次, 然而copy当前的需要1次, 所以dp[i] = Math.min(dp[i], dp[j] + i/j);
+    // 2. 用i从1到n做forloop, j从1到i做forloop, 如果 i % j == 0; 则我们知道从j加j一直加到i需要加 i/j-1次, 然而copy当前的需要1次,
+    // 所以dp[i] = Math.min(dp[i], dp[j] + i/j);
 
     //Runtime: O(n^2), Space: O(n);
     public int minSteps_Math(int n) {

@@ -2,81 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e8cda-fea1-4f05-ad0b-dac7a748dd3a" name="Default" comment="yyo">
-      <change afterPath="$PROJECT_DIR$/src/Array/maxSubarray/LongestFibonacciSubsequence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backtrack/BeautifulArrangement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backtrack/SplitArrayIntoFibonacciSequence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/FibonacciNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/ShoppingOffers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/TwoKeysKeyboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/LongestFibonacciSubsequence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/MaxlengthOfPairChain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/twoDimensionalRelations/LongestFibonacciSubsequence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/BFS/bucketFill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/BFS/levelorderTraversal/BinaryTreeLevelorderTraversalII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/BFS/levelorderTraversal/BinaryTreeRightSideView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/BFS/levelorderTraversal/PopulatingNextRightPointersII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/BFS/reverseBinaryTreeLevelOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/BFS/searchInMatrix/MinimumKnightMoves.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/BFS/searchInTree/LevelOrderTraversal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/BFS/searchInTree/ZigZagTraversal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/BFS/topologicalSort/MinHeightTrees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/BFS/topologicalSort/ReconstructItinerary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/BFS/topologicalSort/courseSchedule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/BFS/topologicalSort/courseScheduleII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/BFS/topologicalSort/isValidTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/BalancedBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/FlattenBinaryTreeToLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/TwoSameTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/commonAncestors/LowestCommonAncestorII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/commonAncestors/LowestCommonAncestorIII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/commonAncestors/LowestCommonAncestors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/commonAncestors/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/commonAncestors/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/connectNodesOnSameLevel/PopulatingNextRightPointers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/connectNodesOnSameLevel/PopulatingNextRightPointersII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/converSortedArrayToBST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/friendCricles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/inorderTraversal/BinaryTreeInOrderTraversal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/matrix/IslandPerimeter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/matrix/MaxAreaOfIsland.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/matrix/NumberOfIslands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/maxDepthOfBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/path/AllNodesDistanceKInBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/path/PathSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/path/PathSumII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/preorderHybirdPostorder/BoundaryOfBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/subtreeOfAnotherTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/symmetricTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/validBST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/deepCopy/CloneGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/unionFind/EvaluateDivision.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/unionFind/NumOfConnectedParts/NumberOfConnectedComponentsInGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/unionFind/ValidTree/GraphValidTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Math/addTwoNumbers/AddBinary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Math/addTwoNumbers/AddTwoNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Math/addTwoNumbers/AddTwoNumbersII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Math/addTwoNumbers/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/BFS/topologicalSort/MinHeightTrees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/BFS/topologicalSort/ReconstructItinerary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TwoPointer/sameDirection/LongestFibonacciSubsequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataDesign/MyHashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataDesign/SparseVector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/accumulate/FourKeysKeyboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/bitMask/PartitionToKEqualSumSubsets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/divideToSubproblems/FourKeysKeyboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleArray/FindNumberOfLongestIncreasingSubsequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/FindNumberOfLongestIncreasingSubsequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/math/FourKeysKeyboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/math/TwoKeysKeyboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/tempMatrix/OutOfBoundsPaths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/tempMatrix/PossibilitiesOfKnightOutBound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HashTable/hashMap/KDiffPairs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sort/intervals/IntervalListIntersections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TwoPointer/intervals/InsertInterval.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TwoPointer/intervals/IntervalListIntersections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TwoPointer/intervals/MeetingRooms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TwoPointer/sameDirection/FirstUniqueCharacterInString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Summary.md" beforeDir="false" afterPath="$PROJECT_DIR$/Summary.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/twoDimensionalRelations/OutOfBoundsPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/twoDimensionalRelations/OutOfBoundsPaths.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graph/dijkstra_floydWarshall_bellman/networkDelayTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/dijkstra_floydWarshall_bellman/networkDelayTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graph/unionFind/isValidTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/unionFind/ValidTree/IsValidTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList/addTwoNumbers/AddTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/addTwoNumbers/AddTwoNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/BFS/topologicalSort/isValidTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BFS/topologicalSort/isValidTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backTrack/combinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backtrack/combinationSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backTrack/combinationSum2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backtrack/combinationSum2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backTrack/findPeakElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backtrack/findPeakElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backTrack/generateParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backtrack/generateParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backTrack/letterCombinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backtrack/letterCombinations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backTrack/nextPermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backtrack/nextPermutation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backTrack/permutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backtrack/permutations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backTrack/swapPairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backtrack/swapPairs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记 copy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/笔记 copy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/TwoKeysKeyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/accumulate/TwoKeysKeyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph/unionFind/JZ_accountMerge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/unionFind/JZ_accountMerge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sort/intervals/InsertInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort/intervals/InsertInterval.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TwoPointer/JZ_minimumSizeSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoPointer/JZ_minimumSizeSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataDesign/minStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataDesign/MinStack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +124,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Markdown" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Graph" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/TwoPointer" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -183,6 +132,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/TwoPointer" />
       <recent name="$PROJECT_DIR$/src/Graph" />
       <recent name="$PROJECT_DIR$/src/Math" />
       <recent name="$PROJECT_DIR$/src/Tree/BFS" />
@@ -193,11 +143,11 @@
       <recent name="Tree.DFS.commonAncestors" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="DynamicProgramming.tempMatrix" />
+      <recent name="DynamicProgramming.doubleArray" />
+      <recent name="DynamicProgramming.math" />
+      <recent name="DynamicProgramming.divideToSubproblems" />
       <recent name="Array.maxSubarray" />
-      <recent name="TwoPointer.sameDirection" />
-      <recent name="DynamicProgramming.twoDimensionalRelations" />
-      <recent name="HashTable.hashMap" />
-      <recent name="Math" />
     </key>
   </component>
   <component name="RunManager">

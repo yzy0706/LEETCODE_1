@@ -1,4 +1,4 @@
-package Sort.intervals;
+package TwoPointer.intervals;
 
 import java.util.ArrayList;
 import java.util.List;

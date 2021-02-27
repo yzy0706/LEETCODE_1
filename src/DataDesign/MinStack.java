@@ -1,9 +1,11 @@
-package dataDesign;
+package DataDesign;
 
-public class minStack {
+import java.util.*;
+
+public class MinStack {
         public Deque<Integer> stack ;
         public int min;
-        public List <Integer> list = new ArrayList<>();
+        public List<Integer> list = new ArrayList<>();
 
         /** initialize your data structure here. */
         public MinStack() {
