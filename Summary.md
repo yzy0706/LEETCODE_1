@@ -739,6 +739,9 @@ Dynamic Programming
 
 1. 如果只是求max subarray 可以用 kadane's algorithm
 
+
+
+
         public int maxSubArray(int[] nums) {
             if(nums.length < 1) return 0;
             int res = nums[0];
@@ -854,6 +857,73 @@ a. 使用的符号：
     a&b: 取出标志位b;
     a^b: 取出a与b的不同部分;
 
+
+5. Buy And Sell Stock的问题：
+
+主要就是用到了double array的用法， 加上在sell stock这个过程中的各种变化：
+
+
+        public int maxProfit(int[] prices) {
+            int len = prices.length;
+            if(len <= 1) return 0;
+            int[] buy = new int[len], sell = new int[len];
+            buy[0] = - prices[0];
+            for(int i = 1; i < len; i++){
+                buy[i] = Math.max(buy[i-1], sell[i-1] - prices[i]（这里可能会收费或者加一个cooldown time什么的）);
+                sell[i] = Math.max(sell[i-1], buy[i-1] + prices[i]);
+            }
+            return sell[len-1];
+    }
+
+        
+
+6. 2D dp的题， 比如说求两个string的longest common subsequence那种， 我们一般去假设dp[i+1][j+1]就是两个string分别到i和j的最长
+的common subseq， 然后再去看i， j的位置是不是相等（这种subseq都是跳跃着组合的， 如果都不是跳跃的就只有相等的时候才叠加）： 
+   
+
+a. 要求完全连续的: 718 Maximum Length of Repeated Subarray
+
+
+
+            public int findLength(int[] A, int[] B) {
+                int len1 = A.length, len2 = B.length;
+                int[][] dp = new int[len1+1][len2+1];
+                int res = 0;
+                for(int i = 0; i < len1; i++){
+                    for(int j = 0; j < len2; j++){
+                        if(A[i] == B[j]){
+                            dp[i+1][j+1] = dp[i][j] + 1;
+                            res = Math.max(dp[i+1][j+1], res);
+                        }
+                    }
+                }
+                return res;
+        
+           }
+
+
+
+b.  跳跃着组合的
+
+
+
+
+        public int longestCommonSubsequence(String text1, String text2) {
+            int[][] dp = new int[text1.length()+1][text2.length()+1];
+            for(int i = 0; i < text1.length(); i++){
+                for(int j = 0; j < text2.length(); j++){
+                    if(text1.charAt(i) == text2.charAt(j)){
+                        dp[i+1][j+1] = dp[i][j] + 1;
+                    }
+                    else{
+                        dp[i+1][j+1] = Math.max(dp[i][j+1], dp[i+1][j]);
+                    }
+                }
+            }
+            return dp[text1.length()][text2.length()];
+        }
+
+
 Array
 ------------------------------------------------------------------------------------------------------------------------
 1. Subarray 
@@ -963,6 +1033,62 @@ c. 假如是有一个limit k的话， 就要用到treeSet()来找到sum <= k的�
         return res;
 
     }
+
+
+
+
+d. 求最长长度话可以用map来记录每到一个位置的和：
+
+
+
+    public int maxSubArrayLen(int[] nums, int k) {
+        if (nums == null || nums.length == 0) return 0;
+        for(int i = 1; i < nums.length; i++){
+            nums[i] += nums[i-1];
+        }
+        int res = 0;
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(0, -1);
+        int max = 0;
+        for(int i = 0; i < nums.length; i++){
+            if(map.containsKey(nums[i] - k)){
+                res = Math.max(i - map.get(nums[i] - k), res);
+            }
+            if (!map.containsKey(nums[i])){
+                map.put(nums[i], i);
+            }
+        }
+
+        return res;
+    }
+
+
+
+   或者求最短长度用同向双指针滑动窗口(sliding window):
+
+
+        public int minSubArrayLen_slidingWindow(int target, int[] nums) {
+        if(nums.length < 1) return 0;
+        int i = 0, j = 0;
+        int sum = 0, res = Integer.MAX_VALUE;
+
+        while(j < nums.length){
+            sum += nums[j]; //这是加了当前的这个j的数字, j还没有++
+
+            while(sum >= target){
+                res = Math.min(res, j - i + 1);
+                sum -= nums[i];
+                i++;
+            }
+
+            j++;
+        }
+
+
+        return res == Integer.MAX_VALUE ?  0 : res;
+    }
+
+
 
 
 

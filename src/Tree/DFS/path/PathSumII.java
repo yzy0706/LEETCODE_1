@@ -8,8 +8,8 @@ import java.util.List;
 public class PathSumII {
         class TreeNode {
             int val;
-            PathSum.TreeNode left;
-            PathSum.TreeNode right;
+            Tree.DFS.path.TreeNode left;
+            Tree.DFS.path.TreeNode right;
 
             TreeNode() {
             }
@@ -18,7 +18,7 @@ public class PathSumII {
                 this.val = val;
             }
 
-            TreeNode(int val, PathSum.TreeNode left, PathSum.TreeNode right) {
+            TreeNode(int val, Tree.DFS.path.TreeNode left, Tree.DFS.path.TreeNode right) {
                 this.val = val;
                 this.left = left;
                 this.right = right;
