@@ -99,21 +99,21 @@ public class MinHeightTrees {
         }
     }
 
-    public List<Integer> findMinHeightTrees(int n, int[][] edges) {
-        UNF unf = new UNF(n);
-        List<Integer> res = new ArrayList<>();
-        if(edges.length != n-1) return res;
-        for(int[] edge : edges){
-            int fa = unf.find(edge[0]);
-            int fb = unf.find(edge[1]);
-            if(fa == fb) return res;
-            unf.merge(edge[0], edge[1]);
-        }
-
-    }
-
-
-    public void permutate(int n, int[][] edges, int i, List<Integer> res){
-        for(int)
-    }
-}
+//    public List<Integer> findMinHeightTrees(int n, int[][] edges) {
+//        UNF unf = new UNF(n);
+//        List<Integer> res = new ArrayList<>();
+//        if(edges.length != n-1) return res;
+//        for(int[] edge : edges){
+//            int fa = unf.find(edge[0]);
+//            int fb = unf.find(edge[1]);
+//            if(fa == fb) return res;
+//            unf.merge(edge[0], edge[1]);
+//        }
+//
+//    }
+//
+//
+//    public void permutate(int n, int[][] edges, int i, List<Integer> res){
+//        for(int)
+//    }
+//}

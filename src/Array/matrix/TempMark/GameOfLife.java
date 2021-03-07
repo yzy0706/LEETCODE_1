@@ -1,4 +1,4 @@
-package Array.matrix;
+package Array.matrix.TempMark;
 
 public class GameOfLife {
     //做法: 这题用了几个数字来代表nextstatus :

@@ -28,7 +28,7 @@ public class isValidTree {
                     if(i-1 < 1) return "E5";
                     if(i+1 >= cl.length) return "E5";
                     int prevID = cl[i-1] - 'A';
-                    int nextID = cl[i+!] - 'A';
+                    int nextID = cl[i+1] - 'A';
                     if(checkedNodes.add(prevID)) {
                         totalNode++;
                     }
@@ -72,4 +72,3 @@ public class isValidTree {
         }
     }
 
-}

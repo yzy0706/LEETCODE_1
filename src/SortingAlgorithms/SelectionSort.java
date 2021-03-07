@@ -12,13 +12,13 @@ public class SelectionSort {
         for(int i = 0; i < arr.length-1; i++){ //arr.length - 1;
             int minIndex = i;
 
-            for(int j  = i; j < arr.length; j++) { // arr.length， 找到到末尾最小的
+            for(int j  = i; j < arr.length; j++) { // arr.length， 找到到i之后最小的
                 if (arr[j] < arr[minIndex]) {
                     minIndex = j;
                 }
             }
 
-            if(minIndex != i){ //如果minIndex != i, 证明找到了最小值， 置换一下
+            if(minIndex != i){ //如果minIndex != i, 证明找到了最小值， 跟i置换一下
                 int temp = arr[i];
                 arr[i] = arr[minIndex];
                 arr[minIndex] = temp;
