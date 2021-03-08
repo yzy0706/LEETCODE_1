@@ -1,4 +1,4 @@
-package OA2;
+package AMAZ.OA2;
 
 import java.util.HashMap;
 

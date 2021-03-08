@@ -858,6 +858,7 @@ a. 使用的符号：
     a^b: 取出a与b的不同部分;
 
 
+
 5. Buy And Sell Stock的问题：
 
 主要就是用到了double array的用法， 加上在sell stock这个过程中的各种变化：
@@ -869,7 +870,7 @@ a. 使用的符号：
             int[] buy = new int[len], sell = new int[len];
             buy[0] = - prices[0];
             for(int i = 1; i < len; i++){
-                buy[i] = Math.max(buy[i-1], sell[i-1] - prices[i]（这里可能会收费或者加一个cooldown time什么的）);
+                buy[i] = Math.max(buy[i-1], sell[i-1] - prices[i])（这里可能会收费或者加一个cooldown time什么的）);
                 sell[i] = Math.max(sell[i-1], buy[i-1] + prices[i]);
             }
             return sell[len-1];

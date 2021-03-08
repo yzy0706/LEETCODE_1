@@ -1,4 +1,4 @@
-package OA2;
+package AMAZ.OA2;
 
 public class BreakAPalidrome {
     public String breakPalindrome(String palindrome) {
