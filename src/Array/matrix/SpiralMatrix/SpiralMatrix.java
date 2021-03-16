@@ -1,9 +1,9 @@
-package Array.matrix;
+package Array.matrix.SpiralMatrix;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class spiralMatrix {
+public class SpiralMatrix {
     // solution给的第一种解法是用两个int[] {0, 1, 0, -1}, {1, 0, -1, 0}和一个标记 dir来分别代表纵轴和横轴的移动方向，
     // 在一个 i  <= l*w 的 forloop中如果预先检查到到了纵横的边界则 (dir + 1) % 4.
     public List<Integer> spiralOrder(int[][] matrix) {

@@ -195,9 +195,4 @@ public class NearstCity {
 
     }
 
-
-
-
-
-    }
 }

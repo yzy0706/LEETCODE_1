@@ -1,4 +1,4 @@
-package DynamicProgramming;
+package DynamicProgramming.math;
 
 public class FibonacciNumber {
     // 做法: 最简单的dp做法, 就是简单的叠加前面两个位置的和, return dp[n];

@@ -1,4 +1,4 @@
-package MidpointExpand;
+package TwoPointer.MidpointExpand;
 
 public class JZ_JC_1_ValidPalindrome {
     //网上做法

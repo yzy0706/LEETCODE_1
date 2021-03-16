@@ -2,29 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e8cda-fea1-4f05-ad0b-dac7a748dd3a" name="Default" comment="yyo">
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/accumulate/ChampagneTower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/divideToSubproblems/ChampagneTower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleArray/MinSwapsToMakeSequenceIncreasing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stack/implementDataStructure/BinarySearchTreeIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stack/implementDataStructure/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/MultiplyStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/findDuplicates/FindAllDuplicatesInAnArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/findDuplicates/FindAllNumbersDisappearedInArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DivideAndConquer/MajorityElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/accumulate/MinimumFallingPathSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/accumulate/New21Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/accumulate/PushDominos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/divideToSubproblems/ChooseFromEitherSide/StoneGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/divideToSubproblems/LargestSumOfAverages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/twoDimensionalRelations/LargestSumOfAverages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HashTable/hashMap/FindDuplicateFileInSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HashTable/hashMap/MajorityElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Math/multiply/MultiplyStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sort/constructComparator/StoneGameVI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/reCombine/AsteroidCollision.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/reCombine/CanPlaceFlowers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/shuntingYard/AsteroidCollision.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/shuntingYard/NextGreaterElementI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/shuntingYard/NextGreaterElementII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/BFS/searchInMatrix/SnakesAndLadders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TwoPointer/diffrentDirection/CountBinaryStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TwoPointer/diffrentDirection/ReverseString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Summary.md" beforeDir="false" afterPath="$PROJECT_DIR$/Summary.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OA2/Amazon OA2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/AMAZ/OA2/Amazon OA2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OA2/BreakAPalidrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AMAZ/OA2/BreakAPalidrome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OA2/CopyListWIthRandomPointer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AMAZ/OA2/CopyListWIthRandomPointer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OA2/CountTeams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AMAZ/OA2/CountTeams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OA2/DiskSpaceAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AMAZ/OA2/DiskSpaceAnalysis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OA2/FetchItemsToDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AMAZ/OA2/FetchItemsToDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OA2/FillTruck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AMAZ/OA2/FillTruck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OA2/MaxAverageSubtree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AMAZ/OA2/MaxAverageSubtree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OA2/MinDistanceBetweenRobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AMAZ/OA2/MinDistanceBetweenRobots.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OA2/NearstCity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AMAZ/OA2/NearstCity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OA2/OA2_part1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/AMAZ/OA2/OA2_part1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OA2/OA2_part2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/AMAZ/OA2/OA2_part2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OA2/PackagingAutomation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AMAZ/OA2/PackagingAutomation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OA2/SmallestNegativeBalance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AMAZ/OA2/SmallestNegativeBalance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OA2/SupplierInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AMAZ/OA2/SupplierInventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OA2/WaysToSplitStringIntoPrimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AMAZ/OA2/WaysToSplitStringIntoPrimes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AMAZ/OA2/NearstCity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AMAZ/OA2/NearstCity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AMAZ/distinctSubstrings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AMAZ/medianOfSortedArray_oa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AMAZ/mostCommonWord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AMAZ/stringToInteger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/matrix/rotateImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/matrix/rotateImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/matrix/spiralMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/matrix/SpiralMatrix/SpiralMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/matrix/spiralMatrixII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/matrix/SpiralMatrix/SpiralMatrixII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/matrix/spiralMatrix_mock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/matrix/validSudoku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/matrix/ValidSudoku.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/stringToInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/stringToInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/FibonacciNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/math/FibonacciNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/divideToSubproblems/PredictTheWinner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/divideToSubproblems/ChooseFromEitherSide/PredictTheWinner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/math/CountNumberWithUniqueDigits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/math/CountNumberWithUniqueDigits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MidpointExpand/JZ_JC_1_LongestPanlidromicSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoPointer/MidpointExpand/JZ_JC_1_LongestPanlidromicSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MidpointExpand/JZ_JC_1_ValidPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoPointer/MidpointExpand/JZ_JC_1_ValidPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sort/bucketSort/HIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort/bucketSort/HIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divideAndConquer/maximumSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DivideAndConquer/MaxSubArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,11 +163,11 @@
       <recent name="Tree.DFS.commonAncestors" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Stack.implementDataStructure" />
+      <recent name="Array" />
+      <recent name="Stack.shuntingYard" />
       <recent name="DynamicProgramming.divideToSubproblems" />
+      <recent name="Stack.implementDataStructure" />
       <recent name="DynamicProgramming.accumulate" />
-      <recent name="Tree.BFS" />
-      <recent name="Tree.BFS.searchInMatrix" />
     </key>
   </component>
   <component name="RunManager">
@@ -255,6 +274,11 @@
           <url>file://$PROJECT_DIR$/src/Stack/reCombine/ExclusiveTime.java</url>
           <line>63</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/matrix/ValidSudoku.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

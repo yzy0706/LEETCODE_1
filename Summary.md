@@ -925,6 +925,37 @@ b.  跳跃着组合的
         }
 
 
+7. Divide into subproblem的题
+
+a. Choose From Eitherside的题型
+
+如果是碰到这种从两头轮流选一个才谁赢的题目，
+dp[i][j]代表player1在i， j这段中能取得的最大价值都可以用到这个2D DP,
+ 1. 用一个sum记录当前所有数的和， forloop j从0到len-1， 再forloop i从j-1到0
+ 2. 用mid， bothI， bothJ分别求出来两个人分别选了i， j（当前player1可以选i或者j）， 或者是都选了i， 都选了j四种情况比较大小
+ 3. mid + piles[i]， mid + pile[j], bothI + pile[i], bothJ + pile[j] 更新每一段dp[i][j]的最大值
+ 4. 检查dp[0][len-1]是不是大于sum的一半
+
+
+    public boolean stoneGame(int[] piles) {
+        int len = piles.length;
+        if(len % 2 != 0) return true;
+        int[][] dp = new int[len][len];
+        int sum = 0;
+        for(int j = 0; j < piles.length; j++){
+            dp[j][j] = piles[j];
+            sum += piles[j];
+            for(int i = j - 1; i >= 0; i--){
+                int mid = dp[i+1][j-1];
+                int bothI = i + 2 < len ? dp[i+2][j] : 0;
+                int bothJ = j - 2 >= 0 ? dp[i][j-2] : 0;
+                dp[i][j] = Math.max(Math.max(mid + piles[i], mid + piles[j]), Math.max(bothI + piles[i], bothJ + piles[j]));
+            }
+        }
+        return dp[0][len-1] * 2 > sum;
+    }
+ 
+
 Array
 ------------------------------------------------------------------------------------------------------------------------
 1. Subarray 
@@ -1101,9 +1132,52 @@ d. 求最长长度话可以用map来记录每到一个位置的和：
 
 
 
+3. Find Duplicates In Array
 
+这种在[1, n]的array里找duplicate或者跟448一样找disappeared的元素又要O(1)space的可以尝试把当前的数值 - 1作为index来标记某个数是否出现过
 
+        public List<Integer> findDisappearedNumbers(int[] nums) {
+        List<Integer> res = new ArrayList<>();
+        for(int i = 0; i < nums.length; i++){
+            int val = Math.abs(nums[i]);
+            if(nums[val-1] > 0) nums[val-1] = - nums[val-1];
+        }
 
+        for(int i = 0; i < nums.length; i++){
+            if(nums[i] > 0) res.add(i+1);
+        }
+        return res;
+    }
+
+4. 对于这种图像的旋转是有套路的:
+   
+   1. 如果是顺时针旋转, 对这个图先上下替换, 再沿着对角线替换;
+      
+   2. 如果是逆时针, 对这个图先左右替换, 再沿着对角线替换
+    
+   特别注意上下替换i到n/2就可以了, 而且对角线替换j要从i+1开始, 也就是只操作对角线的右半部分, 如果对于整个matrix都操作的话那一开始换过去， 然后浏览到换过去的位置又换回来了, 等于什么都没干
+
+            
+            public void rotate_reviewed(int[][] matrix) {
+                int n = matrix.length;
+        
+                for(int i = 0; i < n/2; i++){
+                    for(int j = 0; j < n; j++){
+                        int temp = matrix[i][j];
+                        matrix[i][j] = matrix[n-1-i][j];
+                        matrix[n-1-i][j] = temp;
+                    }
+                }
+        
+                for(int i = 0; i < n; i ++){
+                    for(int j = i + 1; j < n; j ++){
+                        int temp = matrix[i][j];
+                        matrix[i][j] = matrix[j][i];
+                        matrix[j][i] = temp;
+                    }
+                }
+        
+            }
 LinkedList
 ------------------------------------------------------------------------------------------------------------------------
 

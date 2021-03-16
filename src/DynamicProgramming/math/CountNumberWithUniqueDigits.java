@@ -10,6 +10,7 @@ public class CountNumberWithUniqueDigits {
     // 然后 dp[i] = dp[i-1] + newNumbers;
 
     // Runtime: O(n), space: O(n)
+
     public int countNumbersWithUniqueDigits(int n) {
         if(n == 0) return 1;
         if(n == 1) return 10;

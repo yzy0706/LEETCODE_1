@@ -1,7 +1,8 @@
-package divideAndConquer;
+package DivideAndConquer;
 
-public class maximumSubarray {
-    // divideAndConquer解法中心就是把这个int[]拆成左右两部分，分別找左、右和左右共用的的最大sum，然后再继续分下去直到 left == right
+public class MaxSubArray {
+    // DivideAndConquer解法中心就是把这个int[]拆成左右两部分，分別找左、右和左右共用的的最大sum，
+    // 然后再继续分下去直到 left == right
     public int maxSubArray(int[] nums){
         return divide(nums, 0, nums.length - 1);
     }

@@ -1,4 +1,4 @@
-package DynamicProgramming.divideToSubproblems;
+package DynamicProgramming.divideToSubproblems.ChooseFromEitherSide;
 
 public class PredictTheWinner {
     //做法: 属于dp里面记录sub problem的做法, dp[i][j]代表player 1在[i, j]的区间能得到的最大结果
