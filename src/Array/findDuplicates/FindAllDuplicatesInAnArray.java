@@ -7,8 +7,8 @@ import java.util.Set;
 
 public class FindAllDuplicatesInAnArray {
 
-    // 做法: 这种在[1, n]的array里找duplicate或者跟448一样找disappeared的元素又要O(1)space的
-    // 可以尝试把当前的数值 - 1作为index来标记某个数是否出现过
+    // 做法: 这种在[1, n]的array里找duplicate或者跟448一样找disappeared的元素
+    // 又要O(1)space的都可以尝试把当前的数值 - 1作为index来标记某个数是否出现过。
     // 1. int val = Math.abs(nums[i]); if(nums[val-1] < 0) res.add(val); 证明之前已经出现过相同的数把这里变成负数了
     // 2. 每一步最后都把nums[val-1] = - nums[val-1];
 

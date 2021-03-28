@@ -1,6 +1,6 @@
-package Array;
+package Array.findIndex;
 
-public class implementStr {
+public class ImplementStr {
 
     public int str(String haystack, String needle){
         if (needle.equals(null)){

@@ -1,9 +1,9 @@
-package Array.matrix;
+package Array.matrix.Rotate;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class rotateImage {
+public class RotateImage {
     // 做法: 对于这种图像的旋转是有套路的:
     // 1. 如果是顺时针旋转, 对这个图先上下替换, 再沿着对角线替换;
     // 2. 如果是逆时针, 对这个图先左右替换, 再沿着对角线替换

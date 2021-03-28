@@ -1,6 +1,8 @@
-package Array;
+package Array.findIndex;
 
-public class findFirstOccurenceString {
+public class FindFirstOccurenceString {
+    // 做法： 直接return indexOf或者 substring(i, i + need.length());
+    // Runtime: O(n), Space: O(1)
    public int solution1 (String haystack, String needle){
        if(needle == "") return 0;
        return haystack.indexOf(needle);

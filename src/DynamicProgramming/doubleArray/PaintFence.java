@@ -1,4 +1,4 @@
-package DynamicProgramming.adjacent;
+package DynamicProgramming.doubleArray;
 
 public class PaintFence {
     // 准备两个dp, same和diff, 一个代表same[i]个步骤和i-1的步骤的颜色是一样的, diff[i]表示第i个步骤和i-1个步骤的颜色是不一样的,

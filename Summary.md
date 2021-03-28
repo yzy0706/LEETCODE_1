@@ -241,6 +241,37 @@ c.  有负数让你sort平方以后的情况的题：
                   if(a < 0) temp[startIndex++] = calcalate(nums[l]) >= calculate(nums[r])? nums[r--] : nums[l++];
                }
 
+
+d. Use Val As Index
+
+在constant O(1) 的space下， 有当前一个array的数， 要记录之前出现的所有数， 让你找整个array里缺失或者重复出现的数
+
+1. forloop nums上的每一位, 如果当前位置的值大于0, 小于等于nums.length, 则当前的值可以作为index, 
+   则用一个whileloop一直swap i 和 nums[i]-1上的数, 也可以用swap了以后再i--, 因为下一轮i又会++回来继续判断当前位置的值是不是就是i++
+    
+2. 设置当前最小的missing positive是1, 只要当前res应该还在num上就一直往大的移动, 一直到找到nums上当前res-1位置不是对应的值res, 或者当前nums长度以内的数都是符合条件的
+
+
+
+         public int firstMissingPositive_valToMark(int[] nums) {
+            if(nums.length < 1) return 1;
+            for(int i = 0; i < nums.length; i++){
+                if(nums[i] == i + 1 || nums[i] < 0) continue;
+                while(nums[i] > 0 && nums[i] <= nums.length && nums[nums[i] - 1] != nums[i]) swap(nums, i, nums[i] - 1);
+            }
+            int res = 1;
+            while(res <= nums.length && nums[res-1] == res){
+                res ++;
+            }
+            return res;
+         }
+
+        public void swap(int[] nums, int i, int j){
+            int temp = nums[i];
+            nums[i] = nums[j];
+            nums[j] = temp;
+        }
+
 Tree
 ------------------------------------------------------------------------------------------------------------------------
 

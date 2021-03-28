@@ -1,31 +1,11 @@
 package Graph.DFS.path;
 
-import Tree.DFS.TreeNode;
-import Tree.DFS.path.PathSum;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class AllNodesDistanceKInBinaryTree {
-    class TreeNode {
-        int val;
-        PathSum.TreeNode left;
-        PathSum.TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, PathSum.TreeNode left, PathSum.TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
 //做法: 先用一个dfs方程 findTarget 从root左右子树向下开始找寻target, 如果找到了target就会从return 0开始一层层的加一上来, 就得到了root到target的距离, 然后map里就包含了当前所有root到target路径上的TreeNode以及他们到target的距离;
     // 在这个基础上我们再建立一个方程去从root开始dfs左右叶子节点并且距离从map.get(root)开始每次dfs都+1,
     //但是如果当前map里本来就有这个TreeNode的话我们应该把当前的distance换成map.get(root), 再跟着正常步骤一起判断 distance == K的情况

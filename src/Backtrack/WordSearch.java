@@ -1,8 +1,55 @@
-package Array.matrix;
+package Backtrack;
 
-public class wordSearch {
+public class WordSearch {
+    // 做法: 这题融合了dfs和backtrack, 重点是怎么样去避免从一个位置延伸以后又返回到这个位置来
+    // 方法是:
+    // 1. 当dfs的helper每次浏览到一个位置时, 把当前这个位置设置成‘#’, 然后进行下一步的dfs拓展, 这样因为当前的位置是'#'肯定不属于word里面的字符所以不可能再回来
+    // 2. dfs完四个方向以后再把当前的位置恢复到board[i][j] = word.charAt(pos); 因为char[][]是引用参数
+
+    //Runtime: O(mn), Space: O(mn)
+
+    int m, n;
+    public boolean exist_dfs_backtrack(char[][] board, String word) {
+        m = board.length; n = board[0].length;
+        for(int i = 0; i < m; i ++){
+            for(int j = 0; j < n; j++){
+                if(dfs(board, word, 0, i, j)){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public boolean dfs(char[][] board, String word, int pos, int i, int j){
+        if(pos >= word.length()){
+            return true;
+        }
+        int[] curPos = new int[]{i, j};
+        if(i < 0 || i >= m || j < 0 || j >= n || board[i][j] != word.charAt(pos)){
+            return false;
+        }
+        board[i][j] = '#';
+        int[] rowOffsets = {0, 1, 0, -1};
+        int[] colOffsets = {1, 0, -1, 0};
+        for(int a = 0; a < rowOffsets.length; a++){
+            if(dfs(board, word, pos+1, i + rowOffsets[a], j + colOffsets[a])){
+                return true;
+            }
+        }
+        // boolean res = dfs(board, word, pos+1, i+1, j) || dfs(board, word, pos+1, i-1, j) || dfs(board, word, pos+1, i, j+1) || dfs(board, word, pos+1, i, j-1);
+        board[i][j] = word.charAt(pos);
+        return false;
+    }
+
+
+
+
+
+
+
     //看了答案以后修改的，主要是删了一个boolean[][]，如果浏览过了就改成'#',其他没太大区别
-    public boolean exist(char[][] board, String word) {
+    public boolean exist_discussion2(char[][] board, String word) {
         int m = board.length, n = board[0].length;
         char[] l = word.toCharArray();
         boolean[][] visited = new boolean[m][n];
@@ -47,7 +94,7 @@ public class wordSearch {
 
 
 
-    \
+
 
 
     //leetcode给的答案
@@ -55,7 +102,7 @@ public class wordSearch {
     private int ROWS;
     private int COLS;
 
-    public boolean exist(char[][] board, String word) {
+    public boolean exist_discussion1(char[][] board, String word) {
         this.board = board;
         this.ROWS = board.length;
         this.COLS = board[0].length;
@@ -101,8 +148,8 @@ public class wordSearch {
 
 
 
-    //第一遍自己用recursion写的
-    public boolean exist(char[][] board, String word) {
+    //第一遍自己用dfs写的
+    public boolean exist_firstTry(char[][] board, String word) {
         int m = board.length, n = board[0].length;
         char[] l = word.toCharArray();
         boolean[][] visited = new boolean[m][n];
@@ -121,7 +168,7 @@ public class wordSearch {
             visited[i][j] = false;
             return true;
         }
-        if(!visited[i][j] && i board[i][j] == l[pos] ){
+        if(!visited[i][j] &&  board[i][j] == l[pos] ){
             visited[i][j] = true;
             return expand(board, l, pos+1, i-1, j, visited) && expand(board, l, pos+1, i+1, j, visited) && expand(board, l, pos+1, i, j+1, visited) && expand(board, l, pos+1, i, j-1, visited);
         }

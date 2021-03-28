@@ -40,6 +40,35 @@ public class LongestFibonacciSubsequence {
 
     }
 
+
+
+
+
+    public int lenLongestFibSubseq_reviewed(int[] arr) {
+        if(arr.length < 3) return 0;
+        int len = arr.length;
+        HashMap<Integer, Integer> pos = new HashMap<>();
+        int[][] dp = new int[len][len];
+        int res = 0;
+        pos.put(arr[0], 0);
+        dp[0][0] = 1;
+        for(int r = 1; r < arr.length; r++){
+            for(int l = r-1; l >= 0; l--){
+                int diff = arr[r] - arr[l];
+                if(pos.containsKey(diff) && diff < arr[l]){
+                    int diffPos = pos.get(diff);
+                    dp[l][r] = dp[diffPos][l] + 1;
+                }
+                else{
+                    dp[l][r] = 2;
+                }
+                res = Math.max(res, dp[l][r]);
+            }
+            pos.put(arr[r], r);
+        }
+        return res == 2 ? 0 : res;
+    }
+
     // 做法: 简单的two pointer方法, 检查l + r存不存在, 存在就继续更新
     // Runtime : O(n^2log(maxNumber)), Space: O(n)
     public int lenLongestFibSubseq_twoPointer(int[] arr) {
