@@ -1,37 +1,57 @@
 package BinarySearch.rotatedSortedArray;
 
 public class RotatedArrayFindMin {
+
+    // 做法: 复习的时候统一了一下sorted array的做法
+    // 1. 到了极限情况直接return
+    // 2. 一般是比较start到mid是不是递增区间, 但因为这里是在找最小值, 如果start到mid是递增我们就直接跳过了, 那最后我们只剩下一个递增区间的时候我们也会把左边跳过, 所以我们先比较mid到end是不是递增区间, 这样就算最后二分到只剩下一个递增区间了我们也会优先因为mid到end是递增的而自动跳到左边
+
+    // Runtime:  O(log(n))， space: O(1)
+
+    public int findMin_reviewed(int[] nums) {
+        if(nums.length == 1) return nums[0];
+        return  bSearch(nums, 0, nums.length-1);
+    }
+
+    private int bSearch(int[] nums, int start, int end){
+        if(start == end) return nums[start];
+        int mid = (start + end)/2;
+        if(nums[mid] < nums[end])  return bSearch(nums, start, mid);
+        return bSearch(nums, mid+1, end);
+    }
+
+
+
     //第二遍按照题目的写法写的
-    //做法：碰到Rotated Array的题都是以mid为界要在一个在找sorted和没有sorted的过程， 这个题也不例外， 但这个题不可以先去比较左边是不是sorted再去比较右边
-    // 因为假如我们第一遍根据不去sorted的部分找目标的原则， 我们把sorted好的左边跳过, 因为最小值肯定在没有无序的地方（最小值在
+    // 做法：碰到Rotated Array的题都是以mid为界要在一个在找sorted和没有sorted的过程， 这个题也不例外，
+    // 但这个题不可以先去比较左边是不是sorted再去比较右边， 因为假如我们第一遍根据不去sorted的部分找目标的原则， 我们把sorted好的左边跳过, 因为最小值肯定在没有无序的地方
     // 那么我们在最终得到一个sorted好了的区间，我去找左边的最小值并return start时候， 我们又默认忽略了左边区间，
     // 所以我们就算忽略sorted的部分我们也应该先忽略右边
     // 所以跟寻找target不同的是我们在寻找最小值的过程中应该先比较 nums[mid] < nums[end]， 是的话就mid = end；
 
     // Runtime:  O(log(n))， space: O(1)
 
-    public int findMin_2(int[] nums) {
-        if(nums.length == 1) return nums[0];
-        int start = 0, end = nums.length-1;
+    public int findMin_3(int[] nums) {
+        if (nums.length == 1) return nums[0];
+        int start = 0, end = nums.length - 1;
         int res = Integer.MAX_VALUE;
-        while(start < end){
-            int mid = start + (end-start)/2;
-            if(nums[mid] < nums[end]){ //右边sorted
+        while (start < end) {
+            int mid = start + (end - start) / 2;
+            if (nums[mid] < nums[end]) { //右边sorted
                 end = mid;
-            }
-            else{
-                start = mid+1;
+            } else {
+                start = mid + 1;
             }
         }
         return nums[start];
-
+    }
 
 
 
 
 
         //跟第二个solution一样的解法 但是我把先比较mid和start来寻找unsorted改成了先比较start和mid， 结果就不对了
-    public int findMin(int[] nums) {
+    public int findMin_2(int[] nums) {
         if(nums.length == 1) return nums[0];
         int start = 0, end = nums.length-1;
         int res = Integer.MAX_VALUE;

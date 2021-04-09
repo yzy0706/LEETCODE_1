@@ -1,11 +1,17 @@
 package BinarySearch.search;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MostLeftColumnWithOne {
-    interface BinaryMatrix {
-        public default int get(int row, int col) {}
-        public  List<Integer> dimensions{}
+    class BinaryMatrix{
+        public  List<Integer> dimensions;
+        public BinaryMatrix(){
+            this.dimensions = new ArrayList<>();
+        }
+        public int get(int row, int col) {
+            return dimensions.get(row);
+        }
     };
 
 
@@ -14,8 +20,8 @@ public class MostLeftColumnWithOne {
     // 2. 当前mid的column里没有1, 直接把start变成mid+1看之后有没有1
 
     // Runtime: O(log(l)*w),在整个matrix的长度的基础上做binary search, space: O(1);
-    public int leftMostColumnWithOne(BinaryMatrix binaryMatrix) {
-        List<Integer> dimen = binaryMatrix.dimensions();
+    public int leftMostColumnWithOne_1(BinaryMatrix binaryMatrix) {
+        List<Integer> dimen = binaryMatrix.dimensions;
         int m = dimen.get(0), n = dimen.get(1);
         int left = 0, right = n - 1, ans = -1;
         while (left <= right) {
@@ -39,8 +45,8 @@ public class MostLeftColumnWithOne {
     //第二种做法： 直接从右上角开始往下， 如果碰到0直接往下找1， 碰到1往左找1
     //Runtime: O(w+l), space: O(1)
 
-    public int leftMostColumnWithOne(BinaryMatrix binaryMatrix) {
-        List<Integer> dimen = binaryMatrix.dimensions();
+    public int leftMostColumnWithOne_2(BinaryMatrix binaryMatrix) {
+        List<Integer> dimen = binaryMatrix.dimensions;
         int m = dimen.get(0), n = dimen.get(1);
         int ans = -1, r = 0, c = n - 1;
         while (r < m && c >= 0) {
@@ -57,8 +63,8 @@ public class MostLeftColumnWithOne {
 
 
 //第二遍改的
-    public int leftMostColumnWithOne(BinaryMatrix binaryMatrix) {
-        List<Integer> dimension = binaryMatrix.dimensions();
+    public int leftMostColumnWithOne_3(BinaryMatrix binaryMatrix) {
+        List<Integer> dimension = binaryMatrix.dimensions;
         int w = dimension.get(0), l = dimension.get(1);
         int res = -1;
         int start = 0, end = l - 1;
@@ -88,7 +94,7 @@ public class MostLeftColumnWithOne {
 
     //第一遍自己做的
     public int leftMostColumnWithOne(BinaryMatrix binaryMatrix) {
-        List<Integer> dimension = binaryMatrix.dimensions();
+        List<Integer> dimension = binaryMatrix.dimensions;
         int w = dimension.get(0), l = dimension.get(1);
         int res = Integer.MAX_VALUE;
 

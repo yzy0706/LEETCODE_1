@@ -9,6 +9,38 @@ package BinarySearch.rotatedSortedArray;
 // Runtime: 最差的情况是  O(n), 也就是到了最后一位才找得到我想要的target，之前全都是连续性的一样的数字， 我得一直start++, Space: O(1)
 
 public class RotatedSortedArrayII {
+
+    public boolean search_3(int[] nums, int target) {
+        return binarySearch_3(target, nums, 0, nums.length-1);
+    }
+
+    public boolean binarySearch_3(int target, int[] nums, int start, int end){
+        if(start > end) return false;
+        int mid = start + (start + end)/2;
+        if(nums[mid] == target) return true;
+
+        if(nums[start] < nums[mid]){ //左边是排序的
+            //这里比较的是target < nums[start], 因为要包括end
+            if(target < nums[start] || target > nums[mid]) return binarySearch(target, nums, mid+1, end);//target在rotated里面, 先考虑在混乱里的情况
+            else return binarySearch(target, nums, start, mid-1);
+        }
+
+        else if(nums[start] > nums[mid]){//右边是排好序的,我们先考虑左边混乱的地方的情况
+            //这里也是target > nums[end], 因为要包括start
+            if(target < nums[mid] || target > nums[end]) return binarySearch(target, nums, start, mid-1);
+            else return binarySearch(target, nums, mid+1, end);
+        }
+
+        return binarySearch(target, nums, start+1, end);
+        //假设nums[start] == nums[mid], 那我们只能往后移动
+    }
+
+
+
+
+
+
+
     public boolean search_whileloop(int[] nums, int target) {
         //跟答案一模一样的
         int start = 0, end = nums.length - 1;
@@ -42,7 +74,7 @@ public class RotatedSortedArrayII {
 
 
     //第二遍根据答案写的recursion解法
-    public boolean search(int[] nums, int target) {
+    public boolean search_2(int[] nums, int target) {
         return binarySearch(target, nums, 0, nums.length-1);
     }
 
@@ -71,43 +103,40 @@ public class RotatedSortedArrayII {
 
 
 
-    public boolean search(int[] nums, int target) {
-        return binarySearch(target, nums, 0, nums.length-1);
-    }
-
-    public boolean binarySearch(int target, int[] nums, int start, int end){
-        if(start > end) return false;
-        int mid = start + (start + end)/2;
-        if(nums[mid] == target) return true;
-
-        if(nums[mid] > nums[start]){ //左边是排序的
-            if(target < nums[start] || target > nums[mid]) return binarySearch(target, nums, mid+1, end);//target在rotated里面, 先考虑在混乱里的情况
-            else return binarySearch(target, nums, start, mid-1);
-        }
-
-
-        // if(target >= nums[start] && target <= nums[mid]){
-        //     return binarySearch(target, nums, start, mid-1);
-        // }
-        // else return binarySearch(target, nums, mid+1, end);
-
-        else if(nums[start] > nums[mid]){//右边是排好序的,我们先考虑左边混乱的地方的情况
-            if(target > nums[end] || target < nums[mid]) return binarySearch(target, nums, start, mid-1);
-            else return binarySearch(target, nums, start, mid-1);
-            // if(target >= nums[mid] && target <= nums[end]) return binarySearch(target, nums, mid+1, end);
-            // return binarySearch(target, nums, start, mid-1);
-        }
-
-        return binarySearch(target, nums, start+1, end); //假设nums[start] == nums[mid], 那我们只能往后移动
-    }
-}
-
-
+//    public boolean search(int[] nums, int target) {
+//        return binarySearch(target, nums, 0, nums.length-1);
+//    }
+//
+//    public boolean binarySearch(int target, int[] nums, int start, int end){
+//        if(start > end) return false;
+//        int mid = start + (start + end)/2;
+//        if(nums[mid] == target) return true;
+//
+//        if(nums[mid] > nums[start]){ //左边是排序的
+//            if(target < nums[start] || target > nums[mid]) return binarySearch(target, nums, mid+1, end);//target在rotated里面, 先考虑在混乱里的情况
+//            else return binarySearch(target, nums, start, mid-1);
+//        }
+//
+//
+//        // if(target >= nums[start] && target <= nums[mid]){
+//        //     return binarySearch(target, nums, start, mid-1);
+//        // }
+//        // else return binarySearch(target, nums, mid+1, end);
+//
+//        else if(nums[start] > nums[mid]){//右边是排好序的,我们先考虑左边混乱的地方的情况
+//            if(target > nums[end] || target < nums[mid]) return binarySearch(target, nums, start, mid-1);
+//            else return binarySearch(target, nums, start, mid-1);
+//            // if(target >= nums[mid] && target <= nums[end]) return binarySearch(target, nums, mid+1, end);
+//            // return binarySearch(target, nums, start, mid-1);
+//        }
+//
+//        return binarySearch(target, nums, start+1, end); //假设nums[start] == nums[mid], 那我们只能往后移动
+//    }
 
 
 
     //第一遍自己写的
-    public boolean search(int[] arr, int target) {
+    public boolean search_1(int[] arr, int target) {
         int start = 0, end = arr.length - 1;
         while(start <= end){
             int mid = start + (end - start)/2;

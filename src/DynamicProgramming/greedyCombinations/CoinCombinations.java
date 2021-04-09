@@ -6,6 +6,7 @@ public class CoinCombinations {
     //做法: 对于每一个coin, 我都forloop它的面值一直到amount, 如果dp[i-coin]也有值的话代表着到这个值需要的最少的硬币个数, 加上这枚硬币就是+1, 然后与dp[i]比
     //所以我们得到如果 (dp[i - coin] != Integer.Max_Value) dp[i] = Math.min(dp[i], dp[i-coin]);
     //Runtime: 最坏的情况是我每次在coin上都加了整个amount的大小, 所以是O(n^2), Space是O(N), N是amount的大小
+
     public int coinChange(int[] coins, int amount) {
         if(amount < 1) return 0;
         int[] dp = new int[amount+1];

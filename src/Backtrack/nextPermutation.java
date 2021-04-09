@@ -19,8 +19,6 @@ public class nextPermutation {
             swap(nums,i,j);
         }
         reverse(nums,i+1);
-
-
     }
 
 

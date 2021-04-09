@@ -29,15 +29,16 @@ public class sqrt {
             return 0;
         int left = 1, right = x;
         while (true) {
-            int mid = left + (right - left)/2;
-            if (mid > x/mid) {
+            int mid = left + (right - left) / 2;
+            if (mid > x / mid) {
                 right = mid - 1;
             } else {
-                if (mid + 1 > x/(mid + 1))
+                if (mid + 1 > x / (mid + 1))
                     return mid;
                 left = mid + 1;
             }
         }
+    }
 
 
 
@@ -45,7 +46,7 @@ public class sqrt {
 
         //牛顿解法
     double err = 0.01;
-    public int sqrt(int x){
+    public int sqrt_newton(int x){
         double n = (double)x;
         double tmp = x/2;
         while(Math.abs(tmp * tmp - x) >= err){
