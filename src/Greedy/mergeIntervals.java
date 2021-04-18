@@ -1,6 +1,7 @@
 package Greedy;
 
 import java.util.Arrays;
+import java.util.LinkedList;
 
 public class mergeIntervals{
        //主要就是建一个linkedList， getLast() 去比较前一个interval是不是overlap，比较前一个[1]和最后一个[0]就好
@@ -20,5 +21,5 @@ public class mergeIntervals{
 
             return res.toArray(new int[res.size()][]);
 
-        }{
+        }
 }

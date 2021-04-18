@@ -1,15 +1,13 @@
 package Tree.DFS.path;
 
-import Tree.DFS.TreeNode;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class PathSumII {
         class TreeNode {
             int val;
-            Tree.DFS.path.TreeNode left;
-            Tree.DFS.path.TreeNode right;
+            PathSum.TreeNode left;
+            PathSum.TreeNode right;
 
             TreeNode() {
             }
@@ -18,7 +16,7 @@ public class PathSumII {
                 this.val = val;
             }
 
-            TreeNode(int val, Tree.DFS.path.TreeNode left, Tree.DFS.path.TreeNode right) {
+            TreeNode(int val, PathSum.TreeNode left, PathSum.TreeNode right) {
                 this.val = val;
                 this.left = left;
                 this.right = right;

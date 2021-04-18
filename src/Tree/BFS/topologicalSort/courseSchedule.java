@@ -1,11 +1,6 @@
 package Tree.BFS.topologicalSort;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Queue;
+import java.util.*;
 
 public class courseSchedule {
     //主要就是加了个new int[] indegree; 先用indegree记录所有课程的prerequisites数量（入数）， 然后再用一个forloop

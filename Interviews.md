@@ -44,3 +44,12 @@
    1.  给一个 List<Integer> nodes, 一个父节点root， 返回当前的nodes是不是二叉树里面的有效路径
 
       
+
+
+3.  巨硬
+
+   1. Tech一面： lc 977 , 给了三个解法
+      
+      a. follow up ： 有没有O(1) Space的解法： 我说之前那个square再sort就行
+
+      b. 为什么不能直接edit array ： 因为可能会把原来的数字替代掉， 这样就找不到之前的， 要另外储存就还是O(N) space

@@ -45,32 +45,33 @@ public class candy {
 
 // Time Complexity: O(n)
 // Space Complexity: O(1)
+//
+//            #include <vector>
+//    using std::vector;
+//
+//    class Solution {
+//        public:
+//        int candy(vector<int>& ratings) {
+//            if (ratings.size() == 0) return 0;
+//            int res = 1;
+//            int up = 0, down = 0, peak = 0;
+//            for (int i = 1; i < ratings.size(); i++) {
+//                if (ratings[i - 1] < ratings[i]) {
+//                    peak = ++up;
+//                    down = 0;
+//                    res += 1 + up;
+//                } else if (ratings[i - 1] == ratings[i])  {
+//                    peak = up = down = 0;
+//                    res += 1;
+//                } else {
+//                    up = 0;
+//                    down++;
+//                    // when peak >= down, the candies for the peak still don't need to change.
+//                    res += 1 + down + (peak >= down ? -1 : 0);
+//                }
+//            }
+//            return res;
+//        }
+//    };
 
-            #include <vector>
-    using std::vector;
-
-    class Solution {
-        public:
-        int candy(vector<int>& ratings) {
-            if (ratings.size() == 0) return 0;
-            int res = 1;
-            int up = 0, down = 0, peak = 0;
-            for (int i = 1; i < ratings.size(); i++) {
-                if (ratings[i - 1] < ratings[i]) {
-                    peak = ++up;
-                    down = 0;
-                    res += 1 + up;
-                } else if (ratings[i - 1] == ratings[i])  {
-                    peak = up = down = 0;
-                    res += 1;
-                } else {
-                    up = 0;
-                    down++;
-                    // when peak >= down, the candies for the peak still don't need to change.
-                    res += 1 + down + (peak >= down ? -1 : 0);
-                }
-            }
-            return res;
-        }
-    };
 }

@@ -11,7 +11,7 @@ import java.util.PriorityQueue;
 public class Dijkstra_Map {
     public static void main (String[] args){
         int MAX = Integer.MAX_VALUE;
-        HashMap<Integer, List<int[]>> map = new HashMap<>();\
+        HashMap<Integer, List<int[]>> map = new HashMap<>();
         List<int[]> cur0 = new ArrayList<>();
         cur0.add(new int[]{1, 1});
         cur0.add(new int[]{2, 12});
@@ -73,7 +73,7 @@ public class Dijkstra_Map {
             for(int i = curStart; i < distances.size(); i++){
                 if(i != curStart && !visited[i] && distances.get(i)[1] < minDistance) {
                     minDistance = distances.get(i)[1];
-                    curStop = distances.get()
+//                    curStop = distances.get()
                 }
             }
 
@@ -83,7 +83,7 @@ public class Dijkstra_Map {
         }
 
 
-
+    return 0;
 
     }
 }

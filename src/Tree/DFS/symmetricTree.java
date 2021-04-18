@@ -44,7 +44,7 @@ public class symmetricTree {
 
 
     //自己写的queue的办法
-    public boolean isSymmetric(TreeNode root) {
+    public boolean isSymmetric_2(TreeNode root) {
         if (root == null) {
             return true;
         }
@@ -93,5 +93,4 @@ public class symmetricTree {
 //        }
 //        else return false;
 
-}
 }

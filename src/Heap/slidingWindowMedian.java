@@ -8,7 +8,7 @@ public class slidingWindowMedian {
     public double[] medianSlidingWindow(int[] nums, int k) {
         Queue<Integer> minHeap = new PriorityQueue<>();
         Queue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
-        double[] res = new double[];
+        double[] res = new double[nums.length];
         int i = 0, j = k-1;
         for( j = k-1; j < nums.length; j++){
             while(i < j + 1){

@@ -43,9 +43,9 @@ public class BinarySearchTreeIterator {
         Stack<TreeNode> fathers = new Stack<>();
         TreeNode pointer;
 
-        public BSTIterator(TreeNode root) {
-            dfs(root);
-        }
+//        public BSTIterator(TreeNode root) {
+//            dfs(root);
+//        }
 
         public void dfs(TreeNode cur){
             if(cur == null) return;

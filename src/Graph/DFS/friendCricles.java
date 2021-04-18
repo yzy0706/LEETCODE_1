@@ -31,33 +31,32 @@ public class friendCricles {
     }
 
 
-    //第一遍用map和dfs写的，有点太复杂了
-    public int findCircleNum(int[][] M) {
-        int w = M.length;
-        if(w < 1) return 0;
-        int l = M[0].length;
-        Map<int[], List<int[]>> map = new HashMap<>();
-
-        for(int i = 0; i < w; i++){
-            for(int j = 0; j < l; j++){
-                if(M[i][j] == 1){
-                    int[] friend = new int[2]{j, i};
-                    int[] cur = new int[2]{i, j};
-                    if(!map.containsKey(friend)){
-                        map.put(cur, new int[2]);
-                    }
-                    else{
-                        map.replace(friend, map.get(friend), cur);
-                        expand(M, i, j, map, cur);
-                    }
-                }
-
-            }
-        }
-    }
-
-    public void expand(int[][] M, int i, int j, Map<int[], int[]> map, int[] cur){
-        if(M[i][j] == 0) return;
-        if(M[i][j] == )
-    }
+//    //第一遍用map和dfs写的，有点太复杂了
+////    public int findCircleNum(int[][] M) {
+////        int w = M.length;
+////        if(w < 1) return 0;
+////        int l = M[0].length;
+////        Map<int[], List<int[]>> map = new HashMap<>();
+////
+////        for(int i = 0; i < w; i++){
+////            for(int j = 0; j < l; j++){
+////                if(M[i][j] == 1){
+////                    int[] friend = new int[2]{j, i};
+////                    int[] cur = new int[2]{i, j};
+////                    if(!map.containsKey(friend)){
+////                        map.put(cur, new int[2]);
+////                    }
+////                    else{
+////                        map.replace(friend, map.get(friend), cur);
+////                        expand(M, i, j, map, cur);
+////                    }
+////                }
+////
+////            }
+////        }
+////    }
+////
+////    public void expand(int[][] M, int i, int j, Map<int[], int[]> map, int[] cur){
+////        if(M[i][j] == 0) return;
+////        if(M[i][j] == )
 }

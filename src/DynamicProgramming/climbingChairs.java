@@ -23,7 +23,7 @@ public class climbingChairs {
 
 
     //recursion 解法stack overflow
-    public int climbStairs(int n) {
+    public int climbStairs_1(int n) {
         if(n==0) return 0;
         int[] res = new int[1];
         int cur = n;
@@ -44,22 +44,20 @@ public class climbingChairs {
         }
     }
 
-}
-
 //递增dp法
 
 
-    public int climbStairs(int n) {
-        int[] list = new int[n + 1];
-        check(list, n);
-    }
-
-    public int check(int[] list, int n){
-        if(n<=2) list[n] = n;
-        if(list[n] == 0) list[n] = check(list,n-1) + check(list, n-2);
-        return list[n];
-
-}
+//    public int climbStairs(int n) {
+//        int[] list = new int[n + 1];
+//        check(list, n);
+//    }
+//
+//    public int check(int[] list, int n){
+//        if(n<=2) list[n] = n;
+//        if(list[n] == 0) list[n] = check(list,n-1) + check(list, n-2);
+//        return list[n];
+//
+//}
 
 
 
@@ -83,6 +81,7 @@ public class climbingChairs {
         memory[n] = climb(n-1, memory) + climb(n-2, memory);
         return memory[n];
     }
+}
 
 
 

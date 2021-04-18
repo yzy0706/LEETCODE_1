@@ -1152,8 +1152,22 @@ d. 求最长长度话可以用map来记录每到一个位置的和：
     }
 
 
+e. 如果是在forloop上面通过另外一个pointer跳跃到一个位置， 当前的i要跳跃到想去的位置的前一个， 因为在进入下一次forloop前还会++一次到想要的位置
 
-
+        public int partitionDisjoint(int[] A) {
+            int lMax = A[0], pos = 0, len = A.length;
+            for(int l = 0; l < len; l++){
+                pos = l;
+                int r = l + 1;
+                int curMax = lMax;
+                while(r < len && A[r] >= lMax) curMax = Math.max(curMax, A[r++]);
+                if(r == len) break;
+                lMax = curMax;
+                l = r - 1;
+            }
+        
+            return pos + 1;
+        }
 
 2. matrix:
    
