@@ -1,7 +1,11 @@
 package Graph.BFS.topologicalSort;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class courseScheduleII {
     //跟courseSchdule一样, 只是每当indegree[taking]等于0的时候要设置res[pos++]= taking; 这里pos是先使用了再++
+
     public int[] findOrder(int numCourses, int[][] prerequisites) {
         int[] res = new int[numCourses];
         int[] indegree = new int[numCourses];
@@ -36,6 +40,6 @@ public class courseScheduleII {
 
 
         if(numTaken == numCourses) return res;
-        return new int[0];
+        return res;
     }
 }

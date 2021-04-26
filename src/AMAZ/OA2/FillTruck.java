@@ -4,17 +4,16 @@ import java.util.*;
 
 public class FillTruck {
     //刀说的先sort再写
-    long getMaxUnit(int num, ArrayList<Integer> boxes, int unitSize, ArrayList<Integer> unitsPerBox, long truckSize ){
+    long getMaxUnit(int num, ArrayList<Integer> boxes, int unitSize, ArrayList<Integer> unitsPerBox, long truckSize) {
         List<int[]> products = new ArrayList<>();
-        for(int i = 0; i < num; i++) products.add(new int[]{boxes[i], unitsPerBox.get(i)});
+        for (int i = 0; i < num; i++) products.add(new int[]{boxes.get((i)), unitsPerBox.get(i)});
         products.sort((a, b) -> b[1] - a[1]);
         long res = 0;
-        for(int[] p : products){
-            if(truckSize >= p[0]){
+        for (int[] p : products) {
+            if (truckSize >= p[0]) {
                 res += p[0] * p[1];
                 truckSize -= p[0];
-            }
-            else{
+            } else {
                 res += truckSize * p[1];
                 break;
             }
@@ -25,20 +24,21 @@ public class FillTruck {
     }
 
 
-    public int fillTheTruck(int num, int[] boxes, int unitSize, int[] unitsPerBox, long truckSize){
+    public int fillTheTruck(int num, int[] boxes, int unitSize, int[] unitsPerBox, long truckSize) {
         PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> b[1] - a[1]); //maxHeap
-        for(int i = 0; i < num; i++) {
+        for (int i = 0; i < num; i++) {
             pq.offer(new int[]{boxes[i], unitsPerBox[i]});
         }
         int res = 0;
-        while(truckSize > 0 && !pq.isEmpty()){
+        while (truckSize > 0 && !pq.isEmpty()) {
             int[] cur = pq.poll();
             long carry = Math.min(truckSize, cur[0]); //找当前剩下的boxes 和 truckSize哪个更小
             truckSize -= carry;
             res += carry * cur[1];
         }
+        return res;
     }
-
+}
 
 
 
@@ -95,4 +95,4 @@ public class FillTruck {
 //
 //        return cnt;
 //    }
-}
+

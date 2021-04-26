@@ -1,5 +1,8 @@
 package hashTable查重;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class uniqueEmailAddress {
     public int numUniqueEmails(String[] emails) {
         if(emails==null) return 0;

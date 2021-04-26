@@ -1433,6 +1433,8 @@ Stack和Queue：
  ----------------------------------------------------------------------------------------------------------------------- 
  Array
  1. Arrays.fill(int[] a, int val) 可以把一个list或者一个int[]所有的值都initialize
+ 2. 直接toArray()的话要在括号里确定一下array的dimension ： return res.toArray(new int[res.size()][2]);
+ 
  -----------------------------------------------------------------------------------------------------------------------
  BackTrack:
   1. Permutations查重:  temp.remove(temp.size()-1); 用来随时去掉最后的那一个元素来随时查重，因为之前包含最后一个数字的数列已经进入另外一个recursion了
@@ -1492,7 +1494,9 @@ Stack和Queue：
 速度更快
      b. s.split(" ", 2); 可以限制split出来的String[]的大小
      
- 12. String.strip()可以去掉所有的空格， stripLeading()可以去掉前面的， stripTrailing()可以去掉后面的 
+ 12. String.strip()可以去掉所有的空格， stripLeading()可以去掉前面的， stripTrailing()可以去掉后面的
+     
+ 13. s.startsWith(String head)可以检查这个s的头是不是什么特定的head
 
 
 

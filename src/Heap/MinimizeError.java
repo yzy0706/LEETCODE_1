@@ -1,6 +1,5 @@
 package Heap;
 
-import java.util.Arrays;
 import java.util.PriorityQueue;
 
 public class MinimizeError {
@@ -33,28 +32,28 @@ public class MinimizeError {
 
 
 
-    public String minimizeError_dp(String[] prices, int target) {
-        double[] dp = new double[target + 1];
-        Arrays.fill(dp, Integer.MAX_VALUE);
-        double[] pricesDouble = new double[prices.length];
-        int[] floor = new int[prices.length];
-        int[] ceiling = new int[prices.length];
-        for(int i = 0; i < prices.length; i++){
-            float f = Float.valueOf();
-            pricesDouble[i] = (double)cur;
-            System.out.println(cur);
-            if(cur % 1 == 0){
-                floor[i] = (int)cur;
-                ceiling[i] = (int)cur;
-            }
-            floor[i] = (int)cur;
-            // }
-            // for(int i = 0; i < prices.length; i++){
-            //     for(int j = 0; j < prices.length; j++){
-            //         if(j != i)
-            //     }
-            // }
-        }
-        return "";
-    }
+//    public String minimizeError_dp(String[] prices, int target) {
+//        double[] dp = new double[target + 1];
+//        Arrays.fill(dp, Integer.MAX_VALUE);
+//        double[] pricesDouble = new double[prices.length];
+//        int[] floor = new int[prices.length];
+//        int[] ceiling = new int[prices.length];
+//        for(int i = 0; i < prices.length; i++){
+//            float f = Float.valueOf();
+//            pricesDouble[i] = (double)cur;
+//            System.out.println(cur);
+//            if(cur % 1 == 0){
+//                floor[i] = (int)cur;
+//                ceiling[i] = (int)cur;
+//            }
+//            floor[i] = (int)cur;
+//            // }
+//            // for(int i = 0; i < prices.length; i++){
+//            //     for(int j = 0; j < prices.length; j++){
+//            //         if(j != i)
+//            //     }
+//            // }
+//        }
+//        return "";
+//    }
 }

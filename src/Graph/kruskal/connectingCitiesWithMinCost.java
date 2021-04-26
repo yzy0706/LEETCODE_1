@@ -1,8 +1,8 @@
 package Graph.kruskal;
 
 import java.util.Arrays;
-// Kruskal主要是去用一个unf去链接connection的各个点， 并且各个vertice中间应该是双向的， 我们用一个unf来记录各个点的
-//祖宗和他们所对应的祖宗的叠加距离， 如果找到两个点祖宗一样， 直接continue， 反之， 如果哪个祖宗的叠加距离大， 那这个
+// Kruskal主要是去用一个unf去链接connection的各个点， 并且各个vertice中间应该是双向的，
+// 我们用一个unf来记录各个点的祖宗和他们所对应的祖宗的叠加距离， 如果找到两个点祖宗一样， 直接continue， 反之， 如果哪个祖宗的叠加距离大， 那这个
 //祖宗就成为另外一个祖宗的祖宗， 并把他们的叠加距离继续叠加，而且我们一定要记得把connections从大到小先排列了再去forloop。
 
 class UNF{

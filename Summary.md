@@ -143,6 +143,7 @@ Sort
         for(int ind = 0; ind < k; ind++){ //这里k是代表着这个temp的长度，那么从l+0开始+ind，最后一位应该是l+k-1, 把temp里的值都放到arr里去
             arr[l+ind] = temp[ind];
         }
+}
   
   SelectionSort
 做法： forloop i， 里面再forloop一个j从最右边到i， 每次都把最小的值赋值到i
@@ -1288,10 +1289,7 @@ Two Pointer
 Graph
 ------------------------------------------------------------------------------------------------------------------------
    
-1. DFS
-   
-    UNF就是借助一个class用DFS来检查一个directed或者undirected的graph是不是最终都指向一个祖宗， 
-    也就是关注他们所有的edge之间的连通性
+1. UNF ：UNF就是借助一个class用DFS来检查一个directed或者undirected的graph是不是最终都指向一个祖宗， 也就是关注他们所有的edge之间的连通性
 
 
                 class UNF{
@@ -1322,7 +1320,37 @@ Graph
         
 
 
-2. BFS
+2. BFS : 用一个queue存储每一层或者每一次浏览的所有数据， 并且把他们的下一次浏览的数据加到queue里
+
+
+    public List<List<Integer>> ReverseBinaryTreeLevelOrder(TreeNode root) {
+        Queue<TreeNode> queue = new LinkedList<>();
+        Stack<List<Integer>> stack = new Stack<>();
+        List<List<Integer>> ans =  new ArrayList<>();
+        if(root != null) queue.offer(root);
+        while(!queue.isEmpty()){
+            int size = queue.size();
+            List<Integer> temp = new ArrayList<>();
+            for(int i = 0 ;i < size  ; i++){
+                TreeNode cur = queue.poll();
+                temp.add(cur.val);
+                if(cur.left != null) queue.offer(cur.left);
+                if(cur.right != null) queue.offer(cur.right);
+            }
+            stack.push(temp);
+        }
+
+        while(!stack.isEmpty()){
+            ans.add(stack.pop());
+        }
+
+        return ans;
+    }
+
+
+3. DFS : 对当前的方程进行无限制的recursion， 一直到当前的parameter没有办法使用为止
+
+        
      
    
    

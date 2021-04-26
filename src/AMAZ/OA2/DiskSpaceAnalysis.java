@@ -15,7 +15,7 @@ public class DiskSpaceAnalysis {
     // Runtime： 全部i都只浏览了一次， 自然是O(n),在stack处理的过程中就算每次我们处理空了也只是另一个O(n), 最后一起就是O(n)；
     // 然后Space也是res[]和stack的合， 最多也就是O(2n） = O(n）
 
-    public int[] maxSlidingWindow(int[] nums, int k) {
+    public int[] maxSlidingWindow_3(int[] nums, int k) {
         int length = nums.length;
         Deque<Integer> deque = new ArrayDeque<>();
         int[] res = new int[length - k + 1];

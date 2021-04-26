@@ -34,7 +34,6 @@ public class letterCombinations {
 
 //第二遍自己写的
 List<String> res = new ArrayList<>();
-    List<String> res = new ArrayList<>();
     public List<String> letterCombinations_2(String digits) {
         StringBuilder sb = new StringBuilder();
         if(digits.length() < 1 || digits == null) return res;

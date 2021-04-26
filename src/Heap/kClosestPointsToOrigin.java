@@ -5,6 +5,12 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 class kClosestPointsToOrigin {
+
+
+
+
+
+
     class pair {
         int x, y;
 
@@ -18,19 +24,24 @@ class kClosestPointsToOrigin {
         public int compair(pair a, pair b) {
             return (a.x * a.x + a.y * a.y) - (b.x * b.x - b.y * b.y);
         }
+
+        @Override
+        public int compare(pair o1, pair o2) {
+            return 0;
+        }
     }
 
-    public int[][] kClosest(int[][] points, int K) {
+    public int[][] kClosest(int[][] points, int k) {
         int w = points.length;
-        if (w == 0) return new int[][]{0, 0};
+        if (w == 0) return new int[][]{{0, 0}};
         int l = w > 0 ? points[0].length : 0;
         int[] di = new int[]{0, 1}, dj = new int[]{1, 0};
 
         boolean[][] visited = new boolean[w][l];
-        Queue<pair> queue = new PriorityQueue<pair>(new com(), k);
+        Queue<pair> queue = new PriorityQueue<pair>(k, new com());
         queue.offer(new pair(0, 0));
 
-        for (int i = 0; i < k - 1; i++) {
+        for (int i = 0; i <  - 1; i++) {
             pair cur = queue.poll();
             for (int j = 0; j < 2; j++) {
                 int curi = cur.x + di[j];
@@ -51,7 +62,7 @@ class kClosestPointsToOrigin {
         while (!queue.isEmpty()) {
             pair cur = queue.poll();
             int curDistance = cur.x * cur.x + cur.y * cur.y;
-            if (curDistance = distance) {
+            if (curDistance == distance) {
                 res[i] = new int[]{cur.x, cur.y};
                 i++;
             } else break;

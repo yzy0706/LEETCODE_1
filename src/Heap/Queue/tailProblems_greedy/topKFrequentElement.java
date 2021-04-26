@@ -5,7 +5,8 @@ import java.util.Map;
 import java.util.PriorityQueue;
 
 public class topKFrequentElement {
-    //拿一个map去记录所有数的出现频率， 然后用一个size为k的pq由大到小记录各个数的，因为pq永远是尾巴出去， 所以不能是由小到大，这个要注意
+    //拿一个map去记录所有数的出现频率， 然后用一个size为k的pq由大到小记录各个数
+
     public int[] topKFrequent(int[] nums, int k) {
         if(k == nums.length) return nums;
         Map<Integer, Integer> freq = new HashMap<>();

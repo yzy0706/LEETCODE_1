@@ -1,7 +1,5 @@
 package Graph.DFS.commonAncestors;
 
-import Tree.DFS.commonAncestors.TreeNode;
-
 public class LowestCommonAncestorII {
 
     // 做法: 总的做法跟LCA I其实差不多, 但是我们不能再在postorder中碰到p、q中的一个就直接return, 而是应该用两个boolean承载pFound和qFound

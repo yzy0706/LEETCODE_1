@@ -59,7 +59,7 @@ public class FetchItemsToDisplay {
 
 
     //pq写法
-    public static List<String> fetchItemsToDisplay_pq(int numOfItems, HashMap<String, int[]> items, int sortParameter, int sortOrder, int itemsPerPage, int pageNumber){
+    public List<String> fetchItemsToDisplay_pq(int numOfItems, HashMap<String, int[]> items, int sortParameter, int sortOrder, int itemsPerPage, int pageNumber){
         Comparator<item> com = (o1,o2) -> {
             //如果order == 1， pq是应该是maxHeap，这样书越往后翻数才越小， 因为大的已经被poll掉了
             if (sortOrder == 1) {

@@ -5,6 +5,7 @@ import java.util.*;
 public class MeetingRoomsII {
     // 做法: 后面我自己用pq做的, 我根据所有会议结束的时间在pq里排列所有的会议, 让当前的interval尽量和结束时间跟自己开始时间最接近的interval合并, 如果pq里根本就没有结束时间比当前会议开始时间早的会议, 那么肯定就要新开一个会议, 所以res++;
     // Runtime: O(n^2), Space: O(n)
+
     public int minMeetingRooms_Reviewed(int[][] intervals) {
         int len = intervals.length;
         if(len == 1) return 1;

@@ -1,6 +1,5 @@
 package Graph.DFS.commonAncestors;
 
-import Tree.DFS.commonAncestors.Node;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -12,15 +11,15 @@ public class LowestCommonAncestorIII {
 
     //Runtime: O(n), 因为跑第一个重复的路径的时候就会return, 所以最多跑O(n), Space: O(n)
 
-    public Tree.DFS.commonAncestors.Node lowestCommonAncestor(Tree.DFS.commonAncestors.Node p, Tree.DFS.commonAncestors.Node q) {
-        Set<Tree.DFS.commonAncestors.Node> visited = new HashSet<>();
+    public Node lowestCommonAncestor(Node p, Node q) {
+        Set<Node> visited = new HashSet<>();
 
         while(p != null){ //p、q一起运动p到null的距离
             if(visited.contains(p)) return p;
             visited.add(p);
             p = p.parent;
 
-            Tree.DFS.commonAncestors.Node temp = p;
+            Node temp = p;
             p = q; //跟q交换
             q = temp;
         }

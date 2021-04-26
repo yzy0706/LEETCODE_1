@@ -1,7 +1,6 @@
 package AMAZ.OA2;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class MaxAverageSubtree {
     // 总的来说就是一个dfs的方法， helper是一个return double[3]的一个方程，
@@ -10,18 +9,6 @@ public class MaxAverageSubtree {
     //当前回归的double[0]也就是tree里所有的数字之和应该就是root的val加上dfs(root.left)[1], dfs(root.right)[1]; double[1]也就是tree里所有的node的个数也同理
     //然而double[2]也就是当前maxAverage等于当前sum/cnt，dfs(root.left)[2], dfs(root.right)[2]， 也就是它自己和左右subtree average的最大值
     //Runtime： 每个treeNode都跑到底了， 那么最坏的情况也就是O(n)， space： O(1）
-
-
-    class TreeNode{
-        List<TreeNode> sons;
-        int val;
-
-        public TreeNode(int val){
-            this.val = val;
-            this.sons = new ArrayList<>();
-        }
-    }
-
 
 
 
@@ -42,30 +29,26 @@ public class MaxAverageSubtree {
 
 
 
+//    public double maxmumAverageNonbinarySubtree(TreeNode root){
+//        return expand(root)[2];
+//
+//    }
 
 
-
-    //刀让我坐的变种
-    public double maxmumAverageNonbinarySubtree(TreeNode root){
-        return expand(root)[2];
-
-    }
-
-
-    public double[] expand(TreeNode root){
-        if(root == null) return new double[]{0.0, 0,0, 0.0};
-        double curSum = (double)root.val;
-        double curNum = 1.0;
-        for(TreeNode son : root.sons){
-            double[] result = expand(son);
-            curSum += result[0];
-            curNum += result[1];
-        }
-        double maxAverage = curSum/ curNum;
-        for(TreeNode son : root.sons){
-            double[] result = expand(son);
-            maxAverage = Math.max(maxAverage, result[2]);
-        }
-        return new double[]{curSum, curNum, maxAverage};
-    }
+//    public double[] expand(TreeNode root){
+//        if(root == null) return new double[]{0.0, 0,0, 0.0};
+//        double curSum = (double)root.val;
+//        double curNum = 1.0;
+//        for(TreeNode son : root.sons){
+//            double[] result = expand(son);
+//            curSum += result[0];
+//            curNum += result[1];
+//        }
+//        double maxAverage = curSum/ curNum;
+//        for(TreeNode son : root.sons){
+//            double[] result = expand(son);
+//            maxAverage = Math.max(maxAverage, result[2]);
+//        }
+//        return new double[]{curSum, curNum, maxAverage};
+//    }
 }

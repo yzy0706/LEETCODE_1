@@ -1,8 +1,10 @@
 package DynamicProgramming;
 
+import java.util.Arrays;
+
 public class uniquePath {
     // solution给的解法， 就是把二维dp所有的位置都浏览一遍，每个位置的数值都先默认为1 每一个位置都是上左两个位置dp[i-1][j] + dp[i][j-1];
-    public int uniquePaths(int m, int n) {
+    public int uniquePaths_2(int m, int n) {
         int[][] dp = new int[m][n];
         for(int[] arr: dp){
             Arrays.fill(arr, 1);

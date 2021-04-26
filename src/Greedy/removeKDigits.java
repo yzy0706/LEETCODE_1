@@ -1,5 +1,8 @@
 package Greedy;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 public class removeKDigits {
     //看了答案自己写的但没过
     public String removeKdigits(String num, int k) {
