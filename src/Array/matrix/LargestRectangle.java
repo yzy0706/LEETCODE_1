@@ -9,6 +9,7 @@ public class LargestRectangle {
         //并且更新最大的面积 maxArea = Math.max(maxArea, minLength * (i - row + 1));
 
         //Runtime: O(m^2*n), 往上寻找最短宽度的过程可能会直接浏览所有的row; space: O(1), 并没有新建别的数据结构
+
         public int maximalRectangle(char[][] matrix) {
             if(matrix.length < 1) return 0;
             int w = matrix.length, l = matrix[0].length;

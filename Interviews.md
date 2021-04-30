@@ -46,10 +46,36 @@
       
 
 
-3.  巨硬
+3.  微软
 
    1. Tech一面： lc 977 , 给了三个解法
       
       a. follow up ： 有没有O(1) Space的解法： 我说之前那个square再sort就行
 
       b. 为什么不能直接edit array ： 因为可能会把原来的数字替代掉， 这样就找不到之前的， 要另外储存就还是O(N) space
+
+
+   2. VO
+
+      2021 Apr 27, Microsoft Onsite
+
+1. First VO:
+Similar to meeting room problems on leetcode, but it is not asking candidate to merge intervals that is overlapping, instead, this question just asks candidates to check if any of the meetings is overlapping.
+Follow Up: 1. What edge cases are on your mind? 2. Any other solutions 3. Time and space complexity
+
+
+
+2. Second VO:
+   Given a string object “</name=”name0” attr=”attr0”:val=”val0” …/>” design a class XML to store the name, attributes, values of the string, create a method to read the string and return the XML.
+   Follow up: 1. I used String.split(String s) method to separate different parts of the string, but the interviewer says there could be different characters  between names and attributes
+
+3. Third VO:
+   First question was longest palindrome substring(Leetcode 5).
+   Second question was to find a way to find if a number is perfectly square number without using built in method.
+   Follow up for question 2: 1. any other method?  2. If you can use Math.sqrt() method , how would you check a number is a perfectly squarable number?
+
+
+4. Fourth VO:
+   First question: merge two sorted lists
+   Second question: merge k sorted lists
+   Follow up for question 2: 1. Any other way except using heap? 2. Any other way to save space ? 3. If input is a list of ListNodes, what would you do? 4. Is there a solution to handle these ListNodes in O(1) space?

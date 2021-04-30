@@ -8,6 +8,7 @@ public class MaxSumRectangle {
     //4. kadane(tmp), 就会得到这个tmp上sum最大的一段的起始点和sum， 这就是这个长方形的宽， 然后我们再更新res, left和right
 
     //Runtime: O(wl^2), l是这个长方形的长度， space: O(l)
+
     public int findMaxSubMatrix(int[][] matrix){
         int left = 0, right = 0, top = 0, bot = 0;
         int res = Integer.MIN_VALUE;

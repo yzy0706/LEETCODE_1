@@ -8,6 +8,7 @@ public class LongestTurbulentSubarray {
     //  c. 如果curDiff != 0, 之前又通过else知道了 curDiff * diff > 0了, 所以当前位置的dp记录为2
 
     // Runtime: O(n), Space: O(1)
+
     public int maxTurbulenceSize_1d(int[] arr) {
         int len = arr.length;
         if(len == 1) return 1;

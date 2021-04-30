@@ -3,6 +3,7 @@ package Math.addTwoNumbers;
 public class AddBinary {
     // 做法: 用的两个pointer一起跑
     // Runtime: O(m), m是比较长的那一个
+
     public String addBinary(String a, String b) {
         int i = a.length() - 1, j = b.length() - 1;
         int add = 0;

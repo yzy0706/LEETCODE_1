@@ -1,7 +1,7 @@
 package Math;
 
 public class divideTwoIntegers {
-    public int divide(int dividend, int divisor) {
+    public int divide_1(int dividend, int divisor) {
         // if(dividend < Integer.MIN_VALUE || dividend > Integer.MAX_VALUE) return Integer.MAX_VALUE;
         if (dividend == Integer.MIN_VALUE && divisor == -1) {
             return Integer.MAX_VALUE;

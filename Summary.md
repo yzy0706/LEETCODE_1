@@ -1350,6 +1350,13 @@ Graph
 
 3. DFS : 对当前的方程进行无限制的recursion， 一直到当前的parameter没有办法使用为止
 
+
+        public void dfs(TreeNode root){
+            if(root == null) return;
+            dfs(root.left);
+            dfs(root.right);
+        }q
+
         
      
    
