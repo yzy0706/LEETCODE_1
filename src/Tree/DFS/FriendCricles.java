@@ -1,6 +1,6 @@
 package Tree.DFS;
 
-public class friendCricles {
+public class FriendCricles {
     //solution里面的DFS, 就是建立一个int[M.length] visited来记录哪一行浏览过， 然后顺着i浏览每一行，如果这行没有被浏览过
     //则进入以这行行数为i值的dfs并forloop浏览每一列的列数j值，如果跟j值一样的i行没有被浏览过，则visited[j] = 1（也就是第j行）
     // 也要被浏览一遍，然后再以这个j值为根据进入下一个recursion

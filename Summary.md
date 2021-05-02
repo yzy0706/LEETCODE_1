@@ -490,36 +490,43 @@ d. DFS： DFS里面有connectNodesOnSameLevel这种题， 也有PathSum这种题
 1. 首先我们要知道在dfs中， 我们碰到了底层或者碰到了想找的情况是会return回来的， 而不是直接结束方程：在AllNodesDistanceKInBinaryTre这道题
 里， 第一个helper是去找到target， 然后找到target return 0， 再一步步在return的步骤中+1并且放到map里：
 
-        public void findTarget(TreeNode root, TreeNode target,  Map<TreeNode, Integer> map){
-            if(root == null) return -1;
-            if(root.val  == target.val){
-                return 0;
-                map.put(root, 0);
-            }
-            int left = findTarget(root.left, target, map); //像map， list这种引用参数在各个recursion的使用是共通的
-            if(left >= 0){
-                map.put(root, left+1); //这样从target那一层开始就会一直return + 1， + 1一直到root
-                return left+1;
-            }
 
-            int right = ... (同样的再右子树找一遍， 一样的步骤);
+   
+                public void findTarget(TreeNode root, TreeNode target,  Map<TreeNode, Integer> map){
+                    if(root == null) return -1;
+                    if(root.val  == target.val){
+                        return 0;
+                        map.put(root, 0);
+                    }
+                    int left = findTarget(root.left, target, map); //像map， list这种引用参数在各个recursion的使用是共通的
+                    if(left >= 0){
+                        map.put(root, left+1); //这样从target那一层开始就会一直return + 1， + 1一直到root
+                        return left+1;
+                    }
+        
+                    int right = ... (同样的再右子树找一遍， 一样的步骤);
+                    
+                    return -1;
+                }
+               
+                //然后再找一遍每一个节点在不在在map上， 再分别计算他的距离等不等于k就行
+           
+        
             
-            return -1;
-        }
-       
-        //然后再找一遍每一个节点在不在在map上， 再分别计算他的距离等不等于k就行
-        private void findQualified(TreeNode root, TreeNode target, int distance, int K, Map<TreeNode, Integer> map, List<Integer> res){
-        if(root == null) return;
-        if(map.containsKey(root)) distance = map.get(root); //如果map里本来就有当前的node, 那么证明他肯定在root到target的路径上, 直接把distance置换一下
-        if(distance == K) res.add(root.val); //如果不是路径上的再去判断distance是不是等于K
-        findQualified(root.left, target, distance+1, K, map, res);
-        findQualified(root.right, target, distance+1, K, map, res);  //再往左右dfs去看下面的其他TreeNode在map里还是distance == k都行
-    }
+                private void findQualified(TreeNode root, TreeNode target, int distance, int K, Map<TreeNode, Integer> map, List<Integer> res){
+                    if(root == null) return;
+                    if(map.containsKey(root)) distance = map.get(root); //如果map里本来就有当前的node, 那么证明他肯定在root到target的路径上, 直接把distance置换一下
+                    if(distance == K) res.add(root.val); //如果不是路径上的再去判断distance是不是等于K
+                    findQualified(root.left, target, distance+1, K, map, res);
+                    findQualified(root.right, target, distance+1, K, map, res);  //再往左右dfs去看下面的其他TreeNode在map里还是distance == k都行
+                }
 
 
 2. 就在上面已经提到过， 在dfs的过程中， 如果是list， map之类的引用传递参数， 所有的变化是互通的， 如果我们是在做pathSumII这样需要分别记录每一次dfs
 的路径的题目时， 我们需要每次做完dfs以后把自己的最尾部代表当前值的部分像backTrack一样去掉， 这样如果dfs触底了以后会在每一次return到上一个根节点的时候把自己当前的值删掉
     
+
+
         public void expand(TreeNode root, int sum, List<Integer> temp){
             if(root == null) return;
             temp.add(root.val);
@@ -572,6 +579,8 @@ a. PostFixExpress(也叫逆波兰式)， 计算的时候
 b. PostFixToInfix(调度场算法) 
     
 1. 形似火车停入车站：每看到一个运算符就把所有优先级比他大的pop出来， 并把优先级大的运算符都加到答案里
+
+
 
         public String inFixToPostFix(String s){
             HashMap<Character, Integer> priority = constructPriority();
@@ -664,6 +673,8 @@ a. 用到了调度场算法的
 
 2. 也有类似的存储最高的高度来计算面积的（LargestRectangleArea)
         
+
+    
         for(int i = 0; i  < heights.length; i++){
         ...
         if(stack.isEmpty() || heights[i] >= stack.peek()){
@@ -724,6 +735,8 @@ a. 这种题和任何对称性的题思路一样， 当碰到每个object就把�
 2. 建立一个StringBuilder(s)并把需要删除的地方都 sb.serCharAt(i, '！')； 
    最后转成String以后 s.replaceAll("!", ""); 可以统一删除
    
+
+
         public String minRemoveToMakeValid(String s) {
         char[] cl = s.toCharArray();
         Stack<Integer> stack = new Stack<>();
@@ -961,32 +974,38 @@ b.  跳跃着组合的
 
 a. Choose From Eitherside的题型
 
-如果是碰到这种从两头轮流选一个才谁赢的题目，
-dp[i][j]代表player1在i， j这段中能取得的最大价值都可以用到这个2D DP,
+如果是碰到这种从两头轮流选一个才谁赢的题目， dp[i][j]代表player1在i， j这段中能取得的最大价值都可以用到这个2D DP,
+
  1. 用一个sum记录当前所有数的和， forloop j从0到len-1， 再forloop i从j-1到0
+    
  2. 用mid， bothI， bothJ分别求出来两个人分别选了i， j（当前player1可以选i或者j）， 或者是都选了i， 都选了j四种情况比较大小
+    
  3. mid + piles[i]， mid + pile[j], bothI + pile[i], bothJ + pile[j] 更新每一段dp[i][j]的最大值
+    
  4. 检查dp[0][len-1]是不是大于sum的一半
 
 
-    public boolean stoneGame(int[] piles) {
-        int len = piles.length;
-        if(len % 2 != 0) return true;
-        int[][] dp = new int[len][len];
-        int sum = 0;
-        for(int j = 0; j < piles.length; j++){
-            dp[j][j] = piles[j];
-            sum += piles[j];
-            for(int i = j - 1; i >= 0; i--){
-                int mid = dp[i+1][j-1];
-                int bothI = i + 2 < len ? dp[i+2][j] : 0;
-                int bothJ = j - 2 >= 0 ? dp[i][j-2] : 0;
-                dp[i][j] = Math.max(Math.max(mid + piles[i], mid + piles[j]), Math.max(bothI + piles[i], bothJ + piles[j]));
+
+            public boolean stoneGame(int[] piles) {
+                int len = piles.length;
+                if(len % 2 != 0) return true;
+                int[][] dp = new int[len][len];
+                int sum = 0;
+                for(int j = 0; j < piles.length; j++){
+                    dp[j][j] = piles[j];
+                    sum += piles[j];
+                    for(int i = j - 1; i >= 0; i--){
+                        int mid = dp[i+1][j-1];
+                        int bothI = i + 2 < len ? dp[i+2][j] : 0;
+                        int bothJ = j - 2 >= 0 ? dp[i][j-2] : 0;
+                        dp[i][j] = Math.max(Math.max(mid + piles[i], mid + piles[j]), Math.max(bothI + piles[i], bothJ + piles[j]));
+                    }
+                }
+                return dp[0][len-1] * 2 > sum;
             }
-        }
-        return dp[0][len-1] * 2 > sum;
-    }
  
+
+
 
 Array
 ------------------------------------------------------------------------------------------------------------------------
@@ -1054,6 +1073,9 @@ a. 如果只是求max subarray 可以用 kadane's algorithm
    
 b. 假如是只求确定的sum == k而size最大subarray, 就要用到类似与twoSum里面的map的解法，
 因为sum(0, j) - sum(0, i) = sum(i, j), 所以我们每次更新res为 res = Math.max(i - map.get(nums[i] - k), res);
+
+
+
 
         public int maxSubArrayLen(int[] nums, int k) {
         if (nums == null || nums.length == 0) return 0;
