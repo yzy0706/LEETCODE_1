@@ -1,4 +1,4 @@
-package Graph.BFS.searchInMatrix;
+package Graph.BFS.matrix;
 
 import java.util.HashSet;
 import java.util.LinkedList;

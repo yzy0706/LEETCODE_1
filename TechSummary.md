@@ -1077,58 +1077,58 @@ Matrix矩阵题{
    wordBeak_dp:
    中心思想：拿一个queue来装载start和end
 
-
----------------------------------------------------------------------------------------------------------
-
-
-  aoa{
-
-  distinctSubstrings{
-
-  }
-
-  }
-
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-____________________________________________________________________________________________________________
 ____________________________________________________________________________________________________________
 
 技术：
 
 杂：
 
-1.想要做到 Bug Free 最重要的是优化你的 Coding Style
-技巧:子函数 + 好的命名风格
+1.想要做到 Bug Free 最重要的是优化你的 Coding Style， 子函数 + 好的命名风格
 
-2.slide window的做法大概就是右边一边扩展一边检查新进来的元素是不是包含在set里面，如果包含就比较旧的最高值和这个window左右两边的长度
-3.Math.这种用法一定要会用
-4.同时的两个赋值方程可以写在一起  比如 int i= 0； int j =0; 可以写成 int i-0； j=0;
-5.loop里面不要再加一个loop
-6.while loop只是设置条件和极限值，parameter在loop里面也需要有变化（R++，L--之类的）
-7.平常有什么不确定的参数可以用一个最简单的例子试着跑一下
+2.同时的两个赋值方程可以写在一起  比如 int i= 0； int j =0; 可以写成 int i = 0 j=0;
+
+3.while loop只是设置条件和极限值，parameter在loop里面也需要有变化（R++，L--之类的）
+
+4.平常有什么不确定的参数可以用一个最简单的例子试着跑一下
+
+5. lock的用法：
+   
+a. 在enqueue的方程里:
+       
+
+                   synchronized(lock){
+                     while(deque.size() == size) lock.wait();
+                     ...
+                     deque.notify();
+                   }
+       
+
+b. 在deque的方程里
+            
+                   
+                   
+                    synchronized(lock){
+                           while(deq.isEmpty()){
+                               lock.wait();
+                           }
+                           res = deq.removeFirst();
+                           lock.notify();
+                    }
+
+6. Random的用法:
+    
+
+               Random random = new Random();
+
+               public int[] shuffle() {
+                   for(int i = 1; i < nums.length; i++){
+                       int j = random.nextInt(i + 1);
+                       int temp = nums[i];
+                       nums[i] = nums[j];
+                       nums[j] = temp;
+                   }
+                   return nums;
+               }
 
 
 ----------------------------------------------------------------------------------------------------
@@ -1428,17 +1428,30 @@ Stack和Queue：
 
  -----------------------------------------------------------------------------------------------------------------------
  Sort:
+
  1. Sort有 Selection Sort, Bubble Sort, Heap Sort, Quick Sort, Merge Sort, Insert Sort, Shell Sort, Bucket Sort等算法 要熟悉概念
+    
  2. 碰到有平方的排序要看最小的数字是不是负数， 结合two pointer和 merge sort来解题
+    
+ 3. TreeSet<int[]> ts = new TreeSet<>(); 
+    
+    ts.floor(cur);
+    
+    ts.ceiling(cur);
+    
  ----------------------------------------------------------------------------------------------------------------------- 
  Array
+
  1. Arrays.fill(int[] a, int val) 可以把一个list或者一个int[]所有的值都initialize
+    
  2. 直接toArray()的话要在括号里确定一下array的dimension ： return res.toArray(new int[res.size()][2]);
  
  -----------------------------------------------------------------------------------------------------------------------
  BackTrack:
   1. Permutations查重:  temp.remove(temp.size()-1); 用来随时去掉最后的那一个元素来随时查重，因为之前包含最后一个数字的数列已经进入另外一个recursion了
+     
   2. Backtrack的中心是找到了想要的结果之一就进入新的recursion，然后退回到没有找到想要的结果的情况继续浏览，就是从每一种可能找到结果的可能拓展recursion
+     
   3. 一般先用loop去寻找每一种可能，recursion也可以写成多一个forloop
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -1498,6 +1511,8 @@ Stack和Queue：
      
  13. s.startsWith(String head)可以检查这个s的头是不是什么特定的head
 
+    
+
 
 
 
@@ -1514,11 +1529,14 @@ isDefined
 
 2. 改变Character：
 .toLowerCase
+   
 .toUpperCase 
    
 3. (char)65 = 'a', Integer到Character的转换
 
 4. Integer转换成char ： char c = (char)(i + '0');
+
+
 ----------------------------------------------------------------------------------------------------
 
 Math:

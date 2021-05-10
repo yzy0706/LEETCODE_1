@@ -1,4 +1,5 @@
-package Graph.DFS;
+package Graph.DFS.accumulateTree;
+
 
 public class MaxDepthOfBinaryTree {
 
@@ -19,7 +20,7 @@ public class MaxDepthOfBinaryTree {
     }
 
 
-    public void search(TreeNode root,int cnt){
+    public void search(TreeNode root, int cnt){
         if(root.left == null && root.right == null){
             if(cnt >= res ) res = cnt;
             return;

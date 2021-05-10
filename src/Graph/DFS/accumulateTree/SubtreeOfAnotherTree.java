@@ -1,4 +1,4 @@
-package Graph.DFS;
+package Graph.DFS.accumulateTree;
 
 public class SubtreeOfAnotherTree {
     // 做法: 用的简单的dfs去检查每一个s上和t的val相等的TreeNode, 它和t的check(s, t)是不是 true;

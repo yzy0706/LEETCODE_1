@@ -1,4 +1,4 @@
-package Graph.BFS.Flood;
+package Graph.BFS.flood;
 
 public class BucketFill {
     public int bucketFill(String[] picture) {
