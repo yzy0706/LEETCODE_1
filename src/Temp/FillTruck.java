@@ -5,6 +5,45 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 public class FillTruck {
+
+
+    public int fillTruck_reviewed(int num, int[] containers, int unitSize, int[] unitsPerContainer, int cargoSize){
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> unitsPerContainer[b] - unitsPerContainer[a]);
+        for(int i = 0; i < containers.length; i++) if(containers[i] > 0) pq.offer(i);
+        int res = 0;
+        while(cargoSize > 0 && !pq.isEmpty()){
+            int topContainer = pq.poll();
+            long numContainer = Math.min(cargoSize, containers[topContainer]);
+            cargoSize -= numContainer;
+            res += numContainer * unitsPerContainer[topContainer];
+        }
+        return res;
+    }
+
+
+    public int fillTruck(int num, int[] containers, int unitSize, int[] unitsPerContainer, int cargoSize){
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> unitsPerContainer[b] - unitsPerContainer[a]);
+        for(int i = 0; i < containers.length; i++) if(containers[i] > 0) pq.offer(i);
+        int res = 0;
+        while(cargoSize > 0){
+            int topContainer = pq.peek();
+            res += unitsPerContainer[topContainer];
+            containers[topContainer] --;
+            if(containers[topContainer] == 0) pq.poll();
+            cargoSize --;
+        }
+        return res;
+    }
+
+
+
+
+
+
+
+
+
+
     //刀说的先sort再写
     long getMaxUnit(int num, ArrayList<Integer> boxes, int unitSize, ArrayList<Integer> unitsPerBox, long truckSize) {
         List<int[]> products = new ArrayList<>();

@@ -1,9 +1,9 @@
 package Math;
 
 public class RobotRoundInCircle {
-    //做法： 拿二位坐标来代替东西南北也是比较简便的办法，i所在坐标代表现在的方向。
+    // 做法：拿二位坐标来代替东西南北也是比较简便的办法，i所在坐标代表现在的方向。
     // 如果i > 0  或者 x,y变了坐标以后还等于0就代表经过一轮方向变了或者坐标回到原点了
-    // Runtime: 最坏O(n), Space: O(4)
+    // Runtime: O(n), Space: O(1)
     public boolean isRobotBounded_2DimensionalVertices(String instructions) {
         int x = 0, y = 0, i = 0, d[][] = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}}; //东西南北可以用四个二位坐标来代替
         for (int j = 0; j < instructions.length(); ++j)

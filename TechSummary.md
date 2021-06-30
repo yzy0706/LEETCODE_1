@@ -1079,7 +1079,7 @@ Matrix矩阵题{
 
 ____________________________________________________________________________________________________________
 
-技术：
+技术:
 
 杂：
 
@@ -1090,10 +1090,10 @@ ________________________________________________________________________________
 3.while loop只是设置条件和极限值，parameter在loop里面也需要有变化（R++，L--之类的）
 
 4.平常有什么不确定的参数可以用一个最简单的例子试着跑一下
-
+      
 5. lock的用法：
-   
-a. 在enqueue的方程里:
+
+ a. 在enqueue的方程里:
        
 
                    synchronized(lock){
@@ -1102,8 +1102,7 @@ a. 在enqueue的方程里:
                      deque.notify();
                    }
        
-
-b. 在deque的方程里
+ b. 在deque的方程里
             
                    
                    
@@ -1130,25 +1129,123 @@ b. 在deque的方程里
                    return nums;
                }
 
-
+Concept
 ----------------------------------------------------------------------------------------------------
+
+1. 1. Overloading and Overriding:  
+   When two or more methods in the same class have the same name but different parameters, 
+   it's called Overloading. 
+   When the method signature (name and parameters) are the same in the superclass and the child class, 
+   it's called Overriding.
+   
+2. 2. Polymorphism : Object's ability to be taken on many forms.
+
+3. 3. NoSQL: non-relational: 
+    
+    1. simple and quick search 
+    
+    2. different types of data
+   
+    3. key-value(Redis); file-oriented(MongoDB)
+    
+    4. High traffic
+    
+   4. SQL: relational:
+   
+    1. complicated CURD(JOIN)
+       
+    2. bad for high traffic
+    
+4. Abstract Class vs Interface:
+   
+   An abstract class allows you to create functionality that subclasses can implement or override. 
+    
+   An interface only allows you to define functionality, not implement it.
+   
+   And whereas a class can extend only one abstract class, it can take advantage of multiple interfaces.
+
+5. Process means a program is in execution, whereas thread means a segment of a process. 
+   A Process is not Lightweight, whereas Threads are Lightweight.  
+   A Process is mostly isolated, whereas Threads share memory. 
+   Process does not share data, and Threads share data with each other.
+   
+6. 底层数据结构：
+
+   1. List(有序,可重复)
+   
+   a. ArrayList 底层数据结构是array,查询快,增删慢（因为：增删后涉及到其他数据的位移）
+   线程不安全,效率高
+   
+   b. LinkedList
+   底层数据结构是双向链表,查询慢,增删快
+   线程不安全,效率高
+
+
+   2. Set(无序,唯一)
+   
+   a. HashSet 底层数据结构是 HashTable
+   
+   HashTable依赖两个方法：hashCode()和equals()
+   
+   执行顺序：
+   首先判断hashCode()值是否相同
+   是：继续执行equals(),看其返回值
+   是true:说明元素重复，不添加
+   是false:就直接添加到集合
+   否：就直接添加到集合
+   最终：
+   自动生成hashCode()和equals()即可
+
+   b. TreeSet 底层数据结构是红黑树。(是一种自平衡的二叉树)
+
+
+   3. Map
+
+   a. HashMap 底层数据结构是:(数组+单向链表) HashTable
+
+   线程不安全，效率高
+
+   b. TreeMap
+      底层数据结构是Binary Tree, 红黑树(是一种自平衡的二叉树).
+
+7. Design Pattern: 
+   
+    a. Singleton : one object exists 
+   
+    b. Factory: Create related dependent objects
+
+8.  Scaling:
+
+    Vertical: add more resource
+
+    Horizontal: add more instances
+   
+  
+
+
 Graph（记得优先建数据结构： 两种图的表示方式 ： adjacent Array.matrix, adjacent list)
+----------------------------------------------------------------------------------------------------
+
 1.最短路径的三大算法：
-   a. Graph:
+
+   a. Dijkstra:
+
    条件：一般是去找起始点到某个点的最短的路径，然后所有的点之间距离都是正值
    start的数据结构： V大小的map，并且initialize成(i,Integer.MAX_VALUE)； 设置成公用参数
    核心算法：
-   while(!stops.isEmpty()){
-       int curStop =  stops.poll();
-       visited[curStop] = true;
-       if(map.containsKey(curStop){
-         for(int[] time : map.get(curStop)){
-           if(distances.get(time[0]) > distances.get(curStop) + time[1]){
-              distances.put(time[0], distances.get(curStop) + time[1]);
-              }
-           if(!visited[time[0]] stops.offer(time[0]);
+
+           while(!stops.isEmpty()){
+               int curStop =  stops.poll();
+               visited[curStop] = true;
+               if(map.containsKey(curStop){
+                 for(int[] time : map.get(curStop)){
+                   if(distances.get(time[0]) > distances.get(curStop) + time[1]){
+                      distances.put(time[0], distances.get(curStop) + time[1]);
+                      }
+                   if(!visited[time[0]] stops.offer(time[0]);
+                   }
            }
-           }
+
 
    Runtime: O(（V+E)log(V), 这是pq的解法的复杂度，V是节点的个数，E是每个节点分别能去到的最多的其他节点的个数， 如果是forloop的解法就是O(V^2)
 
@@ -1158,57 +1255,73 @@ Graph（记得优先建数据结构： 两种图的表示方式 ： adjacent Arr
    start的数据结构：一个动态规划的dp[V][V]
    核心算法：
    //a就是n个stop循环一下
-   for(int a = 0; a < n; a++){
-     for(int i = 0; i < n; i++){
-       for(int j = 0; j < n; j++){
-       dist[i][j] = Math.min(dist[i][j], dist[i][a] + dist[a][j];
-       }
-     }
-     }
+
+        
+           for(int a = 0; a < n; a++){
+             for(int i = 0; i < n; i++){
+               for(int j = 0; j < n; j++){
+               dist[i][j] = Math.min(dist[i][j], dist[i][a] + dist[a][j];
+               }
+             }
+             }
+
+
      Runtime：O(n^3)，相当于所有的node循环了立方次
 
    c. Bellman-ford
    条件：也可以有负权重，
+
    核心算法：
    对每条边进行n-1次松弛，如果距离有变化就是闭环
+
    Runtime: O(V*E)
 
 
 
 
 2. 组成MST的两大算法（也是算最短距离， 但这两个是有中转站的数量限制的）
+   
     a. Kruskal
+   
     条件：双向图单向图都可以， 主要是去增加两个常量cost和checkNum叠加一个每条边（也就是2个vertice）的weight和已经检查过的边的数量，并建立一个unf，特别记得要sort
-    数据结构：除了unf不用建新的， forloop每条边就可以，
+   
+    数据结构：除了unf不用建新的， forloop每条边就可以
+   
     核心算法：
-    public void merge(int a, int b){
-        int rootA = find(a), rootB = find(b);
-        if(weights[rootA] > weights[rootB]){
-          parents[rootB] = parents[rootA]; // 合并小的root到大的root去
-          weights[rootA] += weights[rootB]; //并且把小的weight加到大的上面
-        }
-        else{
-       ...  //反过来
-        }
-    }
-    ...
+   
+            public void merge(int a, int b){
+                int rootA = find(a), rootB = find(b);
+                if(weights[rootA] > weights[rootB]){
+                  parents[rootB] = parents[rootA]; // 合并小的root到大的root去
+                  weights[rootA] += weights[rootB]; //并且把小的weight加到大的上面
+                }
+                else{
+               ...  //反过来
+                }
+            }
+            ...
 
-    for(int[]  connection  : connections){
-       if(unf.isSameTree(connection[0], connection[1])) continue;
-       unf.merge(connection[0], connection[1]);
-       cost += connection[2];
-       checkNum++;
-       }
+            for(int[]  connection  : connections){
+               if(unf.isSameTree(connection[0], connection[1])) continue;
+               unf.merge(connection[0], connection[1]);
+               cost += connection[2];
+               checkNum++;
+               }
+   
      Runtime: O(Elog(v)) = O(log(v)(E+V)), 然而space是O(E), parents的大小
 
 
 
 
-     b. Prim
-     条件: 做的那道题是单向图，不过双向图应该也可以， 其他部分都跟dijkstra一样， 只是不需要建立一个dist来比较并更新src到各个点的距离，反之我们是在叠加每个点和他最近的点的距离
-     数据结构： pq和map都一样， 但我们不需要建立dist[]，而是建立一个新的int[邻居的位置， cost,  checkNum]; 如果中转站的数量checkNum > k则continue, 一开始应该都是offer
-     src的邻居 new int[]{cur[0], cur[1], 0};
-     核心算法：
+   b. Prim：
+
+   条件: 做的那道题是单向图，不过双向图应该也可以， 其他部分都跟dijkstra一样， 只是不需要建立一个dist来比较并更新src到各个点的距离，反之我们是在叠加每个点和他最近的点的距离
+
+   数据结构： pq和map都一样， 但我们不需要建立dist[]，而是建立一个新的int[邻居的位置， cost,  checkNum]; 如果中转站的数量checkNum > k则continue, 一开始应该都是offer
+
+   src的邻居 new int[]{cur[0], cur[1], 0};
+    
+   核心算法：
 
      ...
      for(int[] cur : map.get(src)){
@@ -1228,16 +1341,16 @@ Graph（记得优先建数据结构： 两种图的表示方式 ： adjacent Arr
      }
 
      Runtime: 因为有比较所以是O(log(V)V+log(V)E), space是O(E+V)， 所有当前邻居的最大值
-----------------------------------------------------------------------------------------------------
+
 Tree Traverse
+----------------------------------------------------------------------------------------------------
 
 1. Tree的题一定要灵活利用左子树是start到i-1，右子树是i+1到end这一个特性， 无论是dp
 还是recursion还是forloop来做permutation
 
 
-
+Tree DFS
 ----------------------------------------------------------------------------------------------------
-Tree.DFS
 1. helper查null的时候helper有几个node就查几个node == null， 不然会null pointer
    
 2. DfS如果helper里有arraylist等结构的话因为是引用参数而不是传值参数是需要在每个helper的末尾像backtrack一样去掉尾巴的
@@ -1273,12 +1386,11 @@ Tree.DFS
                                 }
                             }
                         }
-                
-                        
 
 
+
+Tree BFS
 ----------------------------------------------------------------------------------------------------
-Tree.BFS
 1.BFS在forloop去poll() queue里面的东西之前一定要注意用一个int在while loop里确认好queue的size
 2.常用的whileloop格式
   Queue<> queue = new LinkedList<>();
@@ -1324,8 +1436,8 @@ Tree.BFS
             }
             if(numsTaken == numCourses) return true;
 
-----------------------------------------------------------------------------------------------------
 Comparator
+----------------------------------------------------------------------------------------------------
  1. Arrays.sort(points, Comparator.comparing(a -> a[0]*a[0] +a[1]*a[1]))
 
  2. Arrays.sort(intervals, (a,b) -> (a[0] - b[0]));
@@ -1355,6 +1467,8 @@ Comparator
 
  5. KthSmallestSum: 定义一个comparator的class并且implement它：
     建立这个comparator class：
+
+
     class com implements Comparator<pair>{
     public int compare (pair a, pair b){
        return a.val - b.val;
@@ -1362,27 +1476,44 @@ Comparator
     }
 
     应用这个comparator class：
+    
+
     public ...{
     PriorityQueue<Heap> minHeap = new PriorityQueue<Heap>(k,new com()); （注意！： k在前面）f
     }
 
 6. meetingRoomsII 也可以在 Arrays.Sort()里面直接加comparator：
-   Arrays.Sort( end,
-         new Comparator<Integer>(){
-                                public int compare(int a, int b)
-                                 return a - b; 
-        });
+   
+
+           Arrays.Sort( end,
+                 new Comparator<Integer>(){
+                                        public int compare(int a, int b)
+                                         return a - b; 
+                });
 
 7. Arrays.Sort(char[]) 也是可以的
+   
 8. 要sort一个特定的list并且要新建comparator最好不要用arrays.Sort(listName, Comparator.comparing(...))， 而是listName.Sort(com)
+   
 9. 如果pq是minHeap， 那么他的comparator应该是从小到大的comparator: return a-b; 因为pq是top出来， 所以他的顺序应该还是从小到大，
 所以在fetch items这道题里pq的解法和array的sort的comparator应该是一样的
+   
 10. return a - b; 是minHeap， 上升趋势， 再强调一遍
+    
 11. list.Sort(com)也可以被Collections.Sort(list)取代， 如果我们只是要一个普通递增趋势的list
+    
 12. 当我们在一遍记录频率一边按照频率在heap里面排列是会出错的， 但如果频率是固定的我们随时加进去都会根据它的频率排列到它应该在的位置上
 
----------------------------------------------------------------------------------------
+13. Collections.max() 可以直接求出整个collection里的最大值
+
+14. treeMap永远都由key来sort， 基本不要用value来sort
+
+15. 要正常使用treeSet就不要改comparator 
+    
+16. 找最接近requirement的marking的时候不能用treeSet.higher()； 而是要用treeSet.ceiling(); higher()是不包括等于requirement的marking的
+
 Stack和Queue：
+---------------------------------------------------------------------------------------
 
  1.Deque<List<Integer>> Stack = new ArrayDeque<>();
    Stack<Integer> Stack = new Stack<>();
@@ -1415,8 +1546,9 @@ Stack和Queue：
  8. pq.remove(Integer)可以把某个特定的元素从pq里移出去
  9. 注意在提取多位数的数字的时候可以用 num = num * 10 + (cl[i] - '0');
  10. 将一整个List addAll到一个stack里的话他会头先进去， 所以在必要的时候要学会reverse
+
+Dynamic Programming:
 ------------------------------------------------------------------------------------------------------------------------
- DynamicProgramming
 
  1.如果碰上有负数的会影响乘积的， 可以用一个maxDp[]和一个minDp来分别记录， 再根据当前是否小于0来多列一项关系式
 
@@ -1426,8 +1558,8 @@ Stack和Queue：
 
  4.求连续的最长数列的情况一般都是用dp来记载当前最长的长度然后再根据尾部来更新长度
 
+Sort:
  -----------------------------------------------------------------------------------------------------------------------
- Sort:
 
  1. Sort有 Selection Sort, Bubble Sort, Heap Sort, Quick Sort, Merge Sort, Insert Sort, Shell Sort, Bucket Sort等算法 要熟悉概念
     
@@ -1438,24 +1570,24 @@ Stack和Queue：
     ts.floor(cur);
     
     ts.ceiling(cur);
-    
- ----------------------------------------------------------------------------------------------------------------------- 
- Array
+
+Array
+ -----------------------------------------------------------------------------------------------------------------------
 
  1. Arrays.fill(int[] a, int val) 可以把一个list或者一个int[]所有的值都initialize
     
  2. 直接toArray()的话要在括号里确定一下array的dimension ： return res.toArray(new int[res.size()][2]);
- 
+
+BackTrack:
  -----------------------------------------------------------------------------------------------------------------------
- BackTrack:
   1. Permutations查重:  temp.remove(temp.size()-1); 用来随时去掉最后的那一个元素来随时查重，因为之前包含最后一个数字的数列已经进入另外一个recursion了
      
   2. Backtrack的中心是找到了想要的结果之一就进入新的recursion，然后退回到没有找到想要的结果的情况继续浏览，就是从每一种可能找到结果的可能拓展recursion
      
   3. 一般先用loop去寻找每一种可能，recursion也可以写成多一个forloop
 
+Node\Pointer:
 ------------------------------------------------------------------------------------------------------------------------
- Node\Pointer:
 
  1. addTwoNumbers: int val2 = l2  != null ? l2.val : 0; 标记一个integer之前做一个判断
  2. addTwoNumbers: ListNode node = new ListNode(val%10); track.next = node; track = node; 先把node放在track之后，然后再让track = node 继续追踪储值
@@ -1463,8 +1595,8 @@ Stack和Queue：
  4. 九章第一课： 双指针一起移动的方法： 删去最左边的那个， 并且看最左边的那个pointer是不是预值,  然后主指针在forloop里面继续移动
 
 
+String:
 ------------------------------------------------------------------------------------------------------------------------
- String:
  1.switch(ch){
 
           case '.' :
@@ -1511,14 +1643,15 @@ Stack和Queue：
      
  13. s.startsWith(String head)可以检查这个s的头是不是什么特定的head
 
-    
 
 
 
 
-----------------------------------------------------------------------------------------------------
 Char:
+----------------------------------------------------------------------------------------------------
+
 1. 判断Character里面内容是什么：
+
 isDigit
 isLetter
 isLetterOrDigit
@@ -1528,48 +1661,64 @@ isSpaceChar
 isDefined
 
 2. 改变Character：
+
 .toLowerCase
-   
+
 .toUpperCase 
    
-3. (char)65 = 'a', Integer到Character的转换
+3. (char)97 = 'a', Integer到Character的转换, ascii代码
 
-4. Integer转换成char ： char c = (char)(i + '0');
-
-
-----------------------------------------------------------------------------------------------------
+4. 保存了ascii代码的表， 65是'A'， 97才是'a'
 
 Math:
+----------------------------------------------------------------------------------------------------
 
 1.不同的数字类型：int（10位）Max 2^32;  long（10位）2^64;  short（5位）2^16; float（小数点后6位） 2^32;  double（小数点后16位）2^64
+
 2.（int）tmp 就是只留整数， tmp本来是double
+
 3. 碰到数字一直要找各个digit的题，while(n > 0) n /= 10;
+   
 4. a/2 可以写成 a>>1 ; a*2 可以写成 a<<1
+   
 5. peak = a ++ ; 是先使用a再a++ ， 然而peak = ++a; 是a先++再使用a
+   
 6. Integer i 可以是null， 但int i 只能是数字， 所以在tree里面用的时候我们可以用Integer来modify一个node的val
+   
 7. Long.intValue() 可以把一个int转换成long， （char)(i + 48);
+   
 8. 判断一个数n 是不是prime： 可以用一个forloop
-   for(int i = 2; i*i <= n; i++){
-      if(n % i == 0) return false; //假设有整除return false
-      }
-      return true;
-9. Collections.min(List<Integer>)可以直接求一段数字的最大值
+       
+       for(int i = 2; i*i <= n; i++){
+          if(n % i == 0) return false; //假设有整除return false
+          }
+          return true;
+   
+9. Collections.min(List<Integer>)可以直接求一段数字的最小值
+   
 10. 判断一个String里面是不是Integer可以用 Character.isDigit(String的最后一位char);
+    
 11. Integer.parseInt(String) 可以一次性读取String里面的整个数字
+    
 12. java里面peek()出来比较大的数会被看作object， 是不能直接用 == 比较的， 要么用equals要么用两个参数来point这两个object的intVal,
     如果是比较小的数在[-128, 127]之内的话是可以直接==比较， 就是在直接比较数值和地址.
     
 13. Math有很多题都是跟余数有关的
+    
 14. Math的四个方向可以用四个二位坐标来代替
+    
 15. 跟11差不多， Integer.getInteger()也可以取String里面整个Integer
+    
 16. 但如果要找一个string里面的double的话就必须要用：
+    
     float f = Float.valueof(s);
+    
     double floor = Math.floor(f);
+    
     double ceil = Math.ceil(f);
 
-
-----------------------------------------------------------------------------------------------------
 Boolean:
+----------------------------------------------------------------------------------------------------
 1. true && false == false;  true || false == true;
    
 2. boolean[][] visited = new boolean[length][width]class
@@ -1577,8 +1726,8 @@ Boolean:
 3.  l2.val+carry>=10? 1:0; 这种句式而避过if
 
 
-----------------------------------------------------------------------------------------------------
 TimeLimit, Overflow：
+----------------------------------------------------------------------------------------------------
 
 1.  l + （r-l)/2 比 （l+r)/2好， 因为（l+r)/2加起来的数字太大就会stack overflow (badVersion)
     
@@ -1587,9 +1736,9 @@ TimeLimit, Overflow：
 3. recursion最后不删掉尾巴 sb.deleteCharAt(sb.length()-1)的话会进入死循环
 
 
+Trie：
 ----------------------------------------------------------------------------------------------------
 
-Trie 存储信息
 1. 字母的信息都可以用 int n = c  - 'a' ; 来找到sons = new TrieNode[26] ；字符位置
 
 2.创建： TrieNode root = new TrieNode();
@@ -1607,8 +1756,8 @@ Trie 存储信息
         }
 
 
+BinarySearch：
 ----------------------------------------------------------------------------------------------------
-BinarySearch
 1.中心用法就是判断mid比结果大还是比结果小，然后一直向这个结果挤压
 
 2.除非特殊情况l或者r可以包括target,不然mid找到target以后就直接returntarget，否则l = mid+1 || r = mid-1, 不然会有runtime error
@@ -1626,8 +1775,8 @@ BinarySearch
 
 5.Sorted才能用二分法
 
+HashTable：
 ----------------------------------------------------------------------------------------------------
-HashTable
 
 1. 浏览一个map所有的entry可以用 for（Map.Entry<K,V> e: map.entrySet()) 的 forloop来浏览
    
@@ -1650,23 +1799,25 @@ HashTable
    d. test(T t, U u)
 
  来源 ： https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html
-    
 
-    
-    
 
-----------------------------------------------------------------------------------------------------
+
+
 Matrix
+----------------------------------------------------------------------------------------------------
 1. l = w > 0? Array.matrix[0].length : 0;
+   
 2. 计算能找到的最大边长长度的时候最好沿着对角线找
+   
 3. 知道整个matrix m*n的总数的值，则去找特定的坐标是 Array.matrix[cur/n][cur%n]
 
-----------------------------------------------------------------------------------------------------
-LinkedList                       https://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html
+LinkedList
+---------------------------------------------------------------------------------------------------- 
+https://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html
+
 1. return res.toArray(new int[res.size][]);可以直接把linkedList转换成int[][];
 
 
 
 ----------------------------------------------------------------------------------------------------
-Intervals类型题目
-1. 拿一个linkelist(queue) 来随时比较检查过的最后一个和未被检查过的第一个的大小差别
+

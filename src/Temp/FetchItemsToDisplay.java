@@ -3,6 +3,44 @@ package Temp;
 import java.util.*;
 
 public class FetchItemsToDisplay {
+
+    //做法： 简单来说就是用了一个pq按照sortParameter和sortOrder来排列所有的name，
+    // 然后再按照itemsPerPage一页一页的把pq里的items全部poll()出来，直到我们想要的pageNumber那一页的所有item都被加到res里
+    // 注意：要注意pq里面是不是poll()完了， 如果是的话就没必要继续poll()下去了
+    // Runtime: O(klog(n)) , Space: O(nlog(n)), k是pageNumber * itemsPerpage
+
+    PriorityQueue<String> pq;
+    public List<String> fetchItemsToDisplay(int sortParameter, int sortOrder, int itemsPerPage, int pageNumber, int numOfItems, HashMap<String, int[]> items){
+        if(sortParameter == 0) pq = new PriorityQueue<>((a, b) -> sortOrder == 0 ? a.compareTo(b) : b.compareTo(a));
+        else if(sortParameter == 1) pq = new PriorityQueue<>((a, b) -> sortOrder == 0 ?  items.get(a)[0] - items.get(b)[0] : items.get(b)[0] - items.get(a)[0]);
+        else if(sortParameter == 2) pq = new PriorityQueue<>((a, b) -> sortOrder == 0 ? items.get(a)[1] - items.get(b)[1] : items.get(b)[1] - items.get(a)[1]);
+        for(String name : items.keySet()) pq.offer(name);
+        List<String> res = new ArrayList<>();
+        for(int i = 0; i <= pageNumber; i++){
+            int cnt = 0;
+            while(!pq.isEmpty() && cnt < itemsPerPage) {
+                if (i == pageNumber) res.add(pq.poll());
+                else pq.poll();
+                cnt++;
+            }
+            if(pq.isEmpty()) break;
+        }
+        return res;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //做法: 主要就是建了一个item的class, 然后建一个pq, 这个pq要注意sortOrder和sortParameter,
     // 我们需要用一个pq来存map里所有的值, 如果sortOrder = 0, 那他需要这个书是从小到大的排序的,
     // 但我们的pq不应该是maxHeap, 我们正好相反要是minHeap, 因为最后一步我们要把所有比目标页数的页数小的页数的item都poll()出来,
@@ -10,7 +48,6 @@ public class FetchItemsToDisplay {
     //Runtime: 应该就是O(Nlog(N)), space也是O(Nlog(N)), 因为map也只是N
 
 
-    //刀说的sort一下list的解法
     class item{
         String name;
         int relevance;

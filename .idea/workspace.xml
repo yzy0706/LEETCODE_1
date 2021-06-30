@@ -2,55 +2,144 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e8cda-fea1-4f05-ad0b-dac7a748dd3a" name="Default" comment="yyo">
-      <change afterPath="$PROJECT_DIR$/src/Array/Intervals/RectangleOverlap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/SingleElementInASortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/matrix/BattleShipsOnABoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/string/AddBoldTagToString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/string/FindAllAnagramsInAString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/string/GroupShiftedStrings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/string/MinTimeDifference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backtrack/CountNumberOfTeams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/search/SingleElementInASortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataDesign/DesignBoundedUniqueQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataDesign/DesignSnakeGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataDesign/MovingAverageFromDataStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataDesign/MyCalendarI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataDesign/OnlineStockSpan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataDesign/ShuffleAnArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataDesign/SnapShotArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/accumulate/PascalTriangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/BFS/math/WaterAndJugProblem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/BFS/matrix/MineSweeper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/BFS/matrix/ShortestBridge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/BFS/matrix/WallAndGates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/accumulateTree/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/accumulateTree/RangeSumOfBST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/accumulateTree/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/matrix/ShortestBridge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/unionFind/GraphBipartite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HashTable/hashSet/IntersectionOfTwoArrays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Heap/treeSet/MyCalendarI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/reverse/ReorderList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Math/WaterAndJugProblem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Math/algebra/PascalTriangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Math/algebra/RectangleOverlap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Math/converIntegerAndString/ExcelSheetColumnTitle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sort/constructComparator/HighFive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sort/constructComparator/MaxUnitsOnATruck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/DFS/inorderTraversal/ConvertBSTToSortedDoublyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/constructBinaryTree/BinaryTreeWithFactors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TwoPointer/sameDirection/LongestRepeatingCharacterReplacement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/KthMissingPositiveNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/LongestConsecutiveSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/MinimumIncrementToMakeArrayUnique.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/matrix/DFS/DiagonalTraverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/matrix/DFS/NumberOfDistinctIslands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/matrix/DP/MatrixBlockSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/matrix/SparseMatrixMultiplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/preSum/ContinuousSubarrayDivisbleByK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/preSum/MusicPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/string/LongestRepeatingSubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/string/MaxNumOfOccuranceOfASubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/string/MaxSwap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/string/MostCommonWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/string/NumberOfMatchingSubsequences.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/string/PartitionLabels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/string/ReplaceAllQuestionMarksAndAvoidRepeating.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/string/ReverseVowelsOfAString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/string/ShortEncodingOfWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Backtrack/LetterCombinationsOfAPhoneNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Backtrack/MaxSumOfTwoNonOverlappingSubarray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinarySearch/CapacityToShipPackagesWithinDDays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataDesign/DesignCircularQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataDesign/FlattenNestedListIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataDesign/LRUCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataDesign/NestedInteger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DivideAndConquer/BurstBallons.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/accumulate/MatrixBlockSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/accumulate/MinDifficultyOfAJobSchedule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/MaxSumOfTwoNonOverlappingSubarray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/dfsLeftRightTree/RecoverBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/dfsLeftRightTree/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/matrix/DiagonalTraverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/matrix/NumberOfDistinctIslands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/preorderTraversal/BinaryTreeVerticalOrderTraversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Graph/DFS/preorderTraversal/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Greedy/Array/BuildingWithAnOceanView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Greedy/Array/KthMissingPositiveNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HashTable/hashMap/ContinuousSubarrayDivisbleByK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HashTable/hashMap/DegreeOfArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Heap/Intervals/AddBoldTagToString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Heap/queue/CarFleet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Heap/queue/FetchItemsToDisplay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Heap/queue/FiveStarSeller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Heap/queue/greedy/LongestHappyString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Heap/queue/greedy/SellDiminishingValuedColoredBalls.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Heap/treeMap/CarFleet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Heap/treeMap/MinDifferenceBetweenLargestAndSmallestVal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Heap/treeMap/MinimumIncrementToMakeArrayUnique.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Math/ReachANumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Math/matrix/SparseMatrixMultiplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Math/multiply/SignOfTheProductOfAnArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/histogram/BuildingWithAnOceanView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/reCombine/RemoveAllAdjacentDuplicatesInString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/ChemicalDeliverySystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/CriticalConnections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/CutOffRank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/DistanceBetweenTwoNodesInBST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/DivisibilityOfStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/EarliestDeliveryTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/FiveStarSeller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/FreshPromotion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/GiftingGroups.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/ItemInContainers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/KeywordSuggestions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/LRUCacheMisses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/LargestItemAssociation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/MinCostToConnectAllNodes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/MinimumTotalContainerSize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/MusicPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/OptimalUtilization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/PartitionLabels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/PowerGrid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/PrimeAirTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/RoverControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/ThrottlingGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/TransactionLogs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/Turnsites.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp/UtilizationCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/DFS/MaxSumOfTwoNonOverlappingSubarray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/DFS/commonAncestors/DistanceBetweenTwoNodesInBST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/DFS/dfsLeftRightTree/RecoverBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/DFS/dfsLeftRightTree/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/DFS/matrix/DiagonalTraverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/DFS/matrix/NumberOfDistinctIslands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/constructBinaryTree/ConstructBinaryTreeFromPreorderPostorder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TwoPointer/sameDirection/SlidingWindowMaximum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Summary.md" beforeDir="false" afterPath="$PROJECT_DIR$/Summary.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TechSummary.md" beforeDir="false" afterPath="$PROJECT_DIR$/TechSummary.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graph/BFS/Flood/BucketFill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/BFS/flood/BucketFill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graph/BFS/Flood/FloodFill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/BFS/flood/FloodFill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graph/BFS/searchInMatrix/MinimumKnightMoves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/BFS/matrix/MinimumKnightMoves.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graph/DFS/MaxDepthOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/DFS/accumulateTree/MaxDepthOfBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graph/DFS/SubtreeOfAnotherTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/DFS/accumulateTree/SubtreeOfAnotherTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graph/DFS/TwoSameTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/DFS/accumulateTree/TwoSameTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Math/RomanToInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Math/converIntegerAndString/RomanToInteger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/DFS/FriendCricles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/DFS/FriendCircles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Intervals/AddBoldTagToString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/Intervals/AddBoldTagToString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/matrix/DFS/NumberOfIslands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/matrix/DFS/NumberOfIslands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph/BFS/levelorderTraversal/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/BFS/levelorderTraversal/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph/BFS/topologicalSort/courseScheduleII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/BFS/topologicalSort/CourseScheduleII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph/DFS/friendCricles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/DFS/matrix/FriendCircle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph/DFS/path/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/DFS/path/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph/kruskal/connectingCitiesWithMinCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/kruskal/connectingCitiesWithMinCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph/unionFind/JZ_connectingGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/unionFind/JZ_connectingGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Greedy/meetingRoomsII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Greedy/mergeIntervals.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/MinimizeError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/queue/greedy/MinimizeError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Queue/CampusBikesII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/queue/CampusBikesII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Queue/MaxNumberOfEatenApples.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/queue/MaxNumberOfEatenApples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Queue/TwoCitiesScheduling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/queue/TwoCitiesScheduling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Queue/contructNewDataStructure/KPairsWithSmallestSums.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/queue/contructNewDataStructure/KPairsWithSmallestSums.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Queue/contructNewDataStructure/KSmallestElementInMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/queue/contructNewDataStructure/KSmallestElementInMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Queue/contructNewDataStructure/SuperUglyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/queue/contructNewDataStructure/SuperUglyNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Queue/contructNewDataStructure/UglyNumbersII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/queue/contructNewDataStructure/UglyNumbersII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Queue/tailProblems_greedy/FurthestBuildingYouCanReach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/queue/greedy/FurthestBuildingYouCanReach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Queue/tailProblems_greedy/MinDeletionsToMakeFreqUnique.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/queue/greedy/MinDeletionsToMakeFreqUnique.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Queue/tailProblems_greedy/distantBarcodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/queue/greedy/distantBarcodes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Queue/tailProblems_greedy/isPossible.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/queue/greedy/isPossible.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Queue/tailProblems_greedy/reorganizeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/queue/greedy/reorganizeString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Queue/tailProblems_greedy/sortCharactersByFrequency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/queue/greedy/sortCharactersByFrequency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Queue/tailProblems_greedy/topKFrequentElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/queue/greedy/topKFrequentElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/kClosestPointsToOrigin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/kClosestPointsToOrigin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/CopyListWithRandomPointer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/CopyListWithRandomPointer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/addTwoNumbers/AddTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/addTwoNumbers/AddTwoNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Math/RobotRoundInCircle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Math/RobotRoundInCircle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Temp/BreakAPalidrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Temp/BreakAPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Temp/CopyListWIthRandomPointer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Temp/CopyListWIthRandomPointer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Temp/CountTeams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Temp/CountTeams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Temp/DiskSpaceAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Temp/DiskSpaceAnalysis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Temp/FetchItemsToDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Temp/FetchItemsToDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Temp/FillTruck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Temp/FillTruck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Temp/MaxAverageSubtree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Temp/SubtreeWithMaximumAverage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Temp/MinDistanceBetweenRobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Temp/MinDistanceBetweenRobots.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Temp/NearstCity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Temp/NearestCity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Temp/PackagingAutomation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Temp/PackagingAutomation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Temp/SmallestNegativeBalance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Temp/SmallestNegativeBalance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Temp/SupplierInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Temp/FindTheHighestProfit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Temp/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Temp/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Temp/WaysToSplitStringIntoPrimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Temp/WaysToSplitStringIntoPrimes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/DFS/commonAncestors/LowestCommonAncestorII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/DFS/commonAncestors/LowestCommonAncestorII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/DFS/commonAncestors/LowestCommonAncestors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/DFS/commonAncestors/LowestCommonAncestors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TwoPointer/MidpointExpand/JZ_JC_1_ValidPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoPointer/midpointExpand/JZ_JC_1_ValidPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TwoPointer/MidpointExpand/LongestPalindromicString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoPointer/midpointExpand/LongestPalindromicString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TwoPointer/sameDirection/LengthOfLongestSubstringKDistinct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoPointer/sameDirection/LengthOfLongestSubstringKDistinct.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,19 +238,19 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Markdown" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Temp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Graph/DFS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Graph/DFS" />
       <recent name="$PROJECT_DIR$/src/Temp" />
       <recent name="$PROJECT_DIR$/src/Tree" />
       <recent name="$PROJECT_DIR$/src/Tree/DFS" />
       <recent name="$PROJECT_DIR$/src/Tree/BFS" />
-      <recent name="$PROJECT_DIR$/src/Heap" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Temp/OA2" />
@@ -174,14 +263,14 @@
       <recent name="Tree.DFS.commonAncestors" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="BinarySearch.search" />
-      <recent name="Array" />
-      <recent name="Math.algebra" />
-      <recent name="Graph.DFS.accumulateTree" />
+      <recent name="Greedy.Array" />
+      <recent name="Tree.DFS" />
+      <recent name="Graph.DFS" />
       <recent name="DynamicProgramming.accumulate" />
+      <recent name="Array" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CountTeams">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -209,6 +298,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CountTeams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Temp.CountTeams" />
+      <module name="LEETCODE_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Temp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -224,6 +327,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CountTeams" />
         <item itemvalue="Application.Circles" />
       </list>
     </recent_temporary>

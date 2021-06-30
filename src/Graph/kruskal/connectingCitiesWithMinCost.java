@@ -47,10 +47,7 @@ class UNF{
     public boolean isSameTree(int a, int b) {
         return find(a) == find(b);
     }
-}
 
-
-public class connectingCitiesWithMinCost {
     public int minimumCost(int N, int[][] connections) {
         UNF unf = new UNF(N);
         Arrays.sort(connections, (a, b) -> a[2] - b[2]);

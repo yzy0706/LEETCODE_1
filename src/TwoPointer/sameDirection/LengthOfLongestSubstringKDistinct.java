@@ -3,6 +3,28 @@ package TwoPointer.sameDirection;
 import java.util.HashMap;
 
 public class LengthOfLongestSubstringKDistinct {
+    // 做法: 还是经典的同向双指针, 但因为这题里的参数s可能包含空格, 所以没法拿int[] freq来记录频率, 所以只能用HashMap来记录频率, 稍微有点慢
+    // Runtime: O(n), Space: O(n)
+
+    public int lengthOfLongestSubstring(String s){
+        if(s.length() < 1) return 0;
+        int l = 0, r = 0, res = 0;
+        HashMap<Character, Integer> freq = new HashMap<>();
+        while(r < s.length()){
+            Character cur = s.charAt(r);
+            freq.putIfAbsent(cur, 0);
+            freq.replace(cur, freq.get(cur) + 1);
+            while(freq.get(cur) > 1 && l < r){
+                freq.replace(s.charAt(l), freq.get(s.charAt(l)) - 1);
+                l ++;
+            }
+            res = Math.max(res, r - l + 1);
+            r++;
+        }
+        return res;
+    }
+
+
     // 后来自己做了一遍
     // 做法: 用同向的双指针加上HashMap<Character, Integer> freq来做的, 因为s上的字符不一定是英文字母所以必须得用hashmap而不是int[]来记录频率
     // 1. j先出发, 记录每一个字母的频率, 如果当前char在hashmap里面还没出现过, type++

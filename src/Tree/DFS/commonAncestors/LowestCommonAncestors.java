@@ -1,6 +1,18 @@
 package Tree.DFS.commonAncestors;
 
 public class LowestCommonAncestors {
+    //做法： 直接拿当前主方程做dfs， if(root == null || root == p || root == q) return root; ， 然后看右子树和左子树里面有没有p或者q
+    // Runtime: O(n), Space: O(1)
+
+    public TreeNode lowestCommonAncestor_reviewed(TreeNode root, TreeNode p, TreeNode q) {
+        if(root == null || root == p || root == q) return root;
+        TreeNode left = lowestCommonAncestor(root.left, p, q), right = lowestCommonAncestor(root.right, p, q);
+        if(left != null && right != null) return root;
+        return left == null ? right : left;
+    }
+
+
+
     // 做法: lowestCommonAncestor的题基本都用到了一个postorder的dfs的方法, 善用recursion
     // 1. 用recursion检查root的左右路径, left = lowestCommonAncestor(root.left, p, q); right做相同的recursion,
     // 如果当前root是p、q中的一个或者是null就return当前的root

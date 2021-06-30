@@ -540,6 +540,12 @@ d. DFS： DFS里面有connectNodesOnSameLevel这种题， 也有PathSum这种题
             temp.remove(temp.size()-1);
         }
 
+3. Number of Islands的题：
+
+    1. 最简单的版本是直接dfs
+    
+    2. 如果要比较形状的话，我们用一个string来记录dfs走过的所有路程的方向, 出界了就append('e');
+
 Stack
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -1247,6 +1253,51 @@ e. 如果是在forloop上面通过另外一个pointer跳跃到一个位置， �
         
             }
 
+
+5. Prefix Sum的题：
+
+    a. 记得put（0， 1）
+
+    b.  
+   
+   I. if((a + b) % k == 0) -> b % k = k - (a % k) (music pair : remainder = (k - n % k) % k)
+   
+
+        public int numPairsDivisibleBy60_reviewed(int[] time) {
+            int len = time.length;
+            if(len == 1) return 0;
+            int[] map = new int[60];
+            int res = 0;
+            for(int i = 0; i < len; i++){
+                int cur = time[i], coorRemainder = (60 - cur % 60) % 60;
+                //in case of cur == 0
+                res += map[coorRemainder];
+                map[cur % 60] ++;
+            }
+            return res;
+        }
+
+   II. if((a - b) % k == 0) -> a % k = b % k; (divisble subarray : remainder = (sum + n) % k
+
+    
+    public int subarraysDivByK_remainder(int[] nums, int k) {
+        int r = 0, len = nums.length, res = 0;
+        HashMap<Integer, Integer> rms = new HashMap<>();
+        rms.put(0, 1);
+        for(int n : nums){
+            r = (r + n) % k;
+            if(r < 0) r += k; // 举例 : 如果当前remainder sum == -1, sum += k = 4;
+            if(rms.containsKey(r)) res += rms.get(r);
+            rms.put(r, rms.getOrDefault(r, 0) + 1);
+        }
+        return res;
+    }
+
+
+        
+
+        
+ 
 LinkedList
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -1475,3 +1526,57 @@ TreeSet的用法：
    
    
         
+2.做法： 用HashMap和keySet来做的
+
+  1. 记录每一种flask的index和对应的所有marking,放到HashMap里
+
+  2. 在map里foreach loop每一种flask， 根据requirements, 用flaskMarkings.ceiling(requirement)找到每一种flask最接近requirement的marking,计算每一种flask的totalWaste:
+     
+         a. 如果totalWaste == minWaste, 比较flaskIndex和res
+     
+         b. 如果totalWaste < minWaste, 更新minWaste和res
+
+     注意：
+    
+          1. 要正常使用treeSet就不要改comparator
+          
+          2. 找最接近requirement的marking的时候不能用treeSet.higher()； 而是要用treeSet.ceiling(); higher()是不包括等于requirement的marking的
+
+      Runtime: O(nlog(k)m) Space: O(nklog(k)), n是flask的种类数量， k是一个flask最多的marking数量， m是requirement的数量
+
+   
+
+    public int chemicalDeliverySystem(int numOrders, List<Integer> requirements, int flaskTypes, int totalMarks, List<int[]> markings){
+        HashMap<Integer, TreeSet<Integer>> flasks = new HashMap<>();
+        for(int i = 0; i < totalMarks; i++){
+            int[] curMark = markings.get(i);
+            flasks.putIfAbsent(curMark[0], new TreeSet<>());
+            flasks.get(curMark[0]).add(curMark[1]);
+        }
+        int minWaste = Integer.MAX_VALUE, res = Integer.MAX_VALUE;
+        for(int flaskIndex : flasks.keySet()) {
+            TreeSet<Integer> flaskMarkings = flasks.get(flaskIndex);
+            int totalWaste = 0;
+            for (int requirement : requirements) {
+                int closestMark = flaskMarkings.ceiling(requirement) == null ? -1 : flaskMarkings.ceiling(requirement);
+                if (closestMark == -1) {
+                    totalWaste = -1;
+                    break;
+                }
+                totalWaste += closestMark - requirement;
+            }
+            if (totalWaste == -1) {
+                continue;
+            } else {
+                if (totalWaste == minWaste) {
+                    if (flaskIndex < res) {
+                        res = flaskIndex;
+                    }
+                } else if (totalWaste < minWaste) {
+                    minWaste = totalWaste;
+                    res = flaskIndex;
+                }
+            }
+        }
+        return minWaste == Integer.MAX_VALUE ? -1 : res;
+    }

@@ -7,6 +7,29 @@ import java.util.Queue;
 class kClosestPointsToOrigin {
 
 
+    // 做法: 简单的pq做法
+    // Runtime: O(nlog(n)), Space: O(nlog(n));
+
+    public int[][] kClosest_reviewed(int[][] points, int K){
+        int len = points.length;
+        int[][] res = new int[K][2];
+        if(len < 1) return res;
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> (a[0] * a[0] + a[1] * a[1] - (b[0] * b[0] + b[1] * b[1])));
+        for(int[] point : points) pq.offer(point);
+        int pos = 0;
+        while(!pq.isEmpty() && K > 0){
+            res[pos ++] = pq.poll();
+            K --;
+        }
+        return res;
+    }
+
+
+
+
+
+
+
 
 
 

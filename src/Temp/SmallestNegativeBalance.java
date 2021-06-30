@@ -1,11 +1,62 @@
 package Temp;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class SmallestNegativeBalance {
+
+    public List<String> minDebtMembers_reviewed(List<debtRecord> records){
+        int len = records.size();
+        List<String> res = new ArrayList<>();
+        if(len < 1){
+            res.add("Nobody has a negative balance");
+            return res;
+        }
+        HashMap<String, Integer> members = new HashMap<>();
+        for(debtRecord dr : records){
+            String borrower = dr.borrower, lender = dr.lender;
+            int amount = dr.amount;
+            members.putIfAbsent(borrower, 0);
+            members.putIfAbsent(lender, 0);
+            members.put(borrower, members.get(borrower) + amount);
+            members.put(borrower, members.get(lender) - amount);
+        }
+        int min = Collections.min(members.values());
+        if(min >= 0){
+            res.add("Nobody has a negative balance");
+            return res;
+        }
+        for(Map.Entry<String, Integer> entry : members.entrySet()){
+            if(entry.getValue() == min){
+                res.add(entry.getKey());
+            }
+        }
+        res.sort(String::compareTo);
+        return res;
+    }
+
+
+
+
+
+
+
+    // 找的是最小值， 不是最靠近0的负值， 不用TreeMap
+    //        TreeMap<Integer, List<String>> treeMap = new TreeMap<>();
+    //        for(Map.Entry<String, Integer> entry : members.entrySet()){
+    //            String name = entry.getKey();
+    //            int balance = entry.getValue();
+    //            treeMap.putIfAbsent(balance, new ArrayList<>());
+    //            treeMap.get(balance).add(name);
+    //        }
+    //    List<String> minNegative = treeMap.get(treeMap.ceilingKey(0));
+
+
+
+
+
+
+
+
     public  class debtRecord{
         String borrower = "";
         String lender  = "";

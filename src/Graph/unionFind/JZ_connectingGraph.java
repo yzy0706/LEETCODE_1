@@ -18,7 +18,6 @@ public class JZ_connectingGraph {
         while(f[j] != j) {
             j = f[j];
         }
-
         while(a != j){
             fa = f[a];
             f[a] = j;
