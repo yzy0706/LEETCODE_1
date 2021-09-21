@@ -1,63 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="872e8cda-fea1-4f05-ad0b-dac7a748dd3a" name="Default" comment="yyo">
-      <change afterPath="$PROJECT_DIR$/src/Array/Intervals/MeetingScheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/matrix/BFS/ZeroOneMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/matrix/DFS/ZeroOneMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/sort/SearchSuggestionSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/swap/MinSwapsToGroupAll1Together.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backtrack/ValidTriangleNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/FindKClosestElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DivideAndConquer/ConstructBinaryTreeFromInorderPostorder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DivideAndConquer/ConstructBinaryTreeFromPreorderInorder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/accumulate/PartitionArrayForMaxSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/greedyCombinations/PartitionArrayForMaxSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Greedy/Array/KokoEatingBananas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Greedy/Array/MinSwapsToGroupAll1Together.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Greedy/Array/PartitionArrayForMaxSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HashTable/hashMap/BinaryTreeWithFactors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HashTable/hashMap/SearchSuggestionSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Heap/queue/RankTeamByVotes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Math/addTwoNumbers/SumOfTwoIntegers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sort/sortThenCompareString/SearchSuggestionSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TwoPointer/SumOfSubarrayMins.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Summary.md" beforeDir="false" afterPath="$PROJECT_DIR$/Summary.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSummary.md" beforeDir="false" afterPath="$PROJECT_DIR$/TechSummary.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/UniqueBinaryTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/accumulate/UniqueBinaryTrees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/CoinCombinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/greedyCombinations/CoinCombinations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/CoinCombinationsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/greedyCombinations/CoinCombinationsII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/CombinationSumIV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/greedyCombinations/CombinationSumIV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/DivideIntegerForMaxProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/greedyCombinations/DivideIntegerForMaxProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/LastStoneWeightII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/greedyCombinations/LastStoneWeightII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/MinimumCostForTickets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/greedyCombinations/MinimumCostForTickets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/OnesAndZeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/greedyCombinations/OnesAndZeros.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/PartitionEqualSubsetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/greedyCombinations/PartitionEqualSubsetSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/RedOrBlackCardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/greedyCombinations/RedOrBlackCardGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/ShoppingOffers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/greedyCombinations/ShoppingOffers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/greedyCombinations/TargetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/greedyCombinations/TargetSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/FindNumberOfLongestIncreasingSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/longestSubsequence/FindNumberOfLongestIncreasingSubsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/LargestDivisibleSubset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/longestSubsequence/LargestDivisibleSubset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/LongestArithmeticSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/longestSubsequence/LongestArithmeticSubsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/LongestCommonSubseq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/longestSubsequence/LongestCommonSubseq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/LongestFibonacciSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/longestSubsequence/LongestFibonacciSubsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/LongestPalindromeSubseq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/longestSubsequence/LongestPalindromeSubseq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/LongestPalindromicSubseqII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/longestSubsequence/LongestPalindromicSubseqII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/LongestValidParenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/longestSubsequence/LongestValidParenthesis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/MaxLengthOfRepeatedSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/longestSubsequence/MaxLengthOfRepeatedSubarray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/MaxlengthOfPairChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/longestSubsequence/MaxlengthOfPairChain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/MinASCIIDeleteSumForTwoStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/longestSubsequence/MinASCIIDeleteSumForTwoStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/ShortestWayToFormString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/longestSubsequence/ShortestWayToFormString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/longestSubsequence/WiggleSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/doubleForLoop/longestSubsequence/WiggleSubsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graph/unionFind/GraphBipartite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/unionFind/GraphBipartite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Heap/KthLargestElementInAnArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/queue/KthLargestElementInAnArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Heap/kClosestPointsToOrigin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/queue/contructNewDataStructure/KClosestPointsToOrigin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Temp/DiskSpaceAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Temp/DiskSpaceAnalysis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/DFS/commonAncestors/LowestCommonAncestorII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/DFS/commonAncestors/LowestCommonAncestorII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/constructBinaryTree/BinaryTreeWithFactors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/constructBinaryTree/BinaryTreeWithFactors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/constructBinaryTree/ConstructBinaryTreeFromPreorderInorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/constructBinaryTree/ConstructBinaryTreeFromPreorderInorder.java" afterDir="false" />
-    </list>
+    <list default="true" id="872e8cda-fea1-4f05-ad0b-dac7a748dd3a" name="Default" comment="yyo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
