@@ -1,4 +1,4 @@
-package Tree.constructBinaryTree;
+package DivideAndConquer;
 
 
 public class ConstructBinaryTreeFromPreorderInorder {

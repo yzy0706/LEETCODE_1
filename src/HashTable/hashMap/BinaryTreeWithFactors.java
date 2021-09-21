@@ -1,4 +1,4 @@
-package Tree.constructBinaryTree;
+package HashTable.hashMap;
 
 import java.util.Arrays;
 import java.util.HashMap;

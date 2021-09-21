@@ -17,6 +17,7 @@
 
 
 
+
 -----------------------------------------------------------------------------------------------------------------------------
 
 
@@ -1132,15 +1133,17 @@ ________________________________________________________________________________
 Concept
 ----------------------------------------------------------------------------------------------------
 
-1. 1. Overloading and Overriding:  
-   When two or more methods in the same class have the same name but different parameters, 
+1. Overloading and Overriding:  
+   
+   Overloading: When two or more methods in the same class have the same name but different parameters, 
    it's called Overloading. 
-   When the method signature (name and parameters) are the same in the superclass and the child class, 
+   
+   Overriding: When the method signature (name and parameters) are the same in the superclass and the child class, 
    it's called Overriding.
    
-2. 2. Polymorphism : Object's ability to be taken on many forms.
+2. Polymorphism : Object's ability to be taken on many forms.
 
-3. 3. NoSQL: non-relational: 
+3.  NoSQL: non-relational: 
     
     1. simple and quick search 
     
@@ -1150,7 +1153,7 @@ Concept
     
     4. High traffic
     
-   4. SQL: relational:
+    SQL: relational:
    
     1. complicated CURD(JOIN)
        
@@ -1164,7 +1167,7 @@ Concept
    
    And whereas a class can extend only one abstract class, it can take advantage of multiple interfaces.
 
-5. Process means a program is in execution, whereas thread means a segment of a process. 
+5. Process（进程） means a program is in execution, whereas thread（线程） means a segment of a process. 
    A Process is not Lightweight, whereas Threads are Lightweight.  
    A Process is mostly isolated, whereas Threads share memory. 
    Process does not share data, and Threads share data with each other.
@@ -1221,7 +1224,18 @@ Concept
     Horizontal: add more instances
    
   
+9. Processor: 16、32、64位处理器分别代表可以处理16、 32、 64位字
 
+10. 计算机系统：
+        
+        1. 信息储存的方式： 源程序就是0和1组成的位（byte）序列， 文本字符都用ASCII标准来表示， 计算机系统里的所有的信息都是存储在比特里（字节序列）
+        
+        2. 编译系统的组成： 
+
+        Unix上GCC编译器转换源文件(文本）到目标文件（二进制）：
+
+        hello.c（原文本）-> 预处理器(cpp) -> hello.
+    
 
 Graph（记得优先建数据结构： 两种图的表示方式 ： adjacent Array.matrix, adjacent list)
 ----------------------------------------------------------------------------------------------------

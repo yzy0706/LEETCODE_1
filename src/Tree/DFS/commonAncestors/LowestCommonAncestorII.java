@@ -6,7 +6,7 @@ public class LowestCommonAncestorII {
     // 1. 建立一个helper, 这个postOrder return的TreeNode必须在pFound && qFound才能用, 开始构建helper
     // 2. 首先如果root == null直接return
     // 3. dfs一下root.left和root.right, return一个left和一个right, 这里跟LCA不同的是先进行下面的DFS再判断root是不是p,q之中单一一个, 因为这个题我们需要先完成所有的浏览
-    // 4. 如果root是p、q中的一个哪个boolean就变成true, 而且还return root, 那么p、q就在最顶上的root这
+    // 4. 如果root是p、q中的一个, 哪个boolean就变成true, 而且还return root, 那么p、q就在最顶上的root这
     // 5. 如果不是其中的一个那么我们就判断left和right是不是有一个是null, 如果另外一个不是就return另外一个, 证明p、q都在左子树或者都在右子树
     // 6. 如果两个都不是空的就return root, 证明p、q分别在左右子树
 

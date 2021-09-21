@@ -1,11 +1,20 @@
 package Temp;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.PriorityQueue;
-import java.util.Queue;
+import java.util.*;
 
 public class DiskSpaceAnalysis {
+    public int diskSpaceAnalysis_reviewed_linkedlist(int numComputer, List<Integer> hardDiskSpace, int segmentLength){
+        LinkedList<Integer> l = new LinkedList<>();
+        int res = Integer.MIN_VALUE;
+        for(int i = 0; i < numComputer; i++){
+            int curSpace = hardDiskSpace.get(i);
+            while(!l.isEmpty() && l.peekFirst() < i - segmentLength + 1) l.pollFirst(); //去除掉segment以外的
+            while(!l.isEmpty() && hardDiskSpace.get(l.peekLast()) > curSpace) l.pollLast(); //去除比当前i大的
+            l.addLast(i);
+            if(i + 1 >= segmentLength) res = Math.max(res, curSpace);
+        }
+        return res;
+    }
 
     // dq做法： 跟leetcode上不同的就是， 每次都把dq从最近的开始比i位置的值大的值去掉，以保证dq的最前端是最小值， 正好跟leetcode上那个题相反
     // Runtime: O(n), Space: 0(k), k是segmentLength

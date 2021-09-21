@@ -70,8 +70,12 @@ Sort
          
        public void maxheapify(int[] nums, int start, int lastIndex){
          int lSon = start*2+1, rSon = lSon+1, curMaxSon = lSon;
-         if(lSon > lastIndex) return;
-         if(rSon < lastIndex && nums[rSon] > nums[lSon]) curMaxSon = lSon;
+         if(lSon > lastIndex){
+            return;
+         }
+         if(rSon < lastIndex && nums[rSon] > nums[lSon]){
+            curMaxSon = lSon;
+         }
          if(nums[curMaxSon] > nums[start]){
            swap(curMaxSon, start, nums);
            maxheapify(nums, curMaxSon, lastIndex);
@@ -80,11 +84,17 @@ Sort
    
    
    Quick Sort:
-   做法：挖坑原理， 首先假如l > r直接return，否则把key设置为arr[l]； 
-   然后设置i， j分别等于l， r； 然后折翼一个i < j的whileloop， 从右边看起，j或者i向中间移动，比较j，i位置的数
-   是不是比key大， 是的话就拿对方置换自己并且再向中间移动一位， 这样对方就变成一个坑了， 当whileloop结束的
-   时候i肯定等于j，那么当前的位置应该就要是当前key应该处于最后sort好的数列的位置， 因为他的左右两边相对于他
-   已经是左小右大了，所以结束了以后再把不包括自己的左右两部分继续recursion， 直到l==r为止
+
+   做法：挖坑原理 
+    
+   1. 首先假如l > r直接return，否则把key设置为arr[l]； 
+
+   2. 然后设置i， j分别等于l， r； 然后折翼一个i < j的whileloop， 从右边看起，j或者i向中间移动，比较j，i位置的数
+   是不是比key大， 是的话就拿对方置换自己并且再向中间移动一位， 这样对方就变成一个坑了 
+      
+   3. 当whileloop结束的时候i肯定等于j，那么当前的位置应该就要是当前key应该处于最后sort好的数列的位置， 因为他的左右两边相对于他
+   已经是左小右大了，所以结束了以后再把不包括自己的左右两部分继续recursion， 直到l == r为止
+      
    Runtime: 分割左右的数n次， O(nlog(n)), space O(1)
 
        public void quickSort(int[] nums, int l, int r){
@@ -116,9 +126,8 @@ Sort
      if(l < r){
      int m = (l+r)/2;
      mergeSort(arr, l, m);
-    mergeSort(arr, m+1, r); //把两边都分割并排序成只有一个的情况
-    merge(arr, l, r); //两边都处理完以后再把两边都merge
-    }
+     mergeSort(arr, m+1, r); //把两边都分割并排序成只有一个的情况
+     merge(arr, l, r); //两边都处理完以后再把两边都merge
     }
    
 
@@ -164,7 +173,9 @@ Runtime： O(n^2), space: O(1)
     }
 
 
+
    BucketSort
+
 做法： 用一个有限的bucket来限制所有的数， 分别按照最后一个位数和不同的位数放到cnt里面两次（一共两位数）， 排列的过程中按照相同的
 位数把位数相同的所有的数分在一个位置上， 用int[] cnt来记录他们的数量， 然后再叠加cnt上的数量， 则这个数当前的cnt的大小就他在这个数列上应该处于的位置
 他应该在这个数列里所处的位置， 从所有数的最后一位开始一一分配
@@ -193,6 +204,7 @@ Runtime： O(n^2), space: O(1)
 
 
 
+
 2. 几种题型的解法： 
    
 a. 有关于interval的题：
@@ -202,10 +214,9 @@ a. 有关于interval的题：
 2. 比较两个interval我们一般用右边比较左边, 接下来这个取自insert interval：
      
 
-
             
                 while (insert[0] > intervals[i][1]){
-                    res.add(interval);
+                    res.add(intervals[i]);
                     i++;
                 }
                 while (insert[0] <= intervals[i][1]){

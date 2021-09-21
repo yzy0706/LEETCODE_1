@@ -51,14 +51,18 @@ public class GraphBipartite {
                     int size = queue.size();
                     for(int j = 0; j < size; j++){
                         int cur = queue.poll();
-                        if(mark[cur] != 0 && mark[cur] != curMark) return false;
-                        else if(mark[cur] == curMark) continue;
+                        if(mark[cur] != 0 && mark[cur] != curMark){
+                            return false;
+                        }
+                        else if(mark[cur] == curMark){
+                            continue;
+                        }
                         else{
                             mark[cur] = curMark;
                             for(int next : graph[cur]) queue.offer(next);
                         }
                     }
-                    curMark = 3 - curMark;
+                    curMark = 3 - curMark; // curMark代表着两个不同的set
                 }
             }
         }
