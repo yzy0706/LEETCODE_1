@@ -1,0 +1,11 @@
+
+k
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒýÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûëªÌûÿÿÿÿ
+V	java:S125	"<This block of commented-out lines of code should be removed.(ÐÂ¾¶þÿÿÿÿ
+\
+java:S1126"AReplace this if-then-else statement by a single return statement.(¤«»·ùÿÿÿÿ
+h
+java:S3776J"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Ñù£–
+c	java:S100f"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š‹žÑ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(®Æ¢–
