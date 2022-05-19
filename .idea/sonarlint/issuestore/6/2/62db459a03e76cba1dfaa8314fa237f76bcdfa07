@@ -1,0 +1,39 @@
+
+}
+java:S4144"aUpdate this method so that its implementation is not identical to "isValidSudoku_map" on line 43.(²ÿüúùÿÿÿÿ
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§‚“£
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(§‚“£
+c	java:S100+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä¿Çõ
+<
+java:S1905;"&Remove this unnecessary cast to "int".(é³Êµ
+c	java:S100j"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã±²Ñ
+h
+java:S3776j"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(Ã±²Ñ
+P	java:S125Q"<This block of commented-out lines of code should be removed.(ªİ
+V	java:S125{"<This block of commented-out lines of code should be removed.(³Ù€×ùÿÿÿÿ
+i	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²ÿüúùÿÿÿÿ
+=
+java:S1905"&Remove this unnecessary cast to "int".(é³Êµ
+t
+java:S22931"YReplace the type specification in this constructor call with the diamond operator ("<>").(Â¸’ñüÿÿÿÿ
+t
+java:S22932"YReplace the type specification in this constructor call with the diamond operator ("<>").(­ûğ”ûÿÿÿÿ
+o
+java:S22933"YReplace the type specification in this constructor call with the diamond operator ("<>").(†ƒ¡õ
+o
+java:S2293k"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ù¿Ô³
+o
+java:S2293l"YReplace the type specification in this constructor call with the diamond operator ("<>").(­ƒ™¤
+o
+java:S2293m"YReplace the type specification in this constructor call with the diamond operator ("<>").(¿ Õ¼
+u
+java:S2293“"YReplace the type specification in this constructor call with the diamond operator ("<>").(Â¸’ñüÿÿÿÿ
+u
+java:S2293”"YReplace the type specification in this constructor call with the diamond operator ("<>").(­ûğ”ûÿÿÿÿ
+p
+java:S2293•"YReplace the type specification in this constructor call with the diamond operator ("<>").(†ƒ¡õ
+f	java:S117<"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ’Ÿ·
+f	java:S117|"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°áªû
+g	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ’Ÿ·
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÈŒüÅúÿÿÿÿ

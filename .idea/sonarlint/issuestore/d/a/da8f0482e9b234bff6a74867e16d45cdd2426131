@@ -1,0 +1,6 @@
+
+V	java:S125"<This block of commented-out lines of code should be removed.(·È´Õøÿÿÿÿ
+Q	java:S125	"<This block of commented-out lines of code should be removed.(®üÿ
+T
+java:S1659">Declare "k" and all following declarations on a separate line.(¬»ÜÝ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÈŒüÅúÿÿÿÿ

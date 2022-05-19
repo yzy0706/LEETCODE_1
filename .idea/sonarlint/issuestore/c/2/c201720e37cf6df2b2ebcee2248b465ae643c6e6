@@ -1,0 +1,6 @@
+
+=
+java:S16596""Declare "cost" on a separate line.(î”ßÿÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îû¸Ó
+k	java:S1173"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢ÈĞäüÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Í°†½ùÿÿÿÿ

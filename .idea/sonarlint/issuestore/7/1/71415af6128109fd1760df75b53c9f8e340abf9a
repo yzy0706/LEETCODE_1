@@ -1,0 +1,12 @@
+
+M
+java:S1854"7Remove this useless assignment to local variable "end".(Ûë¨Á
+T
+java:S1854"9Remove this useless assignment to local variable "start".(˜šÃùÿÿÿÿ
+[
+java:S1659"@Declare "end" and all following declarations on a separate line.(öºÂ“ùÿÿÿÿ
+E
+java:S1481"*Remove this unused "start" local variable.(öºÂ“ùÿÿÿÿ
+C
+java:S1481"(Remove this unused "end" local variable.(öºÂ“ùÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾¿¯ç

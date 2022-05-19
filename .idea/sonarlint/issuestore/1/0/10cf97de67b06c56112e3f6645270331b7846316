@@ -1,0 +1,12 @@
+
+J
+java:S3740"/Provide the parametrized type for this generic.(È”ğÒúÿÿÿÿ
+t
+java:S1488$"YImmediately return this expression instead of assigning it to the temporary variable "a".(ê›ìµıÿÿÿÿ
+m
+java:S1104"QMake stack a static final constant or non-public and provide accessors if needed.(šáû"8ùÃ„ñ0
+q
+java:S1104"OMake min a static final constant or non-public and provide accessors if needed.(Ü—ùßÿÿÿÿÿ8úÃ„ñ0
+m
+java:S1104"PMake list a static final constant or non-public and provide accessors if needed.(¤¶ôë8úÃ„ñ0
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹¹å†ÿÿÿÿÿ

@@ -1,0 +1,19 @@
+
+=
+java:S1659""Declare "bLen" on a separate line.(ûÚ¬Èşÿÿÿÿ
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ°§‹
+m
+java:S37760"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(˜øŒâşÿÿÿÿ
+1
+java:S3626@"Remove this redundant jump.(ÉŠ©ƒ
+8
+java:S16591""Declare "bLen" on a separate line.(¢Á¶§
+N
+java:S11171"8Rename "wLen" which hides the field declared at line 14.(¢Á¶§
+N
+java:S11171"8Rename "bLen" which hides the field declared at line 14.(¢Á¶§
+D
+java:S1659=")Declare "closestDist" on a separate line.( ±üÿÿÿÿ
+n
+java:S22934"YReplace the type specification in this constructor call with the diamond operator ("<>").(èŠ¸e
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¯ƒˆÆûÿÿÿÿ

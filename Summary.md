@@ -226,7 +226,7 @@ a. 有关于interval的题：
                 }
                 res.add(insert);
                 while (i < intervals.length){
-                    res.add(intervals[i]);
+                    res.add(intervals[i++]);
                 }
 
 b.  Anagram, String之类sort之后比较char或者string的题:
@@ -291,7 +291,7 @@ Tree
 
 a. Preorder Traverse(根节点 -> 左子树 -> 右子树)
 
-Recursiion做法：
+Recursion做法：
 
             public void preorder_recursion(TreeNode root){
                 if(root == null) return;
@@ -498,6 +498,7 @@ j <= i, 因为j可以为1到i的各个数字）， dp[i] += dp[j-1] (左边的�
 
 
 d. DFS： DFS里面有connectNodesOnSameLevel这种题， 也有PathSum这种题
+
 1. 首先我们要知道在dfs中， 我们碰到了底层或者碰到了想找的情况是会return回来的， 而不是直接结束方程：在AllNodesDistanceKInBinaryTre这道题
 里， 第一个helper是去找到target， 然后找到target return 0， 再一步步在return的步骤中+1并且放到map里：
 
@@ -691,7 +692,7 @@ a. 用到了调度场算法的
 2. 也有类似的存储最高的高度来计算面积的（LargestRectangleArea)
         
 
-    
+
         for(int i = 0; i  < heights.length; i++){
         ...
         if(stack.isEmpty() || heights[i] >= stack.peek()){
@@ -885,6 +886,9 @@ b. 如果要考虑排列顺序，我们必须从元素找更大的i - coin，所
             }
             
             return dp[sum];
+
+
+
 
 
             for(int i = 0; i < nums.length; i++){

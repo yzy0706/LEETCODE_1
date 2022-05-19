@@ -1,0 +1,12 @@
+
+U
+java:S1854":Remove this useless assignment to local variable "before".(ÉôäÀøÿÿÿÿ
+F
+java:S1481"+Remove this unused "before" local variable.(ÉôäÀøÿÿÿÿ
+V	java:S125#"<This block of commented-out lines of code should be removed.(èî«ûÿÿÿÿ
+h	java:S100-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›«¥áıÿÿÿÿ
+J
+java:S1066"/Merge this if statement with the enclosing one.(·«ãåÿÿÿÿÿ
+J
+java:S1066:"/Merge this if statement with the enclosing one.(·«ãåÿÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ªëŞ

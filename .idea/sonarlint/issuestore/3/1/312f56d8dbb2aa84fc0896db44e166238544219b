@@ -1,0 +1,11 @@
+
+N
+java:S1854"8Remove this useless assignment to local variable "nums".(ûİôò
+?
+java:S1481")Remove this unused "nums" local variable.(ûİôò
+D
+java:S5413")Verify that "remove()" is used correctly.(şÌÁÊÿÿÿÿÿ
+c	java:S100%"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û¤¦
+D
+java:S5413<")Verify that "remove()" is used correctly.(şÌÁÊÿÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ªëŞ

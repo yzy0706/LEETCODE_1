@@ -1,0 +1,10 @@
+
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªø‚ä
+c	java:S100*"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê⁄ÎΩ
+h
+java:S3776*"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(ê⁄ÎΩ
+1
+java:S3626:"Remove this redundant jump.(…ä©É
+5
+java:S1659j" Declare "fb" on a separate line.(ÍïΩ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ØÀñ¢

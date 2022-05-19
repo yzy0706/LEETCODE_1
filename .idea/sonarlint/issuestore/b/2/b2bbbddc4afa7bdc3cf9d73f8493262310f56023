@@ -1,0 +1,10 @@
+
+V	java:S125"<This block of commented-out lines of code should be removed.(ñˆûÊùÿÿÿÿ
+U
+java:S1659
+"?Declare "r1" and all following declarations on a separate line.(¦ß™
+Z
+java:S1659"?Declare "r2" and all following declarations on a separate line.(Ÿß…ùÿÿÿÿ
+\
+java:S1126"AReplace this if-then-else statement by a single return statement.(˜úœ½ùÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’Ç¯

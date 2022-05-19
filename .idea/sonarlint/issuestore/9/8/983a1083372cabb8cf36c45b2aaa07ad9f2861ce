@@ -1,0 +1,19 @@
+
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ôë©
+U
+java:S1854(":Remove this useless assignment to local variable "edited".(¸±Îàùÿÿÿÿ
+P
+java:S1854.":Remove this useless assignment to local variable "minSet".(öó·¤
+S
+java:S18546"8Remove this useless assignment to local variable "minS".(ÌçÒèùÿÿÿÿ
+F
+java:S1481("+Remove this unused "edited" local variable.(¸±Îàùÿÿÿÿ
+:
+java:S1659,"Declare "r" on a separate line.(×Ÿ„¢øÿÿÿÿ
+\
+java:S1659-"ADeclare "minS" and all following declarations on a separate line.(Ïõÿÿÿÿÿ
+D
+java:S1481-")Remove this unused "minS" local variable.(Ïõÿÿÿÿÿ
+A
+java:S1481."+Remove this unused "minSet" local variable.(öó·¤
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¯ƒˆÆûÿÿÿÿ

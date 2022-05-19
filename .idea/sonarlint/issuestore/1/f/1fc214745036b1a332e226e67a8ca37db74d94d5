@@ -1,0 +1,9 @@
+
+V	java:S125"<This block of commented-out lines of code should be removed.(™…„¿ùÿÿÿÿ
+8
+java:S1659	""Declare "sell" on a separate line.(ê†‰À
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õöõŠùÿÿÿÿ
+R
+java:S1854"7Remove this useless assignment to local variable "min".(’µÁæÿÿÿÿÿ
+P	java:S125"<This block of commented-out lines of code should be removed.(ñÜ¢
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êôÙû

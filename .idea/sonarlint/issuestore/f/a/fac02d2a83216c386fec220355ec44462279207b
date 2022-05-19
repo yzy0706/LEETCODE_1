@@ -1,0 +1,11 @@
+
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰£Öÿÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(ıä÷ã
+Q	java:S125"<This block of commented-out lines of code should be removed.(ŠÅÙã
+A
+java:S1659"&Declare "maxCount" on a separate line.(¶†àşûÿÿÿÿ
+W
+java:S18546"<Remove this useless assignment to local variable "cooldown".(¤®Ô¶şÿÿÿÿ
+H
+java:S14816"-Remove this unused "cooldown" local variable.(¤®Ô¶şÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(òÜ‡ƒıÿÿÿÿ

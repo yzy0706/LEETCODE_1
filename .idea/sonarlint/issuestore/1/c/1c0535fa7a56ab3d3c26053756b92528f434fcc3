@@ -1,0 +1,101 @@
+
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°×ğÔÿÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°×ğÔÿÿÿÿÿ
+c	java:S100""NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…È
+L
+java:S1854%"7Remove this useless assignment to local variable "res".( °à1
+7
+java:S1659$"!Declare "end" on a separate line.(Ä×â
+c	java:S100""NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…È
+=
+java:S1481%"(Remove this unused "res" local variable.( °à1
+L
+java:S1854%"7Remove this useless assignment to local variable "res".( °à1
+h	java:S1006"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éı­‚ıÿÿÿÿ
+7
+java:S1659$"!Declare "end" on a separate line.(Ä×â
+L
+java:S18549"7Remove this useless assignment to local variable "res".( °à1
+=
+java:S1481%"(Remove this unused "res" local variable.( °à1
+7
+java:S16598"!Declare "end" on a separate line.(Ä×â
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°×ğÔÿÿÿÿÿ
+h	java:S1006"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éı­‚ıÿÿÿÿ
+=
+java:S14819"(Remove this unused "res" local variable.( °à1
+L
+java:S18549"7Remove this useless assignment to local variable "res".( °à1
+7
+java:S16598"!Declare "end" on a separate line.(Ä×â
+h
+java:S3776H"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ºÓ¾»
+=
+java:S14819"(Remove this unused "res" local variable.( °à1
+L
+java:S1854K"7Remove this useless assignment to local variable "res".( °à1
+7
+java:S1659J"!Declare "end" on a separate line.(Ä×â
+h
+java:S3776H"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ºÓ¾»
+=
+java:S1481K"(Remove this unused "res" local variable.( °à1
+L
+java:S1854K"7Remove this useless assignment to local variable "res".( °à1
+c	java:S100""NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…È
+V	java:S125N"<This block of commented-out lines of code should be removed.(£Ô”£şÿÿÿÿ
+L
+java:S1854%"7Remove this useless assignment to local variable "res".( °à1
+7
+java:S1659J"!Declare "end" on a separate line.(Ä×â
+=
+java:S1481K"(Remove this unused "res" local variable.( °à1
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°×ğÔÿÿÿÿÿ
+V	java:S125N"<This block of commented-out lines of code should be removed.(£Ô”£şÿÿÿÿ
+7
+java:S1659$"!Declare "end" on a separate line.(Ä×â
+=
+java:S1481%"(Remove this unused "res" local variable.( °à1
+h	java:S1006"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éı­‚ıÿÿÿÿ
+L
+java:S18549"7Remove this useless assignment to local variable "res".( °à1
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÔõÊ¤
+7
+java:S16598"!Declare "end" on a separate line.(Ä×â
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÔõÊ¤
+c	java:S100""NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…È
+=
+java:S14819"(Remove this unused "res" local variable.( °à1
+L
+java:S1854%"7Remove this useless assignment to local variable "res".( °à1
+h
+java:S3776H"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ºÓ¾»
+L
+java:S1854K"7Remove this useless assignment to local variable "res".( °à1
+7
+java:S1659$"!Declare "end" on a separate line.(Ä×â
+7
+java:S1659J"!Declare "end" on a separate line.(Ä×â
+=
+java:S1481%"(Remove this unused "res" local variable.( °à1
+=
+java:S1481K"(Remove this unused "res" local variable.( °à1
+V	java:S125N"<This block of commented-out lines of code should be removed.(£Ô”£şÿÿÿÿ
+h	java:S1006"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éı­‚ıÿÿÿÿ
+L
+java:S18549"7Remove this useless assignment to local variable "res".( °à1
+7
+java:S16598"!Declare "end" on a separate line.(Ä×â
+=
+java:S14819"(Remove this unused "res" local variable.( °à1
+h
+java:S3776H"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ºÓ¾»
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÔõÊ¤
+L
+java:S1854K"7Remove this useless assignment to local variable "res".( °à1
+7
+java:S1659J"!Declare "end" on a separate line.(Ä×â
+=
+java:S1481K"(Remove this unused "res" local variable.( °à1
+V	java:S125N"<This block of commented-out lines of code should be removed.(£Ô”£şÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÔõÊ¤

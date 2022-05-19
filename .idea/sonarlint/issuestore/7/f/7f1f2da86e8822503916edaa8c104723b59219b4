@@ -1,0 +1,63 @@
+
+:
+java:S1659"Declare "n" on a separate line.(âþ©Éÿÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(‹«¼¤úÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â•¼Öÿÿÿÿÿ
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(â•¼Öÿÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(þãÏ°
+9
+java:S1659!"#Declare "nextJ" on a separate line.(áî‹Ð
+5
+java:S1659S" Declare "fb" on a separate line.(ê•½
+h	java:S100f"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼Žúüÿÿÿÿ
+m
+java:S3776f"RRefactor this method to reduce its Cognitive Complexity from 39 to the 15 allowed.(¼Žúüÿÿÿÿ
+Q	java:S125d"<This block of commented-out lines of code should be removed.(Š¾é‚
+:
+java:S1659…"#Declare "nextJ" on a separate line.(áî‹Ð
+i
+java:S3776’"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Ò¥ŸË
+P
+java:S1854”"9Remove this useless assignment to local variable "start".(ðÈ´€
+n
+java:S3776¡"RRefactor this method to reduce its Cognitive Complexity from 54 to the 15 allowed.(Ç¡ž€øÿÿÿÿ
+;
+java:S1659¢"Declare "n" on a separate line.(ÚÜÂ˜þÿÿÿÿ
+Q
+java:S1117¢"5Rename "m" which hides the field declared at line 17.(ÚÜÂ˜þÿÿÿÿ
+Q
+java:S1117¢"5Rename "n" which hides the field declared at line 17.(ÚÜÂ˜þÿÿÿÿ
+W	java:S125©"<This block of commented-out lines of code should be removed.(¶ÒÄ£øÿÿÿÿ
+T
+java:S1117®"8Rename "dirs" which hides the field declared at line 16.(ÌÍ¿üÿÿÿÿ
+:
+java:S1659³"#Declare "nextJ" on a separate line.(áî‹Ð
+:
+java:S1659Â"#Declare "nextJ" on a separate line.(áî‹Ð
+c	java:S100Ñ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Âø‘
+h
+java:S3776Ñ"RRefactor this method to reduce its Cognitive Complexity from 40 to the 15 allowed.(Âø‘
+;
+java:S1659Ò"Declare "n" on a separate line.(ÚÜÂ˜þÿÿÿÿ
+Q
+java:S1117Ò"5Rename "m" which hides the field declared at line 17.(ÚÜÂ˜þÿÿÿÿ
+Q
+java:S1117Ò"5Rename "n" which hides the field declared at line 17.(ÚÜÂ˜þÿÿÿÿ
+T
+java:S1117Ý"8Rename "dirs" which hides the field declared at line 16.(ÌÍ¿üÿÿÿÿ
+:
+java:S1659â"#Declare "nextJ" on a separate line.(áî‹Ð
+F
+java:S1066‚"/Merge this if statement with the enclosing one.(ÄúÅª
+K
+java:S1066“"/Merge this if statement with the enclosing one.(…ÃÙÞýÿÿÿÿ
+F
+java:S1066š"/Merge this if statement with the enclosing one.(Žë¡ñ
+F
+java:S1066µ"/Merge this if statement with the enclosing one.(…ÍÊ§
+K
+java:S1066ä"/Merge this if statement with the enclosing one.(ßËžòýÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šßÆ³ùÿÿÿÿ
+k	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šßÆ³ùÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¯Ë–¢

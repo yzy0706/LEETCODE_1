@@ -1,0 +1,23 @@
+
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üÇıÿÿÿÿ
+R
+java:S1854"7Remove this useless assignment to local variable "len".(Ô¬ÈÉÿÿÿÿÿ
+[
+java:S1659"@Declare "len" and all following declarations on a separate line.(Ô¬ÈÉÿÿÿÿÿ
+C
+java:S1481"(Remove this unused "len" local variable.(Ô¬ÈÉÿÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(ş¸æ
+h	java:S100""NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ËÆíùÿÿÿÿ
+R
+java:S1854#"7Remove this useless assignment to local variable "len".(Ô¬ÈÉÿÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(²×ƒ½øÿÿÿÿ
+[
+java:S1659#"@Declare "len" and all following declarations on a separate line.(Ô¬ÈÉÿÿÿÿÿ
+C
+java:S1481#"(Remove this unused "len" local variable.(Ô¬ÈÉÿÿÿÿÿ
+Q	java:S125("<This block of commented-out lines of code should be removed.(ş¸æ
+[
+java:S16596"@Declare "len" and all following declarations on a separate line.(İ®Èúÿÿÿÿ
+J
+java:S2864;"4Iterate over the "entrySet" instead of the "keySet".(±­‡Ò
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·¿Å°

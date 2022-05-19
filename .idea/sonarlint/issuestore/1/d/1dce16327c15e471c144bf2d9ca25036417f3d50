@@ -1,0 +1,15 @@
+
+E
+java:S3740"/Provide the parametrized type for this generic.(¡ëÓ±
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘×¹
+4
+java:S16594"Declare "j" on a separate line.(©×‹
+P	java:S125J"<This block of commented-out lines of code should be removed.(ùùÀ
+?
+java:S5413q")Verify that "remove()" is used correctly.( è·Ê
+Q	java:S125y"<This block of commented-out lines of code should be removed.(ŠÌ´®
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çë‘g
+g	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ú«Â¾şÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¯Ë–¢
+c
+java:S3824"HReplace this "Map.containsKey()" with a call to "Map.computeIfAbsent()".(•”›ûÿÿÿÿ

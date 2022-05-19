@@ -1,0 +1,15 @@
+
+R
+java:S1854"7Remove this useless assignment to local variable "MAX".(óÈïüÿÿÿÿ
+C
+java:S1481"(Remove this unused "MAX" local variable.(óÈïüÿÿÿÿ
+E
+java:S14813"*Remove this unused "start" local variable.(¡Ò¾üÿÿÿÿ
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+G
+java:S1481C",Remove this unused "curStop" local variable.(ÿ£ƒ¨ıÿÿÿÿ
+t
+java:S2293<"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ïá…æÿÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óÈïüÿÿÿÿ
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ƒ±ø˜ıÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ƒÄÆ

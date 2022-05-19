@@ -1,0 +1,20 @@
+
+V	java:S125	"<This block of commented-out lines of code should be removed.(ô×•ûüÿÿÿÿ
+7
+java:S1659"!Declare "res" on a separate line.(ÂÄÜ
+M
+java:S1117"7Rename "res" which hides the field declared at line 63.(ÂÄÜ
+\
+java:S1659"FDeclare "leftLarge" and all following declarations on a separate line.(Ùùæ±
+c	java:S100""NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œçÅÉ
+D
+java:S54133")Verify that "remove()" is used correctly.(şÌÁÊÿÿÿÿÿ
+h	java:S100A"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËèÉùÿÿÿÿ
+D
+java:S5413R")Verify that "remove()" is used correctly.(şÌÁÊÿÿÿÿÿ
+c	java:S100]"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›„Äî
+7
+java:S1659^"!Declare "res" on a separate line.(ÂÄÜ
+M
+java:S1117^"7Rename "res" which hides the field declared at line 63.(ÂÄÜ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ªëŞ

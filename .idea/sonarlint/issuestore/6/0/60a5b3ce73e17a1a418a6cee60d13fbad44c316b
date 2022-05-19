@@ -1,0 +1,19 @@
+
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(έ
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(έ
+V	java:S125"<This block of commented-out lines of code should be removed.(ΐκνώÿÿÿÿ
+5
+java:S1659"Declare "l" on a separate line.(‚Π‰«
+O
+java:S18543"9Remove this useless assignment to local variable "board".(¤ªϊΛ
+5
+java:S1659,"Declare "l" on a separate line.(‚Π‰«
+m
+java:S37766"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(³ΚªΛύÿÿÿÿ
+6
+java:S3626@"Remove this redundant jump.(ωνέόÿÿÿÿ
+f
+java:S1764="KCorrect one of the identical sub-expressions on both sides of operator "&&"(εμ—πώÿÿÿÿ
+m	java:S135<"YReduce the total number of break and continue statements in this loop to use at most one.(Γιr
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹‘Ω

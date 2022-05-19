@@ -1138,10 +1138,22 @@ Concept
    Overloading: When two or more methods in the same class have the same name but different parameters, 
    it's called Overloading. 
    
-   Overriding: When the method signature (name and parameters) are the same in the superclass and the child class, 
+   Overriding: When the method signature (name and parameters) are the same in the superclass and in the child class, 
    it's called Overriding.
    
+
+
+
+
+
+   
 2. Polymorphism : Object's ability to be taken on many forms.
+
+
+
+
+
+
 
 3.  NoSQL: non-relational: 
     
@@ -1159,6 +1171,11 @@ Concept
        
     2. bad for high traffic
     
+
+
+
+
+
 4. Abstract Class vs Interface:
    
    An abstract class allows you to create functionality that subclasses can implement or override. 
@@ -1167,10 +1184,20 @@ Concept
    
    And whereas a class can extend only one abstract class, it can take advantage of multiple interfaces.
 
+
+
+
+
+
 5. Process（进程） means a program is in execution, whereas thread（线程） means a segment of a process. 
    A Process is not Lightweight, whereas Threads are Lightweight.  
    A Process is mostly isolated, whereas Threads share memory. 
    Process does not share data, and Threads share data with each other.
+   
+
+
+
+
    
 6. 底层数据结构：
 
@@ -1191,12 +1218,19 @@ Concept
    HashTable依赖两个方法：hashCode()和equals()
    
    执行顺序：
+
    首先判断hashCode()值是否相同
+
    是：继续执行equals(),看其返回值
+
    是true:说明元素重复，不添加
+
    是false:就直接添加到集合
+
    否：就直接添加到集合
+
    最终：
+
    自动生成hashCode()和equals()即可
 
    b. TreeSet 底层数据结构是红黑树。(是一种自平衡的二叉树)
@@ -1211,20 +1245,53 @@ Concept
    b. TreeMap
       底层数据结构是Binary Tree, 红黑树(是一种自平衡的二叉树).
 
+
+
+
+
 7. Design Pattern: 
    
-    a. Singleton : one object exists 
+    a. Singleton（单例） : one object exists 、
+
+   优点：
    
+   1. 所有对象访问一个受控访问的实例, 允许多个实例
+    
+   2. class(类)对实例化有一定的伸缩性
+    
+   3. 节省系统资源， 避免交叉访问， 节省共享资源
+   
+   缺点：
+   
+   1.不适用于变化的对象，如果同一类型的对象总是要在不同的用例场景发生变化，单例就会引起数据的错误，不能保存彼此的状态。
+   
+   2.由于单例模式中没有抽象层，因此单例类的扩展有很大的困难。
+   
+   3.单例类的职责过重，在一定程度上违背了“单一职责原则”。
+   
+   4.滥用单例将带来一些负面问题，如为了节省资源将数据库连接池对象设计为的单例类，可能会导致共享连接池对象的程序过多而出现连接池溢出；
+   如果实例化的对象长时间不被利用，系统会认为是垃圾而被回收，这将导致对象状态的丢失。
+
     b. Factory: Create related dependent objects
+
+
+
+
 
 8.  Scaling:
 
     Vertical: add more resource
 
     Horizontal: add more instances
+
+
+
    
   
 9. Processor: 16、32、64位处理器分别代表可以处理16、 32、 64位字
+
+
+
 
 10. 计算机系统：
         
@@ -1235,7 +1302,560 @@ Concept
         Unix上GCC编译器转换源文件(文本）到目标文件（二进制）：
 
         hello.c（原文本）-> 预处理器(cpp) -> hello.
+
+
+
     
+11. 数字的大小： 一个字节八位
+
+   short, char: 2 字节
+
+   int, float : 4字节
+
+   long, double : 8字节
+
+
+
+
+
+12. 互斥锁和自旋锁：
+
+自旋锁是一种互斥锁的实现方式而已，相比一般的互斥锁会在等待期间放弃cpu，自旋锁（spinlock）则是不断循环并测试锁的状态，这样就一直占着cpu。
+
+互斥锁：用于保护临界区，确保同一时间只有一个线程访问数据。对共享资源的访问，先对互斥量进行加锁，如果互斥量已经上锁，调用线程会阻塞，直到互斥量被解锁。在完成了对共享资源的访问后，要对互斥量进行解锁。
+
+临界区：每个进程中访问临界资源的那段程序称为临界区，每次只允许一个进程进入临界区，进入后不允许其他进程进入。
+
+自旋锁：与互斥量类似，它不是通过休眠使进程阻塞，而是在获取锁之前一直处于忙等(自旋)阻塞状态。用在以下情况：锁持有的时间短，而且线程并不希望在重新调度上花太多的成本。"原地打转"。
+
+自旋锁与互斥锁的区别：线程在申请自旋锁的时候，线程不会被挂起，而是处于忙等的状态。
+
+信号量：信号量是一个计数器，可以用来控制多个进程对共享资源的访问。它常作为一种锁机制，防止某进程正在访问共享资源时，其他进程也访问该资源。因此，主要作为进程间以及同一进程内不同线程之间的同步手段。
+
+未加互斥锁：
+    
+
+        public class LockDemo {
+        
+        //private static Object lock = new Object(); // static确保只有一把
+        private int i = 0; 
+        
+          public void increaseI() {
+            //synchronized (lock) {
+
+                for(int k=0;k<10;k++) {  // 对i执行10次增1操作 
+                i++; 
+
+            //}
+            System.out.println(Thread.currentThread().getName() + "线程，i现在的值：" + i); 
+          }
+
+            public static void main(String[] args) {
+                LockDemo ld = new LockDemo();
+                int threadNum = 1000;   // 选择1000个线程让结果更加容易观测到
+                MyThread[] threads = new MyThread[threadNum];
+                for(int i=0;i<threads.length;i++) {
+                    threads[i] = new MyThread(ld);  // 所有线程共用一个LockDemo对象
+                    threads[i].start();
+                }
+            }
+
+
+        class MyThread extends Thread {
+            LockDemo ld;
+
+            public MyThread(LockDemo ld) {
+                this.ld = ld;
+            }
+            public void run() {
+                ld.increaseI();
+            }
+        
+        }
+
+
+
+
+  // 加了互斥锁
+        
+        public class LockDemo {
+
+            private static Object lock = new Object(); // static确保只有一把锁
+            private int i = 0;
+
+            public void increaseI() {
+                synchronized (lock) {
+                    for(int k=0;k<10;k++) {  // 对i执行10次增1操作
+                        i++;
+                    }
+                    System.out.println(Thread.currentThread().getName() + "线程，i现在的值：" + i);
+                }
+            }
+        
+            public static void main(String[] args) {
+                LockDemo ld = new LockDemo();
+                int threadNum = 1000;   // 选择1000个线程让结果更加容易观测到
+                MyThread[] threads = new MyThread[threadNum];
+        
+                for(int i=0;i<threads.length;i++) {
+                    threads[i] = new MyThread(ld);  // 所有线程共用一个LockDemo对
+                    threads[i].start();
+                }
+            }
+        }
+
+
+
+        class MyThread extends Thread {
+        
+            LockDemo ld;
+            public MyThread(LockDemo ld) {
+                this.ld = ld;
+            }
+
+            public void run() {
+                ld.increaseI();
+            }
+        }
+
+
+
+
+自旋锁：
+    
+    import java.util.concurrent.TimeUnit;
+    import java.util.concurrent.atomic.AtomicReference;
+    
+    public class SpinLockTest {
+    
+        /**
+         * 自旋锁：
+         * 是指尝试获取锁的线程不会立即阻塞，而是采用循环的方式获取锁，这样的好处是减少线程上下文切换的消耗，缺点是循环耗用CPU
+         * 而在一个多核的机器中，多个线程是可以并行执行的。如果当后面请求锁的线程没拿到锁的时候，不挂起线程，而是继续占用处理器的执行时间，
+         * 让当前线程执行一个忙循环（自旋操作），
+         * 也就是不断在盯着持有锁的线程是否已经释放锁，那么这就是传说中的自旋锁了。
+         * @param args
+         */
+         
+        /**
+         * 1.6 版本后使用了自适应自旋锁：
+         * 自旋次数通常由前一次在同一个锁上的自旋时间及锁的拥有者的状态决定。如果线程【T1】自旋成功，自旋次数为17次，那么等到下一个线程【T2】自旋时，
+         * 也会默认认为【T2】自旋17次成功，
+         如果【T2】自旋了5次就成功了，那么此时这个自旋次数就会缩减到5次。
+        自适应自旋锁随着程序运行和性能监控信息，从而使得虚拟机可以预判出每个线程大约需要的自旋次数
+         * @param args
+         */
+
+        public static void main(String[] args) {
+            SpinLockTest sl= new SpinLockTest();
+            // 给线程赋予AA名称
+            new Thread(()->{
+                sl.myLock();
+                try {
+                    // 休眠5 秒
+                    TimeUnit.SECONDS.sleep(5);
+                } catch (InterruptedException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+                sl.unMyLock();
+            },"AA").start();
+             
+            try {
+                TimeUnit.SECONDS.sleep(1);
+            } catch (InterruptedException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+             
+            new Thread(()-> {
+                sl.myLock();
+                try {
+                    TimeUnit.SECONDS.sleep(1);
+                } catch (InterruptedException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+                sl.unMyLock();
+            },"BB").start();
+             
+             
+             
+        }
+        //  AtomicReference  原子方式更新对象引用 ，保证多线程下操作该对象进行更新时，避免出现脏读，只要有一个线程改变 ，
+        //其他现场不会在改变该值
+        AtomicReference<Thread> atomicReference = new AtomicReference<>();
+         
+        // null 表示锁未被线程持有，  atomicReference.compareAndSet(t,null);  线程的持有状态改变为null
+        public void  myLock() {
+            Thread t=   Thread.currentThread();
+            System.out.println(t.currentThread().getName()+ "come in");
+            while (!atomicReference.compareAndSet(null, t)) {
+            }
+        }
+        public void unMyLock() {
+             Thread t=  Thread.currentThread();
+             atomicReference.compareAndSet(t,null);
+             System.out.println(t.currentThread().getName()+ "invoked unMyLock() ");
+        }
+    
+    }
+
+13. 做过的锁：
+
+
+    Deque<Integer> deq;
+    int size;
+    Object lock;
+
+    public void BoundedBlockingQueue(int capacity) {
+        size = capacity;
+        deq = new LinkedList<>();
+        lock = new Object();
+    }
+
+    public void enqueue(int element) throws InterruptedException {
+        synchronized(lock){
+            while(deq.size() == size){
+                lock.wait();
+            }
+            deq.addLast(element);
+            lock.notify();
+        }
+    }
+
+    public int dequeue() throws InterruptedException {
+        int res = 0;
+        synchronized(lock){
+            while(deq.isEmpty()){
+                lock.wait();
+            }
+            res = deq.removeFirst();
+            lock.notify();
+        }
+        return res;
+    }
+
+    public int size() {
+        return deq.size();
+    }
+
+    Deque<Integer> deq;
+    int size;
+    Object lock;
+
+    public void BoundedBlockingQueue(int capacity) {
+        size = capacity;
+        deq = new LinkedList<>();
+        lock = new Object();
+    }
+
+    public void enqueue(int element) throws InterruptedException {
+        synchronized(lock){
+            while(deq.size() == size){
+                lock.wait();
+            }
+            deq.addLast(element);
+            lock.notify();
+        }
+    }
+
+    public int dequeue() throws InterruptedException {
+        int res = 0;
+        synchronized(lock){
+            while(deq.isEmpty()){
+                lock.wait();
+            }
+            res = deq.removeFirst();
+            lock.notify();
+        }
+        return res;
+    }
+
+    public int size() {
+        return deq.size();
+    }
+
+
+
+
+
+
+14. HTTPS和HTTP区别：
+    
+    1. https需要收费的CA协议证书
+    
+    2. http使用80号端口， https使用443号端口
+    
+    3. http是超文本传输协议， 是明文传输， https是http + ssl的加密传输、身份认证协议， 更加安全
+    
+
+
+
+
+    
+15. HTTPS加密原理：
+
+    1. 加密方法：
+    
+        a. 对称加密： 双方商定一个密钥， 速度快， 不安全
+        
+        b. 非对称加密： RSA算法等生成公钥和私钥， 公钥信息要私钥解密， 私钥信息要公钥解密， 速度慢， 资源占用多但是安全
+    
+    2. 加密过程：
+    
+        1. 客户端发出https请求， 服务器通过RSA算法产生公钥和私钥， 发送回客户端
+    
+        2. 客户端验证证书， 用公钥加密自己产生的通信密钥， 发送到服务器
+    
+        3. 服务器用私钥解密公钥得到通信密钥 
+           
+    3. 使用非对称加密仅仅获得一个用对称加密生成的秘钥？ 
+    
+    耗时长， 只用来传输密钥而不是数据
+   
+
+
+
+
+
+
+16. TCP和UDP的区别：
+
+    1. TCP 是面向连接的（TCP建立连接时有三次握手， 断连时有四次握手），UDP 是面向无连接的
+    
+    2. UDP程序结构较简单, 只有两个端口号
+    
+    3. TCP 是面向字节流的，UDP 是基于数据报的
+    
+    4. TCP 保证数据正确性，UDP 可能丢包
+    
+    5. TCP 保证数据顺序，UDP 不保证
+    
+    6. TCP通过滑动窗口控制数据传输的大小
+    
+
+
+
+
+    
+17. TCP为什么是可靠连接：
+    
+    1. TCP的报文头序号保证数据不丢包按顺序到达
+    
+    2. 通过滑动窗口实现流量控制和堵塞控制
+    
+
+
+
+
+    
+18. NSString为什么用copy修饰：
+    
+使用copy修饰之后,即使属性拷贝来自可变字符串,也会被深拷贝成不可变字符串,也就是源字符串修改之后不会影响到属性字符串,增强了代码的健壮性。
+
+
+
+
+
+
+
+
+19. Runloop和线程的关系： 一个runloop对应并管理一个核心线程，runloop创建以后线程准备执行任务。
+    主线程的runloop在程序启动的时候就加载好了， 子线程的runloop在使用时创建， 任务完成以后销毁
+    
+
+
+
+    
+20. 交换机和路由器的区别： 交换机是各自拨号使用自己的宽带账号， 形成一个局域网，工作在中继层； 
+    而路由器是共享一个宽带账号， 工作在网络层
+    
+
+
+
+
+    
+21. Top K out of massive amount of integers : 建立size为k的min heap，每次都去比较堆顶的最小值， Runtime: O(nklog(k)), 优化就是分在1000(eg.)个文件里，
+分别找到最小值以后再汇总
+    
+
+
+
+
+
+22. 浅拷贝： 只复制指针； 深拷贝： 复制整个object的数据
+
+
+
+
+
+
+
+23. power()函数的实现： 
+
+    1. 首先判断底数（base）是不是0， 是的话直接return 0；
+    
+    2. 判断exponent大于等于或者小于0， 如果小于0用一个boolean negative记录
+    
+    3. 如果negative, res = 1/res;
+    
+
+
+
+
+    
+24. static用来修饰成员变量或方法，主要作用是在不创建对象的情况下，类名.变量名/方法，就可以访问。被static修饰的成员变量或方法，是在类级别的。
+
+注意几点：
+
+    1.static关键字修饰时，在类被初次加载时，顺序执行代码快，且只执行一次。
+
+    2.static 修饰的成员变量或方法实在编译时就动态绑定了的。
+    所以在被static修饰的方法中不能调用非static修饰的变量，（原因：编译期非static变量还未被创建）而在普通方法中可以调用被static修饰的变量。
+
+    3.构造方法默认为static类型。
+
+    4.java中不允许static修饰局部变量（语法规定）
+
+    5.static关键字不依赖于对象，所以不能用this访问。
+
+
+
+
+
+
+
+25. TCP粘包问题和断包问题：
+
+    1. 粘包： 缓存里的数据包和当前数据包一起发送了， 会导致通道的堵塞
+
+    2. 断包： 当前数据包过大导致发送方缓冲区存不下， 所以截取发送
+
+
+解决方法：
+
+    1. 记录包的大小， 接收方根据包的大小进行截取处理
+
+    2. 发送的包加入特殊字符， 接收方根据特殊字符处理
+
+
+
+
+
+
+
+
+
+26. http里GET和POST请求都是TCP的链接, GET传输的参数在url里， 比较没有隐私性， 产生一个TCP数据包；
+    POST通过request body来传输参数， 比较安全， 产生两个TCP数据包
+
+
+
+
+
+
+
+
+
+
+27. 进程间通信： 
+
+    1. 匿名管道： 两个程序分享数据
+
+    2. 有名管道： 允许无亲缘关系程序通信
+    
+    3. 高级管道： 把一个程序当作另外程序的子进程
+    
+
+
+
+
+
+
+
+28. 死锁： 多个进程因为争夺资源而形成的僵局
+
+    产生原因： 1. 竞争资源  2. 推进顺序非法
+
+    必要条件： 
+    
+    1. 互斥条件：进程要求对所分配的资源进行排它性控制，即在一段时间内某资源仅为一进程所占用。
+    
+    2. 请求和保持条件：当进程因请求资源而阻塞时，对已获得的资源保持不放。
+    
+    3. 不剥夺条件：进程已获得的资源在未使用完之前，不能剥夺，只能在使用完时由自己释放。
+    
+    4. 环路等待条件：在发生死锁时，必然存在一个进程--资源的环形链。
+
+    解决方法： 1. 一次性分配资源， 资源尽量不共享 2. 可剥夺资源： 如果当前程序得不到别的资源， 直接放弃当前资源
+
+
+
+
+
+
+29.  JVM原理：
+
+
+程序计数器
+
+占用内存小，线程私有，
+
+生命周期与线程相同
+
+大致为字节码行号指示器
+
+
+
+
+
+
+虚拟机栈
+
+线程私有，生命周期与线程相同，使用连续的内存空间
+
+Java 方法执行的内存模型，存储局部变量表、操作栈、动态链接、方法出口等信息
+
+
+
+
+
+
+
+java堆
+
+线程共享，生命周期与虚拟机相同，可以不使用连续的内存地址
+
+保存对象实例，所有对象实例（包括数组）都要在堆上分配
+
+
+
+
+
+
+
+方法区
+
+线程共享，生命周期与虚拟机相同，可以不使用连续的内存地址
+
+存储已被虚拟机加载的类信息、常量、静态变量、即时编译器编译后的代码等数据
+
+
+
+
+
+
+30. 单纯问一个字占多少字节是没有意义的,因为字的大小取决去具体系统的总线宽度,如果是32位的系统,则一个字是4个字节,如果是64位,则是8个字节.
+
+
+
+
+31. cpu工作状态分为系统态（或称管理态，管态）和用户态（或称目态）。 引入这两个工作状态的原因是：为了避免用户程序错误地使用特权指令，保护操作系统不被用户程序破坏。
+    
+    具体规定为：当cpu处于用户态时，不允许执行特权指令,
+    当cpu处于系统态时，可执行包括特权指令在内的一切机器指令
+
 
 Graph（记得优先建数据结构： 两种图的表示方式 ： adjacent Array.matrix, adjacent list)
 ----------------------------------------------------------------------------------------------------
@@ -1245,7 +1865,9 @@ Graph（记得优先建数据结构： 两种图的表示方式 ： adjacent Arr
    a. Dijkstra:
 
    条件：一般是去找起始点到某个点的最短的路径，然后所有的点之间距离都是正值
+
    start的数据结构： V大小的map，并且initialize成(i,Integer.MAX_VALUE)； 设置成公用参数
+
    核心算法：
 
            while(!stops.isEmpty()){
@@ -1261,7 +1883,7 @@ Graph（记得优先建数据结构： 两种图的表示方式 ： adjacent Arr
            }
 
 
-   Runtime: O(（V+E)log(V), 这是pq的解法的复杂度，V是节点的个数，E是每个节点分别能去到的最多的其他节点的个数， 如果是forloop的解法就是O(V^2)
+   Runtime: O(V+E)log(V), 这是pq的解法的复杂度，V是节点的个数，E是每个节点分别能去到的最多的其他节点的个数， 如果是forloop的解法就是O(V^2)
 
 
    b. Floyd-warshall：
@@ -1283,6 +1905,7 @@ Graph（记得优先建数据结构： 两种图的表示方式 ： adjacent Arr
      Runtime：O(n^3)，相当于所有的node循环了立方次
 
    c. Bellman-ford
+
    条件：也可以有负权重，
 
    核心算法：
@@ -1406,6 +2029,7 @@ Tree DFS
 Tree BFS
 ----------------------------------------------------------------------------------------------------
 1.BFS在forloop去poll() queue里面的东西之前一定要注意用一个int在while loop里确认好queue的size
+
 2.常用的whileloop格式
   Queue<> queue = new LinkedList<>();
   while(!queue.isEmpty()){
@@ -1415,6 +2039,7 @@ Tree BFS
   }
   ...
   }
+
 3.拓扑排序 主要是添加了一个indegree:
 
     1. 建立一个indegree[],先根据给的数据建一个map或者matrix, 把对应的条件参数++
@@ -1641,7 +2266,7 @@ String:
                       3. 去尾巴： 1. sb.setLength(sb.length()-1); 2. sb.deleteCharAt(sb.length()-1);
                       4. 插入：insert(int offset, char c)
     网址 https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html
- 6. #22 backtrack的helper如果用StringBuilder cur就没法backtrack出所有的情况，但如果用String cur就可以
+ 6. 22题： backtrack的helper如果用StringBuilder cur就没法backtrack出所有的情况，但如果用String cur就可以
  7. O(logn)一般都是二分法，dp
  8. toString()只能给int实用， 但String.valueOf()可以给几乎所有的数据种类
  9. StringBuilder sb = new StringBuilder(s); 可以用一个sb来承载s， 
